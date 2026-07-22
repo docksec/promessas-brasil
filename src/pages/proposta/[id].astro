@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import { propostas, getPresidente, getEixo } from '../../lib/data';
+import { withBase } from '../../lib/paths';
 
 export function getStaticPaths() {
   return propostas.map((proposta) => ({
@@ -16,7 +17,7 @@ const eixo = getEixo(proposta.eixo);
 ---
 
 <Layout title={proposta.titulo}>
-  <a href={`/presidente/${proposta.presidente_id}`} class="text-sm text-slate-500 hover:underline">
+  <a href={withBase(`/presidente/${proposta.presidente_id}`)} class="text-sm text-slate-500 hover:underline">
     ← Voltar para {presidente?.nome}
   </a>
 
@@ -49,7 +50,7 @@ const eixo = getEixo(proposta.eixo);
           Localização no documento:{' '}
           {proposta.documento_url ? (
             <a
-              href={`${proposta.documento_url}${proposta.documento_pagina ? `#page=${proposta.documento_pagina}` : ''}`}
+              href={`${withBase(proposta.documento_url)}${proposta.documento_pagina ? `#page=${proposta.documento_pagina}` : ''}`}
               target="_blank"
               rel="noopener noreferrer"
               class="underline hover:text-slate-700"

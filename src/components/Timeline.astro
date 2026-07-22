@@ -1,6 +1,7 @@
 ---
 import StatusBadge from './StatusBadge.astro';
 import type { Proposta } from '../lib/data';
+import { withBase } from '../lib/paths';
 
 interface Props {
   propostas: Proposta[];
@@ -21,7 +22,7 @@ const ordenadas = [...propostas].sort(
         <time class="text-xs font-medium text-slate-400">
           {proposta.data_ultima_atualizacao}
         </time>
-        <a href={`/proposta/${proposta.id}`} class="mt-1 flex flex-wrap items-center gap-2">
+        <a href={withBase(`/proposta/${proposta.id}`)} class="mt-1 flex flex-wrap items-center gap-2">
           <span class="font-medium text-slate-900 hover:underline">{proposta.titulo}</span>
           <StatusBadge status={proposta.status} size="sm" />
         </a>

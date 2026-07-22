@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { withBase } from '../lib/paths';
 ---
 
 <Layout title="Metodologia">
@@ -48,13 +49,13 @@ import Layout from '../layouts/Layout.astro';
       <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700">
         <li>
           Jair Bolsonaro (2018) —
-          <a href="/propostas-tse/bolsonaro.pdf" class="underline hover:text-slate-900">
+          <a href={withBase('/propostas-tse/bolsonaro.pdf')} class="underline hover:text-slate-900">
             "O Caminho da Prosperidade"
           </a>
         </li>
         <li>
           Lula/Alckmin (2022) —
-          <a href="/propostas-tse/lula.pdf" class="underline hover:text-slate-900">
+          <a href={withBase('/propostas-tse/lula.pdf')} class="underline hover:text-slate-900">
             "Diretrizes para o Programa de Reconstrução e Transformação do Brasil"
           </a>
         </li>
