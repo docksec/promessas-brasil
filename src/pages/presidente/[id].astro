@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProposalCard from '../../components/ProposalCard.astro';
+import IndicatorComparisonCard from '../../components/IndicatorComparisonCard.astro';
+import Timeline from '../../components/Timeline.astro';
+import FilterBar from '../../components/FilterBar.astro';
+import {
+  presidentes,
+  getPropostasByPresidente,
+  getIndicadoresByPresidente,
+  getEixo,
+  isMandatoEmAndamento,
+} from '../../lib/data';
+
+export function getStaticPaths() {
+  return presidentes.map((presidente) => ({
+    params: { id: presidente.id },
+    props: { presidente },
+  }));
+}
+
+const { presidente } = Astro.props;
+const propostasDoMandato = getPropostasByPresidente(presidente.id);
+const indicadoresDoMandato = getIndicadoresByPresidente(presidente.id);
+
+// Indicadores em que aumentar é ruim (ao contrário do padrão "aumento é bom")
+const CATEGORIAS_AUMENTO_RUIM = new Set([
+  'desemprego',
+  'inflacao',
+  'divida_publica',
+  'desmatamento',
+  'extrema_pobreza',
+  'homicidios',
+  'cambio',
+]);
+
+const emAndamento = isMandatoEmAndamento(presidente);
+const cumpridas = propostasDoMandato.filter((p) => p.status === 'cumprido').length;
+const percentualGeral =
+  propostasDoMandato.length > 0
+    ? Math.round(
+        propostasDoMandato.reduce((acc, p) => acc + p.percentual_cumprimento, 0) /
+          propostasDoMandato.length
+      )
+    : 0;
+---
+
+<Layout title={presidente.nome}>
+  <div class="flex flex-wrap items-center gap-4">
+    <img
+      src={presidente.foto}
+      alt=""
+      class="h-20 w-20 rounded-full bg-slate-100 object-cover"
+    />
+    <div>
+      <h1 class="text-2xl font-bold text-slate-900">{presidente.nome}</h1>
+      <p class="text-sm text-slate-500">
+        {presidente.mandato_inicio} a {presidente.mandato_fim}
+        {emAndamento && (
+          <span class="ml-1 inline-flex items-center gap-1 rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-800">
+            <span class="h-1.5 w-1.5 rounded-full bg-blue-500" /> Mandato em andamento
+          </span>
+        )}
+        {' '}· {presidente.partido_coligacao}
+      </p>
+    </div>
+    <div class="ml-auto rounded-lg bg-slate-100 px-4 py-2 text-center">
+      <span class="block text-2xl font-bold text-slate-900">{percentualGeral}%</span>
+      <span class="block text-xs text-slate-500">cumprimento médio ({cumpridas} cumpridas)</span>
+    </div>
+  </div>
+
+  <section class="mt-10">
+    <h2 class="text-lg font-semibold text-slate-900">
+      Ponto de partida vs {emAndamento ? 'situação atual' : 'ponto de chegada'}
+    </h2>
+    <p class="text-sm text-slate-500">
+      Indicadores objetivos comparando início do mandato com{' '}
+      {emAndamento ? 'o dado mais recente disponível (mandato ainda em curso)' : 'o fim do mandato'}.
+    </p>
+    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        indicadoresDoMandato.map((indicador) => (
+          <IndicatorComparisonCard
+            indicador={indicador}
+            aumentoEBom={!CATEGORIAS_AUMENTO_RUIM.has(indicador.categoria)}
+            mandatoEmAndamento={emAndamento}
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mt-10">
+    <h2 class="text-lg font-semibold text-slate-900">
+      Linha do tempo do mandato{emAndamento ? ' (em andamento)' : ''}
+    </h2>
+    <p class="text-sm text-slate-500">Últimas atualizações de status das propostas.</p>
+    <div class="mt-4">
+      <Timeline propostas={propostasDoMandato} />
+    </div>
+  </section>
+
+  <section class="mt-10">
+    <h2 class="text-lg font-semibold text-slate-900">Propostas de campanha</h2>
+    <div class="mt-4">
+      <FilterBar />
+    </div>
+    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+      {
+        propostasDoMandato.map((proposta) => {
+          const eixo = getEixo(proposta.eixo);
+          return (
+            <div data-proposta-item data-eixo={proposta.eixo} data-status={proposta.status}>
+              <ProposalCard proposta={proposta} eixo={eixo} />
+            </div>
+          );
+        })
+      }
+    </div>
+  </section>
+</Layout>

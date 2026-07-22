@@ -1,0 +1,50 @@
+[
+  {
+    "id": "economico",
+    "nome": "Econômico",
+    "descricao": "Política fiscal, monetária (indireta, via BC), cambial, industrial, tributária, emprego, inflação, dívida pública, comércio externo.",
+    "cor": "#f59e0b"
+  },
+  {
+    "id": "social",
+    "nome": "Social",
+    "descricao": "Educação, saúde, assistência social, previdência, combate à pobreza/fome, habitação, cultura, esporte.",
+    "cor": "#0ea5e9"
+  },
+  {
+    "id": "seguranca-justica",
+    "nome": "Segurança e Justiça",
+    "descricao": "Segurança pública, sistema penitenciário, combate ao crime organizado, política de drogas, sistema de justiça.",
+    "cor": "#ef4444"
+  },
+  {
+    "id": "meio-ambiente-sustentabilidade",
+    "nome": "Meio Ambiente e Sustentabilidade",
+    "descricao": "Clima, desmatamento, biodiversidade, transição energética, recursos naturais, saneamento.",
+    "cor": "#22c55e"
+  },
+  {
+    "id": "infraestrutura",
+    "nome": "Infraestrutura",
+    "descricao": "Transporte, energia, telecomunicações, logística, obras públicas.",
+    "cor": "#78716c"
+  },
+  {
+    "id": "institucional-democratico",
+    "nome": "Institucional / Democrático",
+    "descricao": "Reforma política, combate à corrupção, transparência, relação entre poderes, liberdade de imprensa, participação social.",
+    "cor": "#8b5cf6"
+  },
+  {
+    "id": "politica-externa-defesa",
+    "nome": "Política Externa e Defesa",
+    "descricao": "Relações internacionais, comércio exterior, integração regional, Forças Armadas, soberania.",
+    "cor": "#0f766e"
+  },
+  {
+    "id": "ciencia-tecnologia-inovacao",
+    "nome": "Ciência, Tecnologia e Inovação",
+    "descricao": "Pesquisa, universidades, transformação digital, inteligência artificial.",
+    "cor": "#ec4899"
+  }
+]

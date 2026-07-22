@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ComparisonTable from '../components/ComparisonTable.astro';
+import { presidentes, eixos, getPropostasByPresidente } from '../lib/data';
+
+const presidenteAId = Astro.url.searchParams.get('a') ?? presidentes[0]?.id;
+const presidenteBId = Astro.url.searchParams.get('b') ?? presidentes[1]?.id ?? presidentes[0]?.id;
+
+function percentualPorEixo(presidenteId: string) {
+  const propostasDoMandato = getPropostasByPresidente(presidenteId);
+  return eixos.map((eixo) => {
+    const doEixo = propostasDoMandato.filter((p) => p.eixo === eixo.id);
+    const media =
+      doEixo.length > 0
+        ? Math.round(doEixo.reduce((acc, p) => acc + p.percentual_cumprimento, 0) / doEixo.length)
+        : null;
+    return { eixo, media, total: doEixo.length };
+  });
+}
+
+const percentuaisA = presidenteAId ? percentualPorEixo(presidenteAId) : [];
+const percentuaisB = presidenteBId ? percentualPorEixo(presidenteBId) : [];
+---
+
+<Layout title="Comparar mandatos">
+  <h1 class="text-2xl font-bold text-slate-900">Comparar mandatos</h1>
+  <p class="mt-2 text-slate-600">
+    Compare os mesmos indicadores objetivos e o percentual de cumprimento de propostas por
+    eixo entre dois mandatos.
+  </p>
+
+  <form method="get" class="mt-6 flex flex-wrap items-end gap-4">
+    <div>
+      <label for="a" class="block text-xs font-medium text-slate-500">Mandato A</label>
+      <select id="a" name="a" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-sm">
+        {presidentes.map((p) => <option value={p.id} selected={p.id === presidenteAId}>{p.nome}</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="b" class="block text-xs font-medium text-slate-500">Mandato B</label>
+      <select id="b" name="b" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-sm">
+        {presidentes.map((p) => <option value={p.id} selected={p.id === presidenteBId}>{p.nome}</option>)}
+      </select>
+    </div>
+    <button
+      type="submit"
+      class="rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
+    >
+      Comparar
+    </button>
+  </form>
+
+  {
+    presidenteAId && presidenteBId && (
+      <>
+        <section class="mt-10">
+          <h2 class="text-lg font-semibold text-slate-900">Indicadores</h2>
+          <div class="mt-4">
+            <ComparisonTable presidenteAId={presidenteAId} presidenteBId={presidenteBId} />
+          </div>
+        </section>
+
+        <section class="mt-10">
+          <h2 class="text-lg font-semibold text-slate-900">Cumprimento de propostas por eixo</h2>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-slate-200 bg-white">
+            <table class="w-full min-w-[480px] text-sm">
+              <thead>
+                <tr class="border-b border-slate-200 bg-slate-50 text-left">
+                  <th class="px-4 py-3 font-semibold text-slate-600">Eixo</th>
+                  <th class="px-4 py-3 font-semibold text-slate-600">Mandato A</th>
+                  <th class="px-4 py-3 font-semibold text-slate-600">Mandato B</th>
+                </tr>
+              </thead>
+              <tbody>
+                {eixos.map((eixo, i) => (
+                  <tr class="border-b border-slate-100 last:border-0">
+                    <td class="px-4 py-3 font-medium text-slate-900">{eixo.nome}</td>
+                    <td class="px-4 py-3 text-slate-700">
+                      {percentuaisA[i]?.media !== null ? `${percentuaisA[i]?.media}% (${percentuaisA[i]?.total} propostas)` : 'Sem propostas'}
+                    </td>
+                    <td class="px-4 py-3 text-slate-700">
+                      {percentuaisB[i]?.media !== null ? `${percentuaisB[i]?.media}% (${percentuaisB[i]?.total} propostas)` : 'Sem propostas'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </>
+    )
+  }
+</Layout>

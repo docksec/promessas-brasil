@@ -1,0 +1,52 @@
+---
+import { eixos as todosEixos, STATUS_LABELS } from '../lib/data';
+
+interface Props {
+  /** Slugs dos eixos que aparecem como opção (default: todos) */
+  eixoIds?: string[];
+}
+
+const { eixoIds } = Astro.props;
+const eixosDisponiveis = eixoIds
+  ? todosEixos.filter((e) => eixoIds.includes(e.id))
+  : todosEixos;
+const statusEntries = Object.entries(STATUS_LABELS);
+---
+
+<div class="flex flex-wrap items-center gap-3 rounded-lg border border-slate-200 bg-white p-3" data-filter-bar>
+  <div class="flex items-center gap-2">
+    <label for="filtro-eixo" class="text-xs font-medium text-slate-500">Eixo</label>
+    <select id="filtro-eixo" class="rounded-md border border-slate-300 px-2 py-1 text-sm">
+      <option value="todos">Todos</option>
+      {eixosDisponiveis.map((e) => <option value={e.id}>{e.nome}</option>)}
+    </select>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <label for="filtro-status" class="text-xs font-medium text-slate-500">Status</label>
+    <select id="filtro-status" class="rounded-md border border-slate-300 px-2 py-1 text-sm">
+      <option value="todos">Todos</option>
+      {statusEntries.map(([value, label]) => <option value={value}>{label}</option>)}
+    </select>
+  </div>
+</div>
+
+<script>
+  function aplicarFiltros() {
+    const eixoSelect = document.getElementById('filtro-eixo') as HTMLSelectElement | null;
+    const statusSelect = document.getElementById('filtro-status') as HTMLSelectElement | null;
+    if (!eixoSelect || !statusSelect) return;
+
+    const eixo = eixoSelect.value;
+    const status = statusSelect.value;
+
+    document.querySelectorAll<HTMLElement>('[data-proposta-item]').forEach((item) => {
+      const matchEixo = eixo === 'todos' || item.dataset.eixo === eixo;
+      const matchStatus = status === 'todos' || item.dataset.status === status;
+      item.style.display = matchEixo && matchStatus ? '' : 'none';
+    });
+  }
+
+  document.getElementById('filtro-eixo')?.addEventListener('change', aplicarFiltros);
+  document.getElementById('filtro-status')?.addEventListener('change', aplicarFiltros);
+</script>

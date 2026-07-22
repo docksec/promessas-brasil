@@ -1,0 +1,20 @@
+[
+  {
+    "id": "lula-2023",
+    "nome": "Luiz Inácio Lula da Silva",
+    "mandato_inicio": "2023-01-01",
+    "mandato_fim": "2026-12-31",
+    "status_mandato": "em_andamento",
+    "partido_coligacao": "COLIGAÇÃO BRASIL DA ESPERANÇA - Federação Brasil da Esperança - FE BRASIL(PT/PC do B/PV) / SOLIDARIEDADE / Federação PSOL REDE(PSOL/REDE) / PSB / AGIR / AVANTE / PROS",
+    "foto": "/images/lula.jpg"
+  },
+  {
+    "id": "bolsonaro-2019",
+    "nome": "Jair Bolsonaro",
+    "mandato_inicio": "2019-01-01",
+    "mandato_fim": "2022-12-31",
+    "status_mandato": "finalizado",
+    "partido_coligacao": "BRASIL ACIMA DE TUDO, DEUS ACIMA DE TODOS - PSL/PRTB/PL",
+    "foto": "/images/bolsonaro.jpg"
+  }
+]

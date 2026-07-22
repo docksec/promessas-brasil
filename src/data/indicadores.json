@@ -1,0 +1,182 @@
+[
+  {
+    "id": "indicador-lula-0001",
+    "presidente_id": "lula-2023",
+    "nome": "Taxa de desemprego",
+    "unidade": "%",
+    "valor_inicio_mandato": "7,9",
+    "valor_fim_mandato": "5,6",
+    "fonte": "IBGE/PNAD Contínua - https://www.ibge.gov.br/estatisticas/sociais/trabalho/9173-pesquisa-nacional-por-amostra-de-domicilios-continua-trimestral.html",
+    "categoria": "desemprego"
+  },
+  {
+    "id": "indicador-lula-0002",
+    "presidente_id": "lula-2023",
+    "nome": "Inflação acumulada (IPCA 12 meses)",
+    "unidade": "%",
+    "valor_inicio_mandato": "5,79",
+    "valor_fim_mandato": "4,26",
+    "fonte": "IBGE/IPCA - https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html",
+    "categoria": "inflacao"
+  },
+  {
+    "id": "indicador-lula-0003",
+    "presidente_id": "lula-2023",
+    "nome": "PIB (variação anual)",
+    "unidade": "%",
+    "valor_inicio_mandato": "3,0",
+    "valor_fim_mandato": "2,0",
+    "fonte": "IBGE/Contas Nacionais Trimestrais - https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9300-contas-nacionais-trimestrais.html",
+    "categoria": "pib"
+  },
+  {
+    "id": "indicador-lula-0004",
+    "presidente_id": "lula-2023",
+    "nome": "Dívida pública (% do PIB) - DBGG",
+    "unidade": "% do PIB",
+    "valor_inicio_mandato": "71,68",
+    "valor_fim_mandato": "81,4",
+    "fonte": "Banco Central - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
+    "categoria": "divida_publica"
+  },
+  {
+    "id": "indicador-lula-0005",
+    "presidente_id": "lula-2023",
+    "nome": "Dívida pública (% do PIB) - DLSP",
+    "unidade": "% do PIB",
+    "valor_inicio_mandato": "56,13",
+    "valor_fim_mandato": "67,4",
+    "fonte": "Banco Central - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
+    "categoria": "divida_publica"
+  },
+  {
+    "id": "indicador-lula-0006",
+    "presidente_id": "lula-2023",
+    "nome": "Salário mínimo (nominal)",
+    "unidade": "R$",
+    "valor_inicio_mandato": "1.212,00",
+    "valor_fim_mandato": "1.621,00",
+    "fonte": "IPEA/Decretos do salário mínimo - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=1739471028",
+    "categoria": "salario_minimo"
+  },
+  {
+    "id": "indicador-lula-0007",
+    "presidente_id": "lula-2023",
+    "nome": "Taxa de câmbio (R$/US$)",
+    "unidade": "R$",
+    "valor_inicio_mandato": "5,21",
+    "valor_fim_mandato": "5,11",
+    "fonte": "IPEA/Banco Central - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=38590&module=M",
+    "categoria": "cambio"
+  },
+  {
+    "id": "indicador-lula-0008",
+    "presidente_id": "lula-2023",
+    "nome": "Área queimada (km²/ano)",
+    "unidade": "km²",
+    "tipo_valor": "total_mandato",
+    "valor_total_mandato": "1.451.255",
+    "fonte": "INPE/TerraBrasilis - https://terrabrasilis.dpi.inpe.br/queimadas/aq1km/",
+    "categoria": "meio_ambiente"
+  },
+  {
+    "id": "indicador-lula-0009",
+    "presidente_id": "lula-2023",
+    "nome": "Taxa de homicídios",
+    "unidade": "por 100 mil habitantes",
+    "valor_inicio_mandato": "21,04",
+    "valor_fim_mandato": "18,79",
+    "fonte": "IPEA/FBSP - Atlas da Violência - https://www.ipea.gov.br/atlasviolencia/dados-series/20/",
+    "categoria": "homicidios"
+  },
+  {
+    "id": "indicador-bolsonaro-0001",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "Taxa de desemprego",
+    "unidade": "%",
+    "valor_inicio_mandato": "11,7",
+    "valor_fim_mandato": "7,9",
+    "fonte": "IBGE/PNAD Contínua - https://www.ibge.gov.br/estatisticas/sociais/trabalho/9173-pesquisa-nacional-por-amostra-de-domicilios-continua-trimestral.html?=&t=series-historicas",
+    "categoria": "desemprego"
+  },
+  {
+    "id": "indicador-bolsonaro-0002",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "Inflação acumulada (IPCA 12 meses)",
+    "unidade": "%",
+    "valor_inicio_mandato": "3,75",
+    "valor_fim_mandato": "5,79",
+    "fonte": "IBGE/IPCA - https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html?t=series-historicas#plano-real-mes",
+    "categoria": "inflacao"
+  },
+  {
+    "id": "indicador-bolsonaro-0003",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "PIB (variação anual)",
+    "unidade": "%",
+    "valor_inicio_mandato": "1,8",
+    "valor_fim_mandato": "3,0",
+    "fonte": "IBGE/SCNT - https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9300-contas-nacionais-trimestrais.html?=&t=series-historicas#evolucao-taxa",
+    "categoria": "pib"
+  },
+  {
+    "id": "indicador-bolsonaro-0004",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "Dívida pública (% do PIB) - DBGG",
+    "unidade": "% do PIB",
+    "valor_inicio_mandato": "75,27",
+    "valor_fim_mandato": "71,68",
+    "fonte": "Banco Central - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
+    "categoria": "divida_publica"
+  },
+  {
+    "id": "indicador-bolsonaro-0005",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "Dívida pública (% do PIB) - DLSP",
+    "unidade": "% do PIB",
+    "valor_inicio_mandato": "52,77",
+    "valor_fim_mandato": "56,13",
+    "fonte": "Banco Central - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
+    "categoria": "divida_publica"
+  },
+  {
+    "id": "indicador-bolsonaro-0006",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "Salário mínimo real",
+    "unidade": "R$",
+    "valor_inicio_mandato": "954,00",
+    "valor_fim_mandato": "1.212,00",
+    "fonte": "IPEA - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=1739471028",
+    "categoria": "salario_minimo"
+  },
+  {
+    "id": "indicador-bolsonaro-0007",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "Taxa de câmbio (R$/US$)",
+    "unidade": "R$",
+    "valor_inicio_mandato": "3,8742",
+    "valor_fim_mandato": "5,2171",
+    "fonte": "IPEA - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=38590&module=M",
+    "categoria": "cambio"
+  },
+  {
+    "id": "indicador-bolsonaro-0008",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "Área queimada (km²/ano)",
+    "unidade": "km²",
+    "tipo_valor": "total_mandato",
+    "valor_total_mandato": "1.533.436",
+    "fonte": "INPE/TerraBrasilis - https://terrabrasilis.dpi.inpe.br/queimadas/aq1km/",
+    "categoria": "meio_ambiente"
+  },
+  {
+    "id": "indicador-bolsonaro-0009",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "Taxa de homicídios",
+    "unidade": "por 100 mil habitantes",
+    "valor_inicio_mandato": "21",
+    "valor_fim_mandato": "21",
+    "fonte": "IPEA Altas da violência - https://www.ipea.gov.br/atlasviolencia/dados-series/20/",
+    "categoria": "homicidios"
+  }
+]

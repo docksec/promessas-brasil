@@ -1,0 +1,134 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Metodologia">
+  <h1 class="text-2xl font-bold text-slate-900">Metodologia</h1>
+  <p class="mt-2 text-slate-600">
+    Esta página descreve como classificamos o cumprimento de propostas e
+    de onde vêm os dados exibidos no site.
+  </p>
+
+  <section class="mt-8 rounded-lg border border-slate-200 bg-white p-5">
+    <h2 class="text-lg font-semibold text-slate-900">Como definimos os status</h2>
+    <dl class="mt-4 space-y-3 text-sm text-slate-700">
+      <div>
+        <dt class="font-semibold">Cumprido</dt>
+        <dd>A proposta foi implementada e está em vigor ou em execução comprovada — não apenas anunciada. Para propostas legislativas, exige lei aprovada, sancionada e regulamentada quando aplicável. Para propostas executivas, exige decreto/programa publicado com execução orçamentária ou operacional verificável. Para metas numéricas, exige que o valor declarado tenha sido atingido segundo dados oficiais.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">Parcialmente cumprido</dt>
+        <dd>Houve ação concreta e resultado real, mas em escopo, alcance ou orçamento menor do que o prometido originalmente, ou meta numérica atingida apenas em parte.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">Em andamento</dt>
+        <dd>Existe ação verificável em curso (projeto de lei em tramitação, programa recém-lançado, obra em execução), mas o resultado final ainda não pode ser avaliado dentro do prazo do mandato.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">Não cumprido</dt>
+        <dd>Chegou ao fim do prazo declarado (ou do mandato) sem que a proposta tenha sido efetivada, mesmo havendo tentativa formal, como projeto de lei rejeitado ou arquivado.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">Não iniciado</dt>
+        <dd>Nenhuma ação concreta e verificável (projeto de lei, decreto, orçamento destinado) foi identificada até a data da última avaliação.</dd>
+      </div>
+    </dl>
+    <p class="mt-4 text-xs text-slate-500">Cada status é atribuído com base em fontes oficiais (Diário Oficial, portal do Congresso, dados de institutos como IBGE e Banco Central) e reavaliado periodicamente. Quando o cumprimento de uma proposta depende também do Congresso Nacional e não apenas do Poder Executivo, isso é indicado separadamente.</p>
+  </section>
+
+  <section class="mt-8 rounded-lg border border-slate-200 bg-white p-5">
+    <h2 class="text-lg font-semibold text-slate-900">Fontes de dados</h2>
+
+    <div class="mt-4">
+      <h3 class="text-sm font-semibold text-slate-900">Propostas de campanha</h3>
+      <p class="mt-1 text-sm text-slate-700">
+        O texto original de cada proposta é extraído dos planos de governo oficiais,
+        registrados no Tribunal Superior Eleitoral (TSE):
+      </p>
+      <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700">
+        <li>
+          Jair Bolsonaro (2018) —
+          <a href="/propostas-tse/bolsonaro.pdf" class="underline hover:text-slate-900">
+            "O Caminho da Prosperidade"
+          </a>
+        </li>
+        <li>
+          Lula/Alckmin (2022) —
+          <a href="/propostas-tse/lula.pdf" class="underline hover:text-slate-900">
+            "Diretrizes para o Programa de Reconstrução e Transformação do Brasil"
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mt-5">
+      <h3 class="text-sm font-semibold text-slate-900">Indicadores socioeconômicos</h3>
+      <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700">
+        <li>
+          <span class="font-medium">IBGE</span> — Desemprego (PNAD Contínua), inflação (IPCA) e
+          PIB (Contas Nacionais Trimestrais)
+        </li>
+        <li>
+          <span class="font-medium">Banco Central</span> — Dívida pública (DBGG e DLSP)
+        </li>
+        <li>
+          <span class="font-medium">IPEA/Ipeadata</span> — Salário mínimo, taxa de câmbio e
+          Atlas da Violência (em parceria com o Fórum Brasileiro de Segurança Pública)
+        </li>
+        <li>
+          <span class="font-medium">INPE/TerraBrasilis</span> — Desmatamento e área queimada na
+          Amazônia
+        </li>
+      </ul>
+    </div>
+
+    <div class="mt-5">
+      <h3 class="text-sm font-semibold text-slate-900">Evidências de cumprimento</h3>
+      <p class="mt-1 text-sm text-slate-700">
+        A avaliação de status de cada proposta é embasada em fontes oficiais (Diário Oficial,
+        Planalto, Congresso Nacional, Senado Federal, STF, BNDES) e em agências de checagem e
+        veículos de jornalismo (Agência Lupa, Poder360, Congresso em Foco, CNN Brasil, entre
+        outros), sempre citadas individualmente na linha do tempo de cada proposta.
+      </p>
+    </div>
+  </section>
+
+  <section class="mt-8 rounded-lg border border-slate-200 bg-white p-5">
+    <h2 class="text-lg font-semibold text-slate-900">Neutralidade e limitações</h2>
+    <p class="mt-2 text-sm text-slate-700">
+      Este projeto não tem vínculo com partidos, candidatos ou campanhas. O objetivo é único: dar
+      clareza ao eleitor sobre o que foi prometido, o que foi entregue e o que não foi entregue,
+      com base em fontes oficiais.
+    </p>
+    <p class="mt-3 text-sm text-slate-700">
+      Reconhecemos algumas limitações metodológicas:
+    </p>
+    <ul class="mt-2 list-disc space-y-2 pl-5 text-sm text-slate-700">
+      <li>
+        <span class="font-semibold">Propostas genéricas.</span> Algumas propostas de campanha são
+        formuladas de maneira ampla ou sem metas mensuráveis (ex: "fortalecer a educação"), o que
+        dificulta uma avaliação objetiva de cumprimento. Essas propostas recebem o status
+        <span class="font-medium">Genérica</span>, acompanhado da justificativa que explica por que
+        não é possível medir seu cumprimento com precisão.
+      </li>
+      <li>
+        <span class="font-semibold">Responsabilidade compartilhada.</span> Nem toda proposta depende
+        exclusivamente do presidente — algumas exigem aprovação do Congresso Nacional ou de outros
+        entes federativos. Quando isso se aplica, indicamos essa dependência junto ao status.
+      </li>
+      <li>
+        <span class="font-semibold">Interpretação de fontes.</span> Mesmo com base em dados oficiais,
+        a classificação de "parcialmente cumprido" envolve certo grau de julgamento sobre a diferença
+        entre o prometido e o entregue. Buscamos aplicar os mesmos critérios a todos os mandatos
+        avaliados, independentemente de partido ou orientação política.
+      </li>
+    </ul>
+  </section>
+
+  <section class="mt-8 rounded-lg border border-slate-200 bg-white p-5">
+    <h2 class="text-lg font-semibold text-slate-900">Frequência de atualização</h2>
+    <p class="mt-2 text-sm text-slate-700">
+      Os dados serão atualizados anualmente no mês de agosto.
+    </p>
+  </section>
+</Layout>

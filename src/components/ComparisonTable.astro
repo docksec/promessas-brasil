@@ -1,0 +1,77 @@
+---
+import {
+  getIndicadoresByPresidente,
+  getPresidente,
+  isMandatoEmAndamento,
+  type Indicador,
+  type Presidente,
+} from '../lib/data';
+
+// Algumas categorias (ex: divida_publica) têm mais de um indicador (DBGG, DLSP).
+// O sufixo depois do "-" no nome (quando existe) distingue essas linhas dentro da categoria.
+function getChaveLinha(indicador: Indicador): string {
+  const sufixo = indicador.nome.includes(' - ') ? indicador.nome.split(' - ').pop() : null;
+  return sufixo ? `${indicador.categoria}::${sufixo}` : indicador.categoria;
+}
+
+function formatarValorIndicador(indicador?: Indicador): string {
+  if (!indicador) return '—';
+  if (indicador.tipo_valor === 'total_mandato') {
+    return `${indicador.valor_total_mandato} ${indicador.unidade}`;
+  }
+  return `${indicador.valor_inicio_mandato} → ${indicador.valor_fim_mandato} ${indicador.unidade}`;
+}
+
+interface Props {
+  presidenteAId: string;
+  presidenteBId: string;
+}
+
+const { presidenteAId, presidenteBId } = Astro.props;
+
+const presidenteA = getPresidente(presidenteAId) as Presidente;
+const presidenteB = getPresidente(presidenteBId) as Presidente;
+
+const indicadoresA = getIndicadoresByPresidente(presidenteAId);
+const indicadoresB = getIndicadoresByPresidente(presidenteBId);
+
+const chavesLinhas = Array.from(
+  new Set([...indicadoresA.map(getChaveLinha), ...indicadoresB.map(getChaveLinha)])
+);
+
+const rotuloColunaA = isMandatoEmAndamento(presidenteA) ? 'início → atual' : 'início → fim';
+const rotuloColunaB = isMandatoEmAndamento(presidenteB) ? 'início → atual' : 'início → fim';
+---
+
+<div class="overflow-x-auto rounded-lg border border-slate-200 bg-white">
+  <table class="w-full min-w-[640px] text-sm">
+    <thead>
+      <tr class="border-b border-slate-200 bg-slate-50 text-left">
+        <th class="px-4 py-3 font-semibold text-slate-600">Indicador</th>
+        <th class="px-4 py-3 font-semibold text-slate-600">
+          {presidenteA?.nome} ({rotuloColunaA})
+        </th>
+        <th class="px-4 py-3 font-semibold text-slate-600">
+          {presidenteB?.nome} ({rotuloColunaB})
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        chavesLinhas.map((chave) => {
+          const indA = indicadoresA.find((i) => getChaveLinha(i) === chave);
+          const indB = indicadoresB.find((i) => getChaveLinha(i) === chave);
+          return (
+            <tr class="border-b border-slate-100 last:border-0">
+              <td class="px-4 py-3 font-medium text-slate-900">
+                {indA?.nome ?? indB?.nome ?? chave}
+              </td>
+              <td class="px-4 py-3 text-slate-700">{formatarValorIndicador(indA)}</td>
+              <td class="px-4 py-3 text-slate-700">{formatarValorIndicador(indB)}</td>
+            </tr>
+          );
+        })
+      }
+    </tbody>
+  </table>
+</div>

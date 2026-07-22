@@ -1,0 +1,31 @@
+---
+import StatusBadge from './StatusBadge.astro';
+import type { Proposta } from '../lib/data';
+
+interface Props {
+  propostas: Proposta[];
+}
+
+const { propostas } = Astro.props;
+
+const ordenadas = [...propostas].sort(
+  (a, b) => new Date(a.data_ultima_atualizacao).getTime() - new Date(b.data_ultima_atualizacao).getTime()
+);
+---
+
+<ol class="relative border-l border-slate-200 pl-6">
+  {
+    ordenadas.map((proposta) => (
+      <li class="mb-8 ml-2 last:mb-0">
+        <span class="absolute -left-[7px] mt-1.5 h-3 w-3 rounded-full border-2 border-white bg-slate-400" />
+        <time class="text-xs font-medium text-slate-400">
+          {proposta.data_ultima_atualizacao}
+        </time>
+        <a href={`/proposta/${proposta.id}`} class="mt-1 flex flex-wrap items-center gap-2">
+          <span class="font-medium text-slate-900 hover:underline">{proposta.titulo}</span>
+          <StatusBadge status={proposta.status} size="sm" />
+        </a>
+      </li>
+    ))
+  }
+</ol>
