@@ -5,9 +5,10 @@ campanha de presidentes do Brasil, no estilo "roadmap eleitoral": o que foi prom
 que foi cumprido, e como os principais indicadores do país mudaram do início ao fim de
 cada mandato.
 
-> **Todos os dados atuais são de EXEMPLO/PLACEHOLDER.** Nenhum número ou fato real foi
-> pesquisado ou inserido — isso é intencional, para que o layout possa ser validado antes
-> do preenchimento com dados reais e verificáveis.
+> Os dados em `/src/data/` são reais e cada um traz sua fonte: indicadores com o período de
+> referência no campo `fonte`, e propostas com evidências datadas e com link. Antes de
+> publicar alterações, confira cada novo número na fonte primária (IBGE, Banco Central,
+> INPE, Diário Oficial/Planalto).
 
 ## Stack
 
@@ -43,7 +44,7 @@ npm run preview   # opcional: serve o build localmente para conferir
   /lib/data.ts        Funções e tipos para ler/consultar os dados JSON
   /pages
     index.astro                Home
-    metodologia.astro          Metodologia (texto placeholder)
+    metodologia.astro          Metodologia (critérios de status, fontes, limitações)
     comparar.astro             Comparação entre dois mandatos
     /presidente/[id].astro     Página de um mandato específico
     /proposta/[id].astro       Página de detalhe de uma proposta
@@ -95,9 +96,9 @@ preenchido" em vez de calcular uma variação.
 
 ## Metodologia
 
-A página `/metodologia` hoje contém apenas texto placeholder explicando o que precisa ser
-definido (critérios de status, fontes, frequência de atualização). Edite diretamente
-`src/pages/metodologia.astro` com o texto final antes de publicar.
+A página `/metodologia` descreve os critérios de cada status, as fontes usadas, a
+frequência de atualização e as limitações da avaliação. Para alterá-la, edite
+`src/pages/metodologia.astro`.
 
 ## Deploy
 
