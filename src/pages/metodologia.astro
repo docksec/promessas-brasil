@@ -15,7 +15,7 @@ import { withBase } from '../lib/paths';
     <dl class="mt-4 space-y-3 text-sm text-slate-700">
       <div>
         <dt class="font-semibold">Cumprido</dt>
-        <dd>A proposta foi implementada e está em vigor ou em execução comprovada — não apenas anunciada. Para propostas legislativas, exige lei aprovada, sancionada e regulamentada quando aplicável. Para propostas executivas, exige decreto/programa publicado com execução orçamentária ou operacional verificável. Para metas numéricas, exige que o valor declarado tenha sido atingido segundo dados oficiais.</dd>
+        <dd>A proposta foi implementada e está em vigor ou em execução comprovada — não apenas anunciada. Para propostas legislativas, exige lei aprovada, sancionada e regulamentada quando aplicável. Para propostas executivas, exige decreto/programa publicado com execução orçamentária ou operacional verificável. Para metas numéricas, exige que o valor declarado tenha sido atingido segundo dados oficiais. Uma proposta cumprida tem sempre 100%; se houver ressalva relevante, ela é classificada como parcialmente cumprida.</dd>
       </div>
       <div>
         <dt class="font-semibold">Parcialmente cumprido</dt>
@@ -70,17 +70,25 @@ import { withBase } from '../lib/paths';
           PIB (Contas Nacionais Trimestrais)
         </li>
         <li>
-          <span class="font-medium">Banco Central</span> — Dívida pública (DBGG e DLSP)
+          <span class="font-medium">Banco Central</span> — Dívida pública (DBGG e DLSP) e taxa de
+          câmbio (PTAX)
         </li>
         <li>
-          <span class="font-medium">IPEA/Ipeadata</span> — Salário mínimo, taxa de câmbio e
-          Atlas da Violência (em parceria com o Fórum Brasileiro de Segurança Pública)
+          <span class="font-medium">IPEA/Ipeadata</span> — Salário mínimo e Atlas da Violência (em
+          parceria com o Fórum Brasileiro de Segurança Pública)
         </li>
         <li>
-          <span class="font-medium">INPE/TerraBrasilis</span> — Desmatamento e área queimada na
-          Amazônia
+          <span class="font-medium">INPE</span> — Área queimada no Brasil (AQ1km) e desmatamento na
+          Amazônia (PRODES e DETER)
         </li>
       </ul>
+      <p class="mt-3 text-sm text-slate-700">
+        O valor de início de cada indicador é o último dado disponível antes da posse (a situação
+        herdada): dezembro do ano anterior para dados mensais e o ano anterior para dados anuais. O
+        valor final é o último dado do mandato ou, em mandatos em andamento, o mais recente
+        publicado. Área queimada é comparada pela média anual de anos completos, para não comparar
+        mandatos de durações diferentes. O período exato de cada valor aparece na fonte do indicador.
+      </p>
     </div>
 
     <div class="mt-5">
@@ -108,9 +116,9 @@ import { withBase } from '../lib/paths';
       <li>
         <span class="font-semibold">Propostas genéricas.</span> Algumas propostas de campanha são
         formuladas de maneira ampla ou sem metas mensuráveis (ex: "fortalecer a educação"), o que
-        dificulta uma avaliação objetiva de cumprimento. Essas propostas recebem o status
-        <span class="font-medium">Genérica</span>, acompanhado da justificativa que explica por que
-        não é possível medir seu cumprimento com precisão.
+        dificulta uma avaliação objetiva de cumprimento. Nesses casos, o status reflete apenas as
+        ações concretas e verificáveis encontradas, e as evidências deixam claro o que foi feito e o
+        que não pode ser medido.
       </li>
       <li>
         <span class="font-semibold">Responsabilidade compartilhada.</span> Nem toda proposta depende
@@ -129,7 +137,8 @@ import { withBase } from '../lib/paths';
   <section class="mt-8 rounded-lg border border-slate-200 bg-white p-5">
     <h2 class="text-lg font-semibold text-slate-900">Frequência de atualização</h2>
     <p class="mt-2 text-sm text-slate-700">
-      Os dados serão atualizados anualmente no mês de agosto.
+      Os dados são revisados periodicamente, sem calendário fixo. Cada proposta mostra a data
+      da sua última atualização, e cada indicador informa o período a que o valor se refere.
     </p>
   </section>
 </Layout>

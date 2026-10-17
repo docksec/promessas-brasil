@@ -46,6 +46,9 @@ Cada registro é uma proposta de campanha específica, vinculada a um mandato e 
 | `titulo`                     | string  | Título curto e objetivo da proposta.                                                              |
 | `descricao_original`         | string  | Texto resumido da proposta, o mais próximo possível do documento/discurso original.               |
 | `fonte_proposta`             | string  | URL ou nome do documento onde a proposta foi feita (plano de governo, discurso, entrevista, etc). |
+| `referencia_documento`       | string  | Localização da proposta dentro do documento (ex: "p. 17 - Redução de Ministérios").              |
+| `documento_url`              | string  | Caminho para o PDF do plano de governo, relativo a `/public` (ex: `/propostas-tse/lula.pdf`).     |
+| `documento_pagina`           | number  | Página do PDF onde a proposta aparece.                                                            |
 | `status`                     | string  | Um de: `cumprido`, `parcialmente_cumprido`, `em_andamento`, `nao_cumprido`, `nao_iniciado`.        |
 | `percentual_cumprimento`     | number  | Percentual estimado de cumprimento (0-100), usado na barra de progresso.                          |
 | `data_ultima_atualizacao`    | string  | Data da última revisão do status, formato `YYYY-MM-DD`.                                           |
@@ -56,7 +59,7 @@ Cada registro é uma proposta de campanha específica, vinculada a um mandato e 
 
 ### Valores possíveis de `status`
 
-- `cumprido` — a proposta foi integralmente realizada.
+- `cumprido` — a proposta foi integralmente realizada. Sempre com `percentual_cumprimento: 100`; havendo ressalva relevante, use `parcialmente_cumprido`.
 - `parcialmente_cumprido` — parte da proposta foi realizada, mas não integralmente.
 - `em_andamento` — ações estão em curso, mas o resultado final ainda não está definido.
 - `nao_cumprido` — o mandato terminou (ou o prazo da proposta se esgotou) sem que ela fosse cumprida.
@@ -74,10 +77,13 @@ Métricas objetivas comparando o início e o fim de cada mandato.
 | `presidente_id`           | string | Referência ao `id` em `presidentes.json`.                                     |
 | `nome`                    | string | Nome de exibição do indicador.                                                |
 | `unidade`                 | string | Unidade de medida (ex: `%`, `R$`, `km²`).                                     |
-| `valor_inicio_mandato`    | string | Valor do indicador no início do mandato. Numérico como string, ou `"PLACEHOLDER"` enquanto não preenchido. |
-| `valor_fim_mandato`       | string | Valor do indicador no fim do mandato (ou mais recente disponível). Mesma regra acima. |
-| `fonte`                   | string | Fonte oficial do dado (ex: IBGE, Banco Central, INPE).                        |
-| `categoria`               | string | Categoria do indicador, usada para agrupar entre mandatos na página `/comparar`. Ex: `desemprego`, `inflacao`, `pib`, `divida_publica`, `salario_minimo`, `cambio`, `desmatamento`, `extrema_pobreza`, `homicidios`, `aprovacao_popular`. |
+| `tipo_valor`              | string | Opcional. `inicio_fim` (padrão), `total_mandato` ou `media_anual`. Define quais campos de valor abaixo são usados. |
+| `valor_inicio_mandato`    | string | (`inicio_fim`) Valor do indicador no início do mandato. Numérico como string, ou `"PLACEHOLDER"` enquanto não preenchido. |
+| `valor_fim_mandato`       | string | (`inicio_fim`) Valor do indicador no fim do mandato (ou mais recente disponível). Mesma regra acima. |
+| `valor_total_mandato`     | string | (`total_mandato`) Soma do indicador no mandato. Só é comparável entre mandatos de mesma duração. |
+| `valor_media_anual`       | string | (`media_anual`) Média anual do indicador no mandato, calculada apenas com anos completos. Preferível a `total_mandato` quando um dos mandatos está em andamento. |
+| `fonte`                   | string | Fonte oficial do dado (ex: IBGE, Banco Central, INPE), com o período de referência entre parênteses antes do link. |
+| `categoria`               | string | Categoria do indicador, usada para agrupar entre mandatos na página `/comparar`. Ex: `desemprego`, `inflacao`, `pib`, `divida_publica`, `salario_minimo`, `cambio`, `meio_ambiente`, `extrema_pobreza`, `homicidios`, `aprovacao_popular`. |
 
 > Ao preencher `valor_inicio_mandato` e `valor_fim_mandato` com números reais, o
 > `IndicatorComparisonCard` calcula automaticamente a variação percentual e mostra

@@ -5,8 +5,8 @@
     "nome": "Taxa de desemprego",
     "unidade": "%",
     "valor_inicio_mandato": "7,9",
-    "valor_fim_mandato": "5,6",
-    "fonte": "IBGE/PNAD Contínua - https://www.ibge.gov.br/estatisticas/sociais/trabalho/9173-pesquisa-nacional-por-amostra-de-domicilios-continua-trimestral.html",
+    "valor_fim_mandato": "5,3",
+    "fonte": "IBGE/PNAD Contínua (trimestres out-dez/2022 e jun-ago/2026) - https://www.ibge.gov.br/estatisticas/sociais/trabalho/9173-pesquisa-nacional-por-amostra-de-domicilios-continua-trimestral.html",
     "categoria": "desemprego"
   },
   {
@@ -15,8 +15,8 @@
     "nome": "Inflação acumulada (IPCA 12 meses)",
     "unidade": "%",
     "valor_inicio_mandato": "5,79",
-    "valor_fim_mandato": "4,26",
-    "fonte": "IBGE/IPCA - https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html",
+    "valor_fim_mandato": "4,58",
+    "fonte": "IBGE/IPCA (12 meses até dez/2022 e até set/2026) - https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html",
     "categoria": "inflacao"
   },
   {
@@ -25,8 +25,8 @@
     "nome": "PIB (variação anual)",
     "unidade": "%",
     "valor_inicio_mandato": "3,0",
-    "valor_fim_mandato": "2,0",
-    "fonte": "IBGE/Contas Nacionais Trimestrais - https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9300-contas-nacionais-trimestrais.html",
+    "valor_fim_mandato": "2,3",
+    "fonte": "IBGE/Contas Nacionais Trimestrais (anos de 2022 e 2025, último ano completo) - https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9300-contas-nacionais-trimestrais.html",
     "categoria": "pib"
   },
   {
@@ -35,8 +35,8 @@
     "nome": "Dívida pública (% do PIB) - DBGG",
     "unidade": "% do PIB",
     "valor_inicio_mandato": "71,68",
-    "valor_fim_mandato": "81,4",
-    "fonte": "Banco Central - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
+    "valor_fim_mandato": "82,87",
+    "fonte": "Banco Central, série SGS 13762 (dez/2022 e ago/2026) - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
     "categoria": "divida_publica"
   },
   {
@@ -45,8 +45,8 @@
     "nome": "Dívida pública (% do PIB) - DLSP",
     "unidade": "% do PIB",
     "valor_inicio_mandato": "56,13",
-    "valor_fim_mandato": "67,4",
-    "fonte": "Banco Central - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
+    "valor_fim_mandato": "69,27",
+    "fonte": "Banco Central, série SGS 4513 (dez/2022 e ago/2026) - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
     "categoria": "divida_publica"
   },
   {
@@ -56,7 +56,7 @@
     "unidade": "R$",
     "valor_inicio_mandato": "1.212,00",
     "valor_fim_mandato": "1.621,00",
-    "fonte": "IPEA/Decretos do salário mínimo - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=1739471028",
+    "fonte": "IPEA/Decretos do salário mínimo (dez/2022 e 2026) - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=1739471028",
     "categoria": "salario_minimo"
   },
   {
@@ -64,19 +64,19 @@
     "presidente_id": "lula-2023",
     "nome": "Taxa de câmbio (R$/US$)",
     "unidade": "R$",
-    "valor_inicio_mandato": "5,21",
-    "valor_fim_mandato": "5,11",
-    "fonte": "IPEA/Banco Central - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=38590&module=M",
+    "valor_inicio_mandato": "5,2171",
+    "valor_fim_mandato": "5,0820",
+    "fonte": "Banco Central/PTAX compra, série SGS 10813 (30/dez/2022 e 16/out/2026) - https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes",
     "categoria": "cambio"
   },
   {
     "id": "indicador-lula-0008",
     "presidente_id": "lula-2023",
-    "nome": "Área queimada (km²/ano)",
-    "unidade": "km²",
-    "tipo_valor": "total_mandato",
-    "valor_total_mandato": "1.451.255",
-    "fonte": "INPE/TerraBrasilis - https://terrabrasilis.dpi.inpe.br/queimadas/aq1km/",
+    "nome": "Área queimada (média anual)",
+    "unidade": "km²/ano",
+    "tipo_valor": "media_anual",
+    "valor_media_anual": "483.752",
+    "fonte": "INPE/Programa Queimadas - AQ1km Coleção 2, produto provisório (média de 2023 a 2025; 2026 ainda incompleto) - https://data.inpe.br/queimadas/aq1km/",
     "categoria": "meio_ambiente"
   },
   {
@@ -84,9 +84,9 @@
     "presidente_id": "lula-2023",
     "nome": "Taxa de homicídios",
     "unidade": "por 100 mil habitantes",
-    "valor_inicio_mandato": "21,04",
-    "valor_fim_mandato": "18,79",
-    "fonte": "IPEA/FBSP - Atlas da Violência - https://www.ipea.gov.br/atlasviolencia/dados-series/20/",
+    "valor_inicio_mandato": "22,01",
+    "valor_fim_mandato": "20,03",
+    "fonte": "IPEA/FBSP - Atlas da Violência 2026 (anos de 2022 e 2024, último disponível) - https://www.ipea.gov.br/atlasviolencia/dados-series/20/",
     "categoria": "homicidios"
   },
   {
@@ -96,7 +96,7 @@
     "unidade": "%",
     "valor_inicio_mandato": "11,7",
     "valor_fim_mandato": "7,9",
-    "fonte": "IBGE/PNAD Contínua - https://www.ibge.gov.br/estatisticas/sociais/trabalho/9173-pesquisa-nacional-por-amostra-de-domicilios-continua-trimestral.html?=&t=series-historicas",
+    "fonte": "IBGE/PNAD Contínua (trimestres out-dez/2018 e out-dez/2022) - https://www.ibge.gov.br/estatisticas/sociais/trabalho/9173-pesquisa-nacional-por-amostra-de-domicilios-continua-trimestral.html?=&t=series-historicas",
     "categoria": "desemprego"
   },
   {
@@ -106,7 +106,7 @@
     "unidade": "%",
     "valor_inicio_mandato": "3,75",
     "valor_fim_mandato": "5,79",
-    "fonte": "IBGE/IPCA - https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html?t=series-historicas#plano-real-mes",
+    "fonte": "IBGE/IPCA (12 meses até dez/2018 e até dez/2022) - https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html?t=series-historicas#plano-real-mes",
     "categoria": "inflacao"
   },
   {
@@ -116,7 +116,7 @@
     "unidade": "%",
     "valor_inicio_mandato": "1,8",
     "valor_fim_mandato": "3,0",
-    "fonte": "IBGE/SCNT - https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9300-contas-nacionais-trimestrais.html?=&t=series-historicas#evolucao-taxa",
+    "fonte": "IBGE/Contas Nacionais Trimestrais (anos de 2018 e 2022) - https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9300-contas-nacionais-trimestrais.html?=&t=series-historicas#evolucao-taxa",
     "categoria": "pib"
   },
   {
@@ -126,7 +126,7 @@
     "unidade": "% do PIB",
     "valor_inicio_mandato": "75,27",
     "valor_fim_mandato": "71,68",
-    "fonte": "Banco Central - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
+    "fonte": "Banco Central, série SGS 13762 (dez/2018 e dez/2022) - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
     "categoria": "divida_publica"
   },
   {
@@ -136,17 +136,17 @@
     "unidade": "% do PIB",
     "valor_inicio_mandato": "52,77",
     "valor_fim_mandato": "56,13",
-    "fonte": "Banco Central - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
+    "fonte": "Banco Central, série SGS 4513 (dez/2018 e dez/2022) - https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
     "categoria": "divida_publica"
   },
   {
     "id": "indicador-bolsonaro-0006",
     "presidente_id": "bolsonaro-2019",
-    "nome": "Salário mínimo real",
+    "nome": "Salário mínimo (nominal)",
     "unidade": "R$",
     "valor_inicio_mandato": "954,00",
     "valor_fim_mandato": "1.212,00",
-    "fonte": "IPEA - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=1739471028",
+    "fonte": "IPEA/Decretos do salário mínimo (dez/2018 e dez/2022) - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=1739471028",
     "categoria": "salario_minimo"
   },
   {
@@ -156,17 +156,17 @@
     "unidade": "R$",
     "valor_inicio_mandato": "3,8742",
     "valor_fim_mandato": "5,2171",
-    "fonte": "IPEA - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=38590&module=M",
+    "fonte": "Banco Central/PTAX compra, série SGS 10813 (31/dez/2018 e 30/dez/2022) - https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes",
     "categoria": "cambio"
   },
   {
     "id": "indicador-bolsonaro-0008",
     "presidente_id": "bolsonaro-2019",
-    "nome": "Área queimada (km²/ano)",
-    "unidade": "km²",
-    "tipo_valor": "total_mandato",
-    "valor_total_mandato": "1.533.436",
-    "fonte": "INPE/TerraBrasilis - https://terrabrasilis.dpi.inpe.br/queimadas/aq1km/",
+    "nome": "Área queimada (média anual)",
+    "unidade": "km²/ano",
+    "tipo_valor": "media_anual",
+    "valor_media_anual": "383.359",
+    "fonte": "INPE/Programa Queimadas - AQ1km Coleção 2, produto provisório (média de 2019 a 2022) - https://data.inpe.br/queimadas/aq1km/",
     "categoria": "meio_ambiente"
   },
   {
@@ -174,9 +174,9 @@
     "presidente_id": "bolsonaro-2019",
     "nome": "Taxa de homicídios",
     "unidade": "por 100 mil habitantes",
-    "valor_inicio_mandato": "21",
-    "valor_fim_mandato": "21",
-    "fonte": "IPEA Altas da violência - https://www.ipea.gov.br/atlasviolencia/dados-series/20/",
+    "valor_inicio_mandato": "28,06",
+    "valor_fim_mandato": "22,01",
+    "fonte": "IPEA/FBSP - Atlas da Violência 2026 (anos de 2018 e 2022) - https://www.ipea.gov.br/atlasviolencia/dados-series/20/",
     "categoria": "homicidios"
   }
 ]
