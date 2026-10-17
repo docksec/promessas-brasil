@@ -1,5 +1,6 @@
 ---
 import { calcularVariacao, isValorNumerico, type Indicador } from '../lib/data';
+import { withBase } from '../lib/paths';
 
 interface Props {
   indicador: Indicador;
@@ -89,4 +90,11 @@ const tendenciaStyles = {
       </div>
     ) : null
   }
+
+  <a
+    href={withBase(`/correcao?item=${indicador.id}`)}
+    class="mt-3 inline-block text-xs text-slate-400 underline hover:text-slate-600"
+  >
+    Reportar erro
+  </a>
 </div>

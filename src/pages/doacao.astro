@@ -2,10 +2,11 @@
 import QRCode from 'qrcode';
 import Layout from '../layouts/Layout.astro';
 import { withBase } from '../lib/paths';
-import { doacao, isPixConfigurado, isPreenchido, obterPixCopiaECola } from '../lib/pix';
+import { isPreenchido } from '../lib/config';
+import { isFormularioConfigurado, WEB3FORMS_URL, web3formsAccessKey } from '../lib/formularios';
+import { doacao, isPixConfigurado, obterPixCopiaECola } from '../lib/pix';
 
 const pixConfigurado = isPixConfigurado(doacao.pix);
-const formularioConfigurado = isPreenchido(doacao.web3forms_access_key);
 
 // O QR Code é gerado no build, como SVG inline — a página não depende de serviço externo para exibi-lo.
 const pixCopiaECola = pixConfigurado ? obterPixCopiaECola(doacao.pix) : '';
@@ -109,14 +110,9 @@ const qrSvg = pixConfigurado
       </p>
 
       {
-        formularioConfigurado ? (
-          <form
-            id="form-melhoria"
-            action="https://api.web3forms.com/submit"
-            method="POST"
-            class="mt-4 space-y-4"
-          >
-            <input type="hidden" name="access_key" value={doacao.web3forms_access_key} />
+        isFormularioConfigurado ? (
+          <form id="form-melhoria" action={WEB3FORMS_URL} method="POST" class="mt-4 space-y-4">
+            <input type="hidden" name="access_key" value={web3formsAccessKey} />
             <input type="hidden" name="subject" value="Solicitação de melhoria - Radar de Propostas" />
             <input type="hidden" name="from_name" value="Radar de Propostas" />
             {/* Campo invisível contra robôs (honeypot do Web3Forms). */}
@@ -186,6 +182,8 @@ const qrSvg = pixConfigurado
 </Layout>
 
 <script>
+  import { ativarEnvioWeb3Forms } from '../scripts/web3forms';
+
   const botaoCopiar = document.getElementById('copiar-pix');
   const campoPix = document.getElementById('pix-copia-e-cola') as HTMLInputElement | null;
   const statusCopiar = document.getElementById('copiar-pix-status');
@@ -202,35 +200,7 @@ const qrSvg = pixConfigurado
     }
   });
 
-  // Envio sem sair da página; sem JavaScript, o formulário é enviado normalmente pelo action.
-  const form = document.getElementById('form-melhoria') as HTMLFormElement | null;
-  const statusForm = document.getElementById('form-melhoria-status');
-
-  form?.addEventListener('submit', async (evento) => {
-    evento.preventDefault();
-    if (!statusForm) return;
-    const botao = form.querySelector('button[type="submit"]') as HTMLButtonElement;
-    botao.disabled = true;
-    statusForm.className = 'text-sm text-slate-600';
-    statusForm.textContent = 'Enviando...';
-
-    try {
-      // O Web3Forms só responde em JSON quando o corpo também é JSON; com FormData ele devolve HTML.
-      const resposta = await fetch(form.action, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(Object.fromEntries(new FormData(form))),
-      });
-      const resultado = await resposta.json();
-      if (!resposta.ok || !resultado.success) throw new Error(resultado.message);
-      form.reset();
-      statusForm.className = 'text-sm text-green-700';
-      statusForm.textContent = 'Solicitação enviada. Obrigado pelo apoio!';
-    } catch {
-      statusForm.className = 'text-sm text-red-700';
-      statusForm.textContent = 'Não foi possível enviar agora. Tente novamente em alguns minutos.';
-    } finally {
-      botao.disabled = false;
-    }
+  ativarEnvioWeb3Forms('form-melhoria', 'form-melhoria-status', {
+    mensagemSucesso: 'Solicitação enviada. Obrigado pelo apoio!',
   });
 </script>

@@ -104,10 +104,17 @@ o bloco correspondente aparece como "ainda não configurado".
   build falha se o CRC estiver inválido); se vazio, `src/lib/pix.ts` gera um BR Code estático,
   sem valor definido, a partir da chave. O QR Code é gerado no build a partir desse código.
   `link_pagamento` (opcional) é a página de cobrança do banco, mostrada como alternativa.
-- **`web3forms_access_key`** — chave de acesso do [Web3Forms](https://web3forms.com), gerada
-  com o e-mail que deve receber as solicitações de melhoria. O site é estático, então o envio
-  do formulário é feito por esse serviço. A chave é pública por design (só permite enviar
-  para o e-mail cadastrado nela).
+
+### Formulários (`/doacao` e `/correcao`)
+
+Os formulários de solicitação de melhoria e de correção de dados enviam por e-mail via
+[Web3Forms](https://web3forms.com), já que o site é estático. A chave de acesso fica em
+`src/data/formularios.json` (`web3forms_access_key`), gerada com o e-mail que deve receber as
+mensagens. A chave é pública por design (só permite enviar para o e-mail cadastrado nela).
+
+A página `/correcao` aceita `?item=<id>` (id de proposta ou de indicador) para abrir o
+formulário com o item já selecionado; é assim que funcionam os links "Reportar erro" das
+páginas de proposta e dos cards de indicador.
 
 ## Metodologia
 
