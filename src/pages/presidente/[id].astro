@@ -32,8 +32,12 @@ const CATEGORIAS_AUMENTO_RUIM = new Set([
   'desmatamento',
   'extrema_pobreza',
   'homicidios',
-  'cambio',
 ]);
+
+// Indicadores mostrados só como alta/queda: classificar como melhora ou piora seria juízo de
+// valor (dólar mais barato favorece quem importa e prejudica quem exporta; o salário mínimo
+// nominal sobe todo ano e não desconta a inflação).
+const CATEGORIAS_SEM_JULGAMENTO = new Set(['cambio', 'salario_minimo']);
 
 const emAndamento = isMandatoEmAndamento(presidente);
 const cumpridas = propostasDoMandato.filter((p) => p.status === 'cumprido').length;
@@ -85,6 +89,7 @@ const percentualGeral =
           <IndicatorComparisonCard
             indicador={indicador}
             aumentoEBom={!CATEGORIAS_AUMENTO_RUIM.has(indicador.categoria)}
+            semJulgamento={CATEGORIAS_SEM_JULGAMENTO.has(indicador.categoria)}
             mandatoEmAndamento={emAndamento}
           />
         ))

@@ -117,6 +117,25 @@ export function calcularVariacao(inicio: string, fim: string): number | null {
   return ((vf - vi) / Math.abs(vi)) * 100;
 }
 
+/** Diferença absoluta fim − início (ex: em pontos percentuais, para indicadores já medidos em %). */
+export function calcularDiferenca(inicio: string, fim: string): number | null {
+  if (!isValorNumerico(inicio) || !isValorNumerico(fim)) return null;
+  return parseValorBR(fim) - parseValorBR(inicio);
+}
+
+/**
+ * Indicadores medidos em % (desemprego, inflação, PIB, dívida/PIB) variam em pontos percentuais:
+ * de 3,0% para 2,3% é −0,7 p.p., não "−23%".
+ */
+export function isUnidadePercentual(unidade: string): boolean {
+  return unidade.trim().startsWith('%');
+}
+
+/** Formata número no padrão brasileiro, com uma casa decimal (ex: 32,9). */
+export function formatarDecimalBR(valor: number): string {
+  return valor.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+}
+
 export const STATUS_LABELS: Record<StatusProposta, string> = {
   cumprido: 'Cumprido',
   parcialmente_cumprido: 'Parcialmente cumprido',

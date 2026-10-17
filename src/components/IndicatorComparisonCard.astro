@@ -1,5 +1,12 @@
 ---
-import { calcularVariacao, isValorNumerico, type Indicador } from '../lib/data';
+import {
+  calcularDiferenca,
+  calcularVariacao,
+  formatarDecimalBR,
+  isUnidadePercentual,
+  isValorNumerico,
+  type Indicador,
+} from '../lib/data';
 import { withBase } from '../lib/paths';
 
 interface Props {
@@ -7,21 +14,29 @@ interface Props {
   /** Se true, uma variação positiva é considerada melhora (ex: PIB). Se false, uma
    * variação negativa é a melhora (ex: desemprego, inflação, desmatamento). */
   aumentoEBom?: boolean;
+  /** Se true, a variação é mostrada só como alta/queda, sem classificar como melhora ou
+   * piora — para indicadores em que isso seria juízo de valor (ex: câmbio, valores nominais). */
+  semJulgamento?: boolean;
   /** Se true, o mandato ainda não terminou — os labels e textos refletem um corte
    * parcial (dado mais recente) em vez de um resultado final de mandato. */
   mandatoEmAndamento?: boolean;
 }
 
-const { indicador, aumentoEBom = true, mandatoEmAndamento = false } = Astro.props;
+const { indicador, aumentoEBom = true, semJulgamento = false, mandatoEmAndamento = false } = Astro.props;
 // Indicadores de valor único (total ou média anual no mandato) não têm início/fim nem variação.
 const ehValorUnico = indicador.tipo_valor === 'total_mandato' || indicador.tipo_valor === 'media_anual';
 const valorUnico =
   indicador.tipo_valor === 'media_anual' ? indicador.valor_media_anual : indicador.valor_total_mandato;
 const labelValorUnico = indicador.tipo_valor === 'media_anual' ? 'Média anual no mandato' : 'Total no mandato';
 
+// Indicadores em % variam em pontos percentuais; os demais, em variação relativa (%).
+const emPontosPercentuais = isUnidadePercentual(indicador.unidade);
 const variacao = ehValorUnico
   ? null
-  : calcularVariacao(indicador.valor_inicio_mandato ?? '', indicador.valor_fim_mandato ?? '');
+  : emPontosPercentuais
+    ? calcularDiferenca(indicador.valor_inicio_mandato ?? '', indicador.valor_fim_mandato ?? '')
+    : calcularVariacao(indicador.valor_inicio_mandato ?? '', indicador.valor_fim_mandato ?? '');
+const unidadeVariacao = emPontosPercentuais ? ' p.p.' : '%';
 const temDados = ehValorUnico
   ? isValorNumerico(valorUnico ?? '')
   : isValorNumerico(indicador.valor_inicio_mandato ?? '') &&
@@ -30,17 +45,35 @@ const temDados = ehValorUnico
 const labelSegundoValor = mandatoEmAndamento ? 'Dado mais recente' : 'Fim do mandato';
 const sufixoVariacao = mandatoEmAndamento ? ' até o momento' : ' no mandato';
 
+// Abaixo destes limites a variação é tratada como estável (0,5% relativo; 0,05 p.p. = arredonda a 0,0).
+const limiteEstavel = emPontosPercentuais ? 0.05 : 0.5;
+
 let tendencia: 'melhora' | 'piora' | 'estavel' | null = null;
 if (variacao !== null) {
-  if (Math.abs(variacao) < 0.5) tendencia = 'estavel';
+  if (Math.abs(variacao) < limiteEstavel || semJulgamento) tendencia = 'estavel';
   else if ((variacao > 0 && aumentoEBom) || (variacao < 0 && !aumentoEBom)) tendencia = 'melhora';
   else tendencia = 'piora';
 }
 
+// A seta mostra a direção do valor (sobe/desce); melhora ou piora fica no texto e na cor.
+let textoVariacao = '';
+let iconeVariacao = '→';
+if (variacao !== null && tendencia) {
+  const valor = `${formatarDecimalBR(Math.abs(variacao))}${unidadeVariacao}`;
+  if (Math.abs(variacao) < limiteEstavel) {
+    textoVariacao = `Estável${sufixoVariacao}`;
+  } else {
+    iconeVariacao = variacao > 0 ? '↑' : '↓';
+    textoVariacao = semJulgamento
+      ? `${variacao > 0 ? 'Alta' : 'Queda'} de ${valor}${sufixoVariacao}`
+      : `${valor} de ${tendencia === 'melhora' ? 'melhora' : 'piora'}${sufixoVariacao}`;
+  }
+}
+
 const tendenciaStyles = {
-  melhora: { text: 'text-melhora-texto', bg: 'bg-melhora-bg', icon: '↑' },
-  piora: { text: 'text-piora-texto', bg: 'bg-piora-bg', icon: '↓' },
-  estavel: { text: 'text-estavel-texto', bg: 'bg-estavel-bg', icon: '→' },
+  melhora: { text: 'text-melhora-texto', bg: 'bg-melhora-bg' },
+  piora: { text: 'text-piora-texto', bg: 'bg-piora-bg' },
+  estavel: { text: 'text-estavel-texto', bg: 'bg-estavel-bg' },
 };
 ---
 
@@ -81,11 +114,11 @@ const tendenciaStyles = {
       </div>
     ) : tendencia ? (
       <div class={`mt-3 flex items-center gap-2 rounded-lg px-2 py-1 ${tendenciaStyles[tendencia].bg}`}>
-        <span class={`text-base font-bold ${tendenciaStyles[tendencia].text}`}>
-          {tendenciaStyles[tendencia].icon}
+        <span class={`text-base font-bold ${tendenciaStyles[tendencia].text}`} aria-hidden="true">
+          {iconeVariacao}
         </span>
         <span class={`text-sm font-medium ${tendenciaStyles[tendencia].text}`}>
-          {Math.abs(variacao ?? 0).toFixed(1)}% {tendencia === 'melhora' ? 'de melhora' : tendencia === 'piora' ? 'de piora' : 'estável'}{sufixoVariacao}
+          {textoVariacao}
         </span>
       </div>
     ) : null
