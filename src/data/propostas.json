@@ -5,24 +5,29 @@
     "eixo": "institucional-democratico",
     "categoria": "Reforma administrativa",
     "titulo": "Redução do número de ministérios",
-    "descricao_original": "Reduzir a estrutura ministerial federal (23 ministérios, 2 secretarias e 4 órgãos com status de ministério), unificando pastas e eliminando o loteamento político do Estado.",
+    "descricao_original": "Reduzir o número de ministérios, que somavam 29 estruturas com status ministerial (23 ministérios, 2 secretarias e 4 órgãos com status de ministério), por considerar o número elevado ineficiente e resultado do loteamento do Estado ('toma lá-dá-cá').",
     "fonte_proposta": "Plano de Governo 2018 - \"O Caminho da Prosperidade\" (Jair Bolsonaro) - registrado no TSE",
     "referencia_documento": "p. 17 - Redução de Ministérios",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 17,
     "status": "cumprido",
     "percentual_cumprimento": 100,
-    "data_ultima_atualizacao": "2019-01-01",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "Medida Provisória nº 870, editada no 1º dia de governo (1º/jan/2019), reduziu de 29 para 22 o número de órgãos com status ministerial: 16 ministérios + 4 órgãos vinculados à Presidência (Casa Civil, Secretaria de Governo, Secretaria-Geral, GSI) + Advocacia-Geral da União + Banco Central. Foram extintos/fundidos os ministérios de Cidades, Cultura, Desenvolvimento Social, Esportes, Fazenda, Indústria/Comércio Exterior/Serviços, Integração Nacional, Planejamento/Desenvolvimento/Gestão, Segurança Pública e Trabalho.",
+        "descricao": "Medida Provisória nº 870, editada no 1º dia de governo (1º/jan/2019), reduziu de 29 para 22 o número de órgãos com status ministerial: 16 ministérios + 4 órgãos vinculados à Presidência (Casa Civil, Secretaria de Governo, Secretaria-Geral, GSI) + Advocacia-Geral da União + Banco Central. Foram extintos/fundidos os ministérios de Cidades, Cultura, Desenvolvimento Social, Esporte, Fazenda, Indústria/Comércio Exterior/Serviços, Integração Nacional, Planejamento/Desenvolvimento/Gestão, Segurança Pública e Trabalho.",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/mpv/mpv870.htm",
         "data": "2019-01-01"
       },
       {
-        "descricao": "MPV 870/2019 foi convertida na Lei nº 13.844, sancionada por Bolsonaro em 18/06/2019, confirmando em definitivo a redução para 22 pastas com status ministerial.",
-        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/Lei/L13844.htm",
+        "descricao": "A MPV 870/2019 foi convertida na Lei nº 13.844, sancionada em 18/06/2019, mantendo 16 ministérios (incluída a CGU) e 22 cargos com status de ministro.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13844.htm",
         "data": "2019-06-18"
+      },
+      {
+        "descricao": "Ao longo do mandato foram recriados o Ministério das Comunicações (2020) e o do Trabalho e Previdência (2021), e o presidente do Banco Central perdeu o status de ministro com a autonomia do BC (LC 179/2021). Ao fim de 2022 eram 23 pastas com status ministerial, ante 29 em 2018. Em campanha, Bolsonaro chegou a falar em no máximo 15 ministérios, número que não consta do plano de governo.",
+        "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
+        "data": "2022-12-23"
       }
     ]
   },
@@ -39,22 +44,22 @@
     "documento_pagina": 58,
     "status": "nao_cumprido",
     "percentual_cumprimento": 15,
-    "data_ultima_atualizacao": "2022-12-31",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "Após quase um ano de atraso, o ministro Paulo Guedes entregou ao Congresso apenas a 1ª de quatro fases prometidas da reforma: um projeto de lei criando a CBS (Contribuição Social sobre Operações com Bens e Serviços), unificando PIS/Pasep e Cofins com alíquota única de 12% (5,8% para bancos).",
-        "fonte_url": "https://www12.senado.leg.br/noticias/materias/2020/07/21/congresso-recebe-primeira-parte-da-reforma-tributaria-do-governo",
+        "descricao": "Em 21/07/2020, o ministro da Economia, Paulo Guedes, entregou ao Congresso o PL 3.887/2020, apresentado como primeira etapa da reforma tributária do governo. O projeto cria a CBS, que substituiria o PIS/Pasep e a Cofins, com alíquota geral de 12% e de 5,8% para instituições financeiras e seguradoras.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/projetos/pl/2020/msg404-julho2020.htm",
         "data": "2020-07-21"
       },
       {
-        "descricao": "As fases 2, 3 e 4 prometidas (tributação de dividendos e mudanças no IR pessoa física/jurídica, reforma do IPI em imposto seletivo, e revisão da CIDE) nunca foram formalmente enviadas ao Congresso pelo governo.",
-        "fonte_url": "https://www.gazetadopovo.com.br/economia/reforma-tributaria-paulo-guedes-detalhes-proposta/",
-        "data": "2020-07-22"
+        "descricao": "A segunda etapa, o PL 2.337/2021 (Imposto de Renda de pessoas físicas e jurídicas e tributação de lucros e dividendos), foi enviada pelo Executivo em 25/06/2021 e aprovada pela Câmara em 02/09/2021, com dividendos taxados em 15% e faixa de isenção do IRPF elevada de R$ 1.903,98 para R$ 2.500. O Senado não votou o projeto até o fim do mandato.",
+        "fonte_url": "https://www.camara.leg.br/noticias/802838-camara-aprova-projeto-que-altera-regras-do-imposto-de-renda/",
+        "data": "2021-09-02"
       },
       {
-        "descricao": "O projeto da CBS foi incorporado à tramitação das PECs 45/2019 (Câmara) e 110/2019 (Senado), que trafegaram em Comissão Mista pelos 4 anos do mandato sem chegar a votação final em nenhuma das Casas do Congresso.",
-        "fonte_url": "https://praserjusto.com.br/reforma-tributaria-jair-bolsonaro/",
-        "data": "2022-10-18"
+        "descricao": "Nenhuma das propostas foi aprovada em definitivo até 31/12/2022: o PL 3.887/2020 (CBS) não foi votado e as PECs 45/2019 e 110/2019 não foram votadas em plenário no mandato. A carga tributária bruta do governo geral passou de 32,58% do PIB (2018) para 33,90% (2021). Nenhuma proposta de imposto de renda negativo foi apresentada ao Congresso.",
+        "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
+        "data": "2022-12-23"
       }
     ]
   },
@@ -69,24 +74,24 @@
     "referencia_documento": "p. 71 - Energia",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 71,
-    "status": "parcialmente_cumprido",
-    "percentual_cumprimento": 50,
-    "data_ultima_atualizacao": "2022-12-31",
+    "status": "nao_cumprido",
+    "percentual_cumprimento": 0,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "Bolsonaro reafirmou publicamente, em live, o compromisso de agilizar o licenciamento de PCHs, criticando processos que hoje levam até 10 anos e anunciando estudo para facilitar a instalação.",
+        "descricao": "A Comissão de Minas e Energia da Câmara aprovou em 21/08/2019 o PL 1962/15, de autoria parlamentar, que cria procedimento simplificado em fase única para licenciar PCHs e usinas solares e de biomassa, dispensando EIA/Rima para as de baixo impacto. O projeto seguiu para outras comissões e não virou lei no mandato.",
+        "fonte_url": "https://www.camara.leg.br/noticias/574985-aprovado-licenciamento-ambiental-simplificado-para-pequenas-centrais-eletricas/",
+        "data": "2019-08-21"
+      },
+      {
+        "descricao": "Bolsonaro reafirmou publicamente, em live, o compromisso de agilizar o licenciamento de PCHs, criticando processos que levavam até 10 anos e anunciando estudo para facilitar a instalação.",
         "fonte_url": "https://www.poder360.com.br/governo/bolsonaro-fala-em-facilitar-construcao-de-pequenas-centrais-hidreletricas/",
         "data": "2020-02-06"
       },
       {
-        "descricao": "A Comissão de Minas e Energia da Câmara aprovou o PL 1962/15, que cria procedimento simplificado e em única fase para o licenciamento de PCHs, solares e de biomassa, dispensando EIA/RIMA para empreendimentos de baixo impacto.",
-        "fonte_url": "https://www.camara.leg.br/noticias/574985-aprovado-licenciamento-ambiental-simplificado-para-pequenas-centrais-eletricas/",
-        "data": "2021-10-02"
-      },
-      {
-        "descricao": "A reforma mais ampla do licenciamento ambiental (que incluía PCHs entre os empreendimentos de baixo/médio impacto elegíveis a procedimento autodeclaratório), tramitando como PL 3729/04 e depois PL 2159/21, avançou na Câmara e no Senado durante o governo Bolsonaro, mas não chegou a ser sancionada dentro do mandato — só foi finalizada como Lei 15.190/2025, já no governo seguinte.",
-        "fonte_url": "https://oeco.org.br/reportagens/projeto-que-reduz-licenciamento-ambiental-passa-em-comissoes-do-senado-e-vai-ao-plenario/",
-        "data": "2022-06-04"
+        "descricao": "O projeto de lei geral do licenciamento ambiental (PL 3.729/2004), que prevê procedimentos simplificados, foi aprovado pela Câmara em 13/05/2021 e enviado ao Senado, onde não foi votado até o fim do mandato. Nenhuma norma federal fixou o prazo de três meses para o licenciamento de PCHs.",
+        "fonte_url": "https://www.camara.leg.br/noticias/758863-camara-aprova-novas-regras-para-o-licenciamento-ambiental/",
+        "data": "2021-05-13"
       }
     ]
   },
@@ -96,19 +101,19 @@
     "eixo": "institucional-democratico",
     "categoria": "Reforma administrativa",
     "titulo": "Orçamento Base Zero",
-    "descricao_original": "Substituir a lógica tradicional do orçamento público: cada gestor deverá justificar suas demandas por recursos a cada ciclo, acabando com verbas carimbadas baseadas em gasto histórico.",
+    "descricao_original": "Inverter a lógica tradicional do gasto público: cada gestor, diante de suas metas, terá de justificar suas demandas por recursos; o gasto passado não justificará os recursos futuros, e não haverá 'dinheiro carimbado' para pessoa, grupo político ou entidade com interesses especiais.",
     "fonte_proposta": "Plano de Governo 2018 - \"O Caminho da Prosperidade\" (Jair Bolsonaro) - registrado no TSE",
     "referencia_documento": "p. 18 - Orçamento Base Zero",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 18,
     "status": "nao_cumprido",
-    "percentual_cumprimento": 5,
-    "data_ultima_atualizacao": "2022-12-31",
+    "percentual_cumprimento": 0,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O ex-ministro-chefe da Casa Civil, Onyx Lorenzoni, anunciou na transição que o governo aplicaria o Orçamento Base Zero a partir de 2020, mas o mecanismo nunca foi de fato colocado em prática — os orçamentos de 2020 a 2023 continuaram seguindo a lógica incremental tradicional, baseada no gasto histórico.",
-        "fonte_url": "https://atlantico.org.br/orcamento-base-zero-na-gestao-publica/",
-        "data": "2023-04-25"
+        "descricao": "Antes de assumir a Casa Civil, Onyx Lorenzoni afirmou que o Orçamento Base Zero seria aplicado a partir de 2020, o que não ocorreu; o método não foi colocado em prática durante o mandato.",
+        "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
+        "data": "2022-12-23"
       }
     ]
   },
@@ -123,19 +128,34 @@
     "referencia_documento": "p. 63 - Programa da Renda Mínima",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 63,
-    "status": "cumprido",
+    "status": "parcialmente_cumprido",
     "percentual_cumprimento": 90,
-    "data_ultima_atualizacao": "2022-12-31",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O Bolsa Família foi extinto e substituído pelo Auxílio Brasil (MP 1.061/2021, sancionada em 30/12/2021), com piso de R$ 400 por família a partir de dezembro/2021 — acima da média de ~R$ 190 do Bolsa Família em outubro/2021.",
-        "fonte_url": "https://destaquedf.com.br/auxilio-brasil-x-bolsa-familia-quais-as-principais-diferencas-entre-os-programas/",
-        "data": "2022-01-01"
+        "descricao": "Em vez de ampliar o Abono Salarial, a PEC 6/2019 (reforma da Previdência) previa restringi-lo; o Senado retirou a restrição em 02/10/2019, mantendo o limite de dois salários mínimos.",
+        "fonte_url": "https://www12.senado.leg.br/noticias/materias/2019/10/02/aprovado-destaque-na-reforma-da-previdencia-para-garantir-o-abono-salarial",
+        "data": "2019-10-02"
       },
       {
-        "descricao": "Em 2022, o valor médio do Auxílio Brasil chegou a cerca de R$ 600 por família. Importante: tanto o piso de R$ 400 (viabilizado pela PEC dos Precatórios) quanto o valor de R$ 600 no 2º semestre de 2022 (EC 123/2022) foram benefícios extraordinários e temporários, não um desenho permanente do programa — sem eles, o valor-base do Auxílio Brasil ficava próximo dos R$ 217 do Bolsa Família.",
-        "fonte_url": "https://neon.com.br/aprenda/financas-pessoais/auxilio-brasil-bolsa-familia/",
-        "data": "2022-12-01"
+        "descricao": "A Lei 14.284, de 29/12/2021 (conversão da MP 1.061/2021), criou o Auxílio Brasil em substituição ao Bolsa Família.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14284.htm",
+        "data": "2021-12-29"
+      },
+      {
+        "descricao": "A Lei 14.342, de 18/05/2022, instituiu 'em caráter permanente' o benefício extraordinário que garante o piso de R$ 400 por família no Auxílio Brasil, valor acima do benefício médio pago pelo Bolsa Família em 2021.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14342.htm",
+        "data": "2022-05-18"
+      },
+      {
+        "descricao": "A EC 123/2022 (14/07/2022) elevou o benefício para R$ 600 de agosto a dezembro de 2022, em caráter temporário.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc123.htm",
+        "data": "2022-07-14"
+      },
+      {
+        "descricao": "Segundo a Lupa, o Bolsa Família atendia 14,6 milhões de famílias com valor médio de R$ 190; o Auxílio Brasil chegou ao fim de 2022 pagando, em média, R$ 609,95 a 21,13 milhões de famílias.",
+        "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
+        "data": "2022-12-23"
       }
     ]
   },
@@ -151,18 +171,23 @@
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 67,
     "status": "parcialmente_cumprido",
-    "percentual_cumprimento": 80,
-    "data_ultima_atualizacao": "2022-12-31",
+    "percentual_cumprimento": 50,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "A Lei da Liberdade Econômica (sancionada em 20/09/2019, da MP 881/2019) reduziu burocracia para abertura e funcionamento de empresas, dispensando alvará para atividades de baixo risco e instituindo a aprovação tácita (silêncio positivo) por decurso de prazo — atendendo à parte da promessa sobre aprovação automática.",
+        "descricao": "A Lei da Liberdade Econômica (sancionada em 20/09/2019, da MP 881/2019) reduziu burocracia para abertura e funcionamento de empresas, dispensando alvará para atividades de baixo risco e instituindo a aprovação tácita (silêncio positivo) por decurso de prazo — atendendo à parte da promessa sobre aprovação automática. O Decreto 10.178/2019, porém, fixou em até 60 dias (prorrogáveis) o prazo para aprovação tácita de atos federais, acima dos 30 dias prometidos.",
         "fonte_url": "https://www.camara.leg.br/noticias/588685-bolsonaro-sanciona-a-lei-da-liberdade-economica/",
         "data": "2019-09-20"
       },
       {
-        "descricao": "O sistema Balcão Único foi lançado em janeiro/2021 inicialmente como piloto na cidade de São Paulo, com expansão gradual a outros municípios/estados via integração com a Redesim — não nacional de imediato. Além disso, o foco do sistema recaiu sobre a abertura de empresas; o fechamento seguiu concentrado nos processos tradicionais da Redesim.",
+        "descricao": "Em 20/01/2021 o Ministério da Economia lançou o Balcão Único, formulário digital único para abrir empresas (registro, CNPJ, licenças e cadastro de funcionários), disponível inicialmente em São Paulo e com integração gradual às juntas comerciais de outros estados.",
         "fonte_url": "https://www.correiobraziliense.com.br/economia/2021/01/4901584-governo-simplifica-abertura-de-empresas-com-formulario-unico-e-digital.html",
         "data": "2021-01-20"
+      },
+      {
+        "descricao": "Em dezembro de 2022, o Ministério da Economia informou que o Balcão Único Nacional 'ainda não foi lançado e está em ambiente de homologação'. Existiam 27 balcões estaduais, 'únicos apenas dentro do Estado', voltados à abertura de empresas, sem foco no fechamento.",
+        "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
+        "data": "2022-12-23"
       }
     ]
   },
@@ -179,10 +204,10 @@
     "documento_pagina": 32,
     "status": "nao_cumprido",
     "percentual_cumprimento": 0,
-    "data_ultima_atualizacao": "2022-12-31",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "Nenhuma PEC de redução da maioridade penal foi aprovada durante o mandato. O tema exigiria emenda constitucional e não avançou no Congresso.",
+        "descricao": "A maioridade penal (art. 228 da Constituição) continuou em 18 anos. O Executivo não apresentou proposta sobre o tema; a PEC 171/1993, aprovada pela Câmara em 2015, aguardava designação de relator na CCJ do Senado desde 2019.",
         "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
         "data": "2022-12-23"
       }
@@ -201,17 +226,27 @@
     "documento_pagina": 32,
     "status": "parcialmente_cumprido",
     "percentual_cumprimento": 45,
-    "data_ultima_atualizacao": "2022-12-31",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O governo editou ao menos 31 mudanças na política de armas (14 decretos, 14 portarias e outras normas) entre 2019 e 2021, flexibilizando substancialmente posse e porte, sem alterar formalmente a lei.",
+        "descricao": "A Lei 13.870, de 17/09/2019, alterou o Estatuto do Desarmamento (Lei 10.826/2003) para permitir a posse de arma em toda a extensão do imóvel rural — a única mudança no Estatuto aprovada pelo Congresso no mandato.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13870.htm",
+        "data": "2019-09-17"
+      },
+      {
+        "descricao": "O projeto do governo que alterava a Lei 10.826/2003 (PL 3.723/2019) foi aprovado pela Câmara em 05/11/2019, mas não foi votado pelo Senado até o fim do mandato.",
+        "fonte_url": "https://www.camara.leg.br/propostas-legislativas/2209381",
+        "data": "2019-11-05"
+      },
+      {
+        "descricao": "Segundo levantamento do Instituto Sou da Paz citado pela CNN, até fevereiro de 2021 o governo havia publicado 31 alterações na política de armas (14 decretos, 14 portarias, 2 projetos de lei e 1 resolução), flexibilizando aquisição, posse e porte.",
         "fonte_url": "https://www.cnnbrasil.com.br/politica/desde-inicio-do-governo-bolsonaro-mudou-31-vezes-a-politica-de-armas-no-brasil/",
         "data": "2021-02-15"
       },
       {
-        "descricao": "Parte relevante dos decretos foi suspensa por liminar da ministra Rosa Weber no STF (abril/2021, suspendendo 13 dispositivos) por invadirem competência legislativa do Congresso. O PL 3.713/2019 (\"PL das Armas\"), que reformularia formalmente a Lei 10.826/2003 por via legislativa, nunca foi votado até o fim do mandato — e boa parte do arcabouço via decreto foi revista já no governo seguinte (Decreto 11.615/2023), evidenciando sua fragilidade jurídica.",
-        "fonte_url": "https://www12.senado.leg.br/noticias/materias/2019/07/26/senado-prepara-nova-lei-de-porte-e-posse-de-armas-para-substituir-decretos",
-        "data": "2019-07-26"
+        "descricao": "Em 12/04/2021, a ministra Rosa Weber (STF) suspendeu em liminar trechos dos quatro decretos de armas editados em 12/02/2021, em ação do PSB.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/justica/noticia/2021-04/ministra-do-stf-suspende-decretos-que-ampliaram-acesso-armas",
+        "data": "2021-04-12"
       }
     ]
   },
@@ -227,12 +262,12 @@
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 32,
     "status": "nao_cumprido",
-    "percentual_cumprimento": 0,
-    "data_ultima_atualizacao": "2022-12-31",
+    "percentual_cumprimento": 10,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O Pacote Anticrime (Lei 13.964/2019) alterou pontualmente a execução penal, mas não extinguiu a progressão de regime nem as saídas temporárias, institutos mantidos na Lei de Execução Penal.",
-        "fonte_url": "https://www.jusbrasil.com.br/artigos/o-pacote-anticrime-lei-n-13964-2019-e-o-juiz-das-garantias/1135776259",
+        "descricao": "O Pacote Anticrime (Lei 13.964/2019) endureceu a progressão de regime, que passou a exigir de 16% a 70% da pena conforme o crime e a reincidência, e vedou a saída temporária a condenados por crime hediondo com resultado morte. A progressão de penas e as saídas temporárias continuaram existindo.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm",
         "data": "2019-12-24"
       }
     ]
@@ -250,17 +285,22 @@
     "documento_pagina": 32,
     "status": "nao_cumprido",
     "percentual_cumprimento": 10,
-    "data_ultima_atualizacao": "2022-12-31",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
         "descricao": "O excludente de ilicitude amplo, ponto central da promessa, foi retirado do Pacote Anticrime pelo grupo de trabalho da Câmara antes da votação (aprovada por 408 a 9 sem a cláusula).",
-        "fonte_url": "https://conectas.org/en/noticias/lower-house-of-congress-approves-anti-crime-bill-without-exemption-from-illegality-clause/",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2019-12/camara-aprova-pacote-anticrime-texto-vai-ao-senado",
         "data": "2019-12-04"
       },
       {
         "descricao": "Sobreviveu apenas um dispositivo pontual: a Lei 13.964/2019 acrescentou o parágrafo único ao art. 25 do Código Penal, reconhecendo legítima defesa do agente de segurança que repele agressão a vítima mantida refém — escopo muito mais restrito que a 'retaguarda jurídica' ampla prometida.",
-        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13964.htm",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm",
         "data": "2019-12-24"
+      },
+      {
+        "descricao": "O Executivo enviou ainda os PLs 6.125/2019 (excludente de ilicitude em operações de GLO) e 733/2022, que não foram aprovados até o fim do mandato.",
+        "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
+        "data": "2022-12-23"
       }
     ]
   },
@@ -277,7 +317,7 @@
     "documento_pagina": 32,
     "status": "nao_cumprido",
     "percentual_cumprimento": 0,
-    "data_ultima_atualizacao": "2022-12-31",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
         "descricao": "Nenhuma lei tipificando invasões de propriedade rural/urbana como terrorismo foi aprovada durante o mandato.",
@@ -297,14 +337,19 @@
     "referencia_documento": "p. 35 - Sufocar a Corrupção",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 35,
-    "status": "parcialmente_cumprido",
-    "percentual_cumprimento": 25,
-    "data_ultima_atualizacao": "2022-12-31",
+    "status": "nao_cumprido",
+    "percentual_cumprimento": 10,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O Pacote Anticrime de Sergio Moro incorporou parte do espírito anticorrupção das \"10 Medidas\" do MPF, alterando 14 leis, mas pontos centrais (como prisão em segunda instância) não foram aprovados, e o texto original do MPF (já esvaziado pela Câmara desde 2016) não foi formalmente resgatado como pacote único.",
-        "fonte_url": "https://www.jusbrasil.com.br/artigos/pacote-anticrime/1770394705",
-        "data": "2019-12-01"
+        "descricao": "As 'Dez Medidas Contra a Corrupção' (PL 4.850/2016) foram aprovadas pela Câmara em 30/11/2016 com supressão de grande parte das propostas do MPF. O Senado aprovou o texto com emendas e ele voltou à Câmara em 03/07/2019 como PL 3.855/2019, onde permaneceu sem votação até o fim do mandato. O governo não reapresentou o pacote do MPF.",
+        "fonte_url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2080604",
+        "data": "2019-07-03"
+      },
+      {
+        "descricao": "A Lei 13.964/2019 (Lei Anticrime), sancionada com 25 vetos em 24/12/2019, resultou da junção do PL 10.372/2018 com o PL 882/2019, do ministro Sergio Moro — projetos distintos das Dez Medidas. Ficaram de fora, entre outros pontos, a prisão após condenação em 2ª instância, o excludente de ilicitude e o plea bargain.",
+        "fonte_url": "https://www.poder360.com.br/governo/bolsonaro-veta-25-trechos-do-pacote-anticrime-juiz-de-garantias-e-mantido/",
+        "data": "2019-12-24"
       }
     ]
   },
@@ -314,22 +359,32 @@
     "eixo": "social",
     "categoria": "Saúde",
     "titulo": "Prontuário Eletrônico Nacional Interligado",
-    "descricao_original": "Informatizar postos, ambulatórios e hospitais com um prontuário eletrônico nacional interligado, unificando os dados de atendimento do paciente entre diferentes unidades de saúde.",
+    "descricao_original": "Informatizar postos, ambulatórios e hospitais com um prontuário eletrônico nacional interligado, com todos os dados do atendimento do paciente e o registro do grau de satisfação do paciente.",
     "fonte_proposta": "Plano de Governo 2018 - \"O Caminho da Prosperidade\" (Jair Bolsonaro) - registrado no TSE",
     "referencia_documento": "p. 39 - Saúde na Base",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 39,
     "status": "parcialmente_cumprido",
     "percentual_cumprimento": 60,
-    "data_ultima_atualizacao": "2022-12-31",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "Em julho de 2021, o Ministério da Saúde lançou o Conecte-SUS Profissional, integrando o Prontuário Eletrônico do Cidadão (PEC) com histórico clínico, vacinação e exames em rede pública e privada.",
+        "descricao": "A Portaria GM/MS 2.983, de 11/11/2019, instituiu o programa Informatiza APS, de incentivo federal à informatização da atenção primária.",
+        "fonte_url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2019/prt2983_13_11_2019.html",
+        "data": "2019-11-11"
+      },
+      {
+        "descricao": "A Portaria GM/MS 1.434, de 28/05/2020, instituiu o Programa Conecte SUS e a Rede Nacional de Dados em Saúde (RNDS), voltados à informatização da atenção à saúde e à integração de estabelecimentos públicos e privados.",
+        "fonte_url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt1434_29_05_2020.html",
+        "data": "2020-05-28"
+      },
+      {
+        "descricao": "Em 01/07/2021 o Ministério da Saúde lançou o Conecte SUS Profissional, que dá a profissionais acesso ao histórico clínico (internações, vacinação, medicamentos, alergias) com dados das redes pública e privada. Segundo o ministério, ele estava apto a ser acessado em cerca de 15 mil UBS.",
         "fonte_url": "https://agenciabrasil.ebc.com.br/saude/noticia/2021-07/ministerio-da-saude-lanca-plataforma-com-prontuario-medico-eletronico",
         "data": "2021-07-01"
       },
       {
-        "descricao": "Apesar do lançamento, o sistema ainda não estava disponível em todas as Unidades Básicas de Saúde do país ao fim do mandato.",
+        "descricao": "Em dezembro de 2022, segundo o Ministério da Saúde citado pela Lupa, o sistema estava disponível em mais de 32 mil das cerca de 46 mil UBS do país; cerca de 14 mil seguiam sem acesso.",
         "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
         "data": "2022-12-23"
       }
@@ -340,25 +395,30 @@
     "presidente_id": "bolsonaro-2019",
     "eixo": "social",
     "categoria": "Saúde",
-    "titulo": "Fim do Programa Mais Médicos com Cuba e criação da carreira de Médico de Estado",
-    "descricao_original": "Encerrar o convênio do Programa Mais Médicos com Cuba e criar a carreira de Médico de Estado para atender áreas remotas e carentes do país.",
+    "titulo": "Médicos cubanos com salário integral e família no Brasil; criação da carreira de Médico de Estado",
+    "descricao_original": "Permitir que os médicos cubanos do Mais Médicos trouxessem suas famílias ao Brasil e, se aprovados no Revalida, recebessem integralmente o salário, hoje retido em parte pelo governo cubano; e criar a carreira de Médico de Estado para atender áreas remotas e carentes.",
     "fonte_proposta": "Plano de Governo 2018 - \"O Caminho da Prosperidade\" (Jair Bolsonaro) - registrado no TSE",
     "referencia_documento": "p. 40 - Prevenir é Melhor e Mais Barato",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 40,
     "status": "parcialmente_cumprido",
-    "percentual_cumprimento": 65,
-    "data_ultima_atualizacao": "2022-12-31",
+    "percentual_cumprimento": 35,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O convênio com Cuba terminou em novembro/2018, mas por decisão do governo cubano em reação às declarações do então presidente eleito, antes mesmo da posse — não por ato do governo Bolsonaro.",
-        "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2018-10/bolsonaro-e-haddad-divergem-sobre-mais-medicos-e-financiamento",
+        "descricao": "Em 14/11/2018, antes da posse, o governo de Cuba anunciou a saída do Mais Médicos, alegando que as condições do presidente eleito (Revalida, salário integral e vinda das famílias) eram inaceitáveis.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/saude/noticia/2018-11/cuba-deixa-mais-medicos-por-discordar-de-exigencias-do-governo-eleito",
         "data": "2018-11-14"
       },
       {
-        "descricao": "A Lei 13.958/2019 criou o programa Médicos pelo Brasil com contratação via CLT pela Adaps — não a 'carreira de Médico de Estado' (carreira pública) prometida — e sua implementação efetiva (editais e contratações) só ocorreu em 2022, ofertando mais de 21,5 mil vagas em quase 94% dos municípios.",
-        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13958.htm",
-        "data": "2022-03-01"
+        "descricao": "A MP 890/2019, convertida na Lei 13.958, de 18/12/2019, criou o programa Médicos pelo Brasil, executado pela Adaps com contratação pela CLT, e não por carreira pública. A lei também permitiu reincorporar ao Mais Médicos, por 2 anos improrrogáveis, os médicos cubanos desligados com a ruptura do acordo que permaneceram no Brasil.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13958.htm",
+        "data": "2019-12-18"
+      },
+      {
+        "descricao": "Até dezembro de 2022, segundo o Ministério da Saúde citado pela Lupa, 3,5 mil médicos atuavam pelo Médicos pelo Brasil, de 21,5 mil vagas previstas. A carreira de Médico de Estado não foi criada.",
+        "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
+        "data": "2022-12-23"
       }
     ]
   },
@@ -368,24 +428,29 @@
     "eixo": "social",
     "categoria": "Educação",
     "titulo": "Revisão da Base Nacional Comum Curricular e fim da doutrinação ideológica",
-    "descricao_original": "Revisar e modernizar o conteúdo da educação básica, incluindo mudanças na alfabetização e na Base Nacional Comum Curricular (BNCC), com o objetivo declarado de combater doutrinação ideológica nas escolas.",
+    "descricao_original": "Revisar e modernizar o conteúdo da educação básica, incluindo a alfabetização ('expurgando a ideologia de Paulo Freire'), mudanças na BNCC, o fim da aprovação automática e a questão da disciplina nas escolas. O plano aponta a 'forte doutrinação' como um dos maiores males atuais.",
     "fonte_proposta": "Plano de Governo 2018 - \"O Caminho da Prosperidade\" (Jair Bolsonaro) - registrado no TSE",
     "referencia_documento": "p. 46 - Gestão é Importante",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 46,
     "status": "parcialmente_cumprido",
-    "percentual_cumprimento": 40,
-    "data_ultima_atualizacao": "2022-12-31",
+    "percentual_cumprimento": 30,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
         "descricao": "O Decreto 9.765/2019 instituiu a Política Nacional de Alfabetização (PNA), priorizando o método fônico — corresponde diretamente à parte da promessa sobre mudanças na alfabetização.",
-        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D9765.htm",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d9765.htm",
         "data": "2019-04-11"
       },
       {
-        "descricao": "A pauta de 'combate à doutrinação' (projetos ligados ao Escola sem Partido) nunca foi aprovada como lei federal, e a BNCC em si não passou por revisão estrutural própria do governo Bolsonaro — o Novo Ensino Médio implementado no período decorre de lei de 2017, do governo Temer.",
-        "fonte_url": "https://en.wikipedia.org/wiki/Escola_sem_Partido",
-        "data": "2022-12-01"
+        "descricao": "Não houve mudanças na BNCC durante a gestão nem ação federal contra a aprovação automática. O Novo Ensino Médio, implementado a partir de 2022, decorre da Lei 13.415/2017 e da BNCC do Ensino Médio aprovada em dezembro de 2018.",
+        "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
+        "data": "2022-12-23"
+      },
+      {
+        "descricao": "O projeto Escola sem Partido (PL 7.180/2014) não foi aprovado: a comissão especial encerrou os trabalhos sem votar em dezembro de 2018, e o projeto seguia em tramitação na Câmara ao fim do mandato.",
+        "fonte_url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=606722",
+        "data": "2022-12-31"
       }
     ]
   },
@@ -395,19 +460,29 @@
     "eixo": "economico",
     "categoria": "Reforma administrativa",
     "titulo": "Fusão dos ministérios da área econômica em um único Ministério da Economia",
-    "descricao_original": "Unificar em um só Ministério da Economia as funções hoje desempenhadas pelos Ministérios da Fazenda, Planejamento e Indústria e Comércio, subordinando também as instituições financeiras federais.",
+    "descricao_original": "Unificar em um só Ministério da Economia as funções hoje desempenhadas pelos Ministérios da Fazenda, Planejamento e Indústria e Comércio e pela Secretaria Executiva do PPI, subordinando também as instituições financeiras federais.",
     "fonte_proposta": "Plano de Governo 2018 - \"O Caminho da Prosperidade\" (Jair Bolsonaro) - registrado no TSE",
     "referencia_documento": "p. 53 - Reorganização da Área Econômica",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 53,
     "status": "cumprido",
     "percentual_cumprimento": 100,
-    "data_ultima_atualizacao": "2019-01-01",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
         "descricao": "A MPV 870/2019, editada no 1º dia de governo, fundiu Fazenda, Planejamento e Indústria/Comércio Exterior/Serviços em um único Ministério da Economia, sob comando de Paulo Guedes.",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/mpv/mpv870.htm",
         "data": "2019-01-01"
+      },
+      {
+        "descricao": "A MPV 870/2019 foi convertida na Lei 13.844, de 18/06/2019, mantendo o Ministério da Economia.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13844.htm",
+        "data": "2019-06-18"
+      },
+      {
+        "descricao": "A Secretaria Especial do PPI ficou primeiro na Secretaria de Governo e depois na Casa Civil, e só passou ao Ministério da Economia com a Lei 14.074, de 14/10/2020.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14074.htm",
+        "data": "2020-10-14"
       }
     ]
   },
@@ -417,18 +492,18 @@
     "eixo": "economico",
     "categoria": "Dívida pública",
     "titulo": "Redução de 20% da dívida pública via privatizações e venda de ativos",
-    "descricao_original": "Reduzir em 20% o volume da dívida pública por meio de privatizações, concessões, venda de imóveis da União e devolução de recursos aplicados em instituições financeiras oficiais.",
+    "descricao_original": "Reduzir o volume da dívida pública (o plano estima 20%, com resgate da dívida mobiliária federal) por meio de privatizações, concessões, venda de imóveis da União e devolução de recursos aplicados em instituições financeiras oficiais.",
     "fonte_proposta": "Plano de Governo 2018 - \"O Caminho da Prosperidade\" (Jair Bolsonaro) - registrado no TSE",
     "referencia_documento": "p. 56 - Redução das Despesas com Juros",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 56,
     "status": "nao_cumprido",
     "percentual_cumprimento": 10,
-    "data_ultima_atualizacao": "2022-12-31",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "A Dívida Bruta do Governo Geral (DBGG) foi de 75,27% do PIB (início do mandato) para 71,68% (fim), uma redução relativa de ~4,8% — bem abaixo dos 20% prometidos. Em valores absolutos (R$), a dívida cresceu ao longo do mandato.",
-        "fonte_url": "https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
+        "descricao": "Em valores nominais, a Dívida Bruta do Governo Geral passou de R$ 5,27 trilhões (dez/2018) para R$ 7,22 trilhões (dez/2022), alta de cerca de 37% (série SGS 13761 do Banco Central). Em proporção do PIB, foi de 75,27% para 71,68%, queda que reflete o crescimento do PIB nominal, não redução do volume.",
+        "fonte_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13761/dados?formato=json&dataInicial=01/12/2018&dataFinal=31/12/2022",
         "data": "2022-12-01"
       }
     ]
@@ -446,12 +521,17 @@
     "documento_pagina": 57,
     "status": "parcialmente_cumprido",
     "percentual_cumprimento": 40,
-    "data_ultima_atualizacao": "2019-11-12",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "A Reforma da Previdência (EC 103/2019) foi aprovada e sancionada, cumprindo o objetivo mais amplo de reformar o sistema — mas o modelo de capitalização em contas individuais, elemento central da proposta de campanha, foi retirado do texto na tramitação, mantendo-se o sistema de repartição com mudanças paramétricas.",
-        "fonte_url": "https://blogdoibre.fgv.br/posts/analisando-reforma-da-previdencia-capitalizacao",
-        "data": "2019-06-01"
+        "descricao": "A PEC 6/2019, enviada pelo governo, previa autorização para lei complementar instituir um regime de capitalização. O parecer do relator na comissão especial da Câmara, apresentado em 13/06/2019, retirou a capitalização do texto.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2019-06/confira-principais-mudancas-no-relatorio-da-reforma-da-previdencia",
+        "data": "2019-06-13"
+      },
+      {
+        "descricao": "A Emenda Constitucional 103/2019, promulgada pelo Congresso em 12/11/2019, reformou a Previdência com mudanças paramétricas, como idade mínima e regras de cálculo, mantendo o regime de repartição e sem contas individuais de capitalização.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc103.htm",
+        "data": "2019-11-12"
       }
     ]
   },
@@ -468,12 +548,17 @@
     "documento_pagina": 59,
     "status": "cumprido",
     "percentual_cumprimento": 100,
-    "data_ultima_atualizacao": "2021-02-24",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "A Lei Complementar 179/2021, sancionada em 24/02/2021, deu autonomia formal ao Banco Central, com mandato fixo do presidente e diretores não coincidente com o do Presidente da República. O projeto (PLP 19/2019) teve origem no Senado, mas foi apoiado e sancionado pelo governo Bolsonaro.",
-        "fonte_url": "https://www.bcb.gov.br",
+        "descricao": "A Lei Complementar 179, sancionada em 24/02/2021, definiu a estabilidade de preços como objetivo fundamental do Banco Central, fixou mandatos de 4 anos para presidente e diretores, não coincidentes com o do Presidente da República, e desvinculou o BC de ministério. As metas de inflação continuam fixadas pelo CMN. O texto aprovado foi o PLP 19/2019, de autoria do Senado; o Executivo havia enviado proposta própria (PLP 112/2019).",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp179.htm",
         "data": "2021-02-24"
+      },
+      {
+        "descricao": "Em agosto de 2021 o STF validou a lei de autonomia do Banco Central.",
+        "fonte_url": "https://www12.senado.leg.br/noticias/materias/2021/08/27/stf-valida-lei-de-autonomia-do-banco-central-aprovada-pelo-congresso",
+        "data": "2021-08-27"
       }
     ]
   },
@@ -489,13 +574,18 @@
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 61,
     "status": "parcialmente_cumprido",
-    "percentual_cumprimento": 40,
-    "data_ultima_atualizacao": "2022-12-31",
+    "percentual_cumprimento": 30,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "Houve privatizações e concessões relevantes (Eletrobras em 2022, portos, aeroportos, rodovias), mas não há vinculação legal/orçamentária obrigatória que direcionasse a totalidade desses recursos exclusivamente ao abatimento da dívida pública, como propunha o plano de governo.",
-        "fonte_url": "https://www.bcb.gov.br/estatisticas/detalhamentoGrafico/graficosestatisticas/dlspDbgg",
-        "data": "2022-12-01"
+        "descricao": "Segundo o Poder360, os recursos das privatizações foram usados em geral para reduzir a dívida, com exceção da Eletrobras: parte da outorga (R$ 26,6 bilhões) seria usada para reforçar o Auxílio Brasil e o vale-gás e para criar um auxílio a caminhoneiros e taxistas em 2022.",
+        "fonte_url": "https://www.poder360.com.br/economia/bolsonaro-arrecada-r-3042-bilhoes-com-privatizacoes/",
+        "data": "2022-07-17"
+      },
+      {
+        "descricao": "Nenhuma norma passou a obrigar a destinação integral de recursos de privatizações e concessões ao pagamento da dívida. Questionado, o Ministério da Economia informou que 'os recursos arrecadados são alocados em despesas orçamentárias consideradas prioritárias'.",
+        "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
+        "data": "2022-12-23"
       }
     ]
   },
@@ -505,24 +595,29 @@
     "eixo": "economico",
     "categoria": "Trabalho",
     "titulo": "Criação da carteira de trabalho verde e amarela",
-    "descricao_original": "Criar uma carteira de trabalho verde e amarela, voluntária, na qual o contrato individual pode prevalecer sobre a CLT (mantendo os direitos constitucionais), e permitir a livre escolha entre sindicatos.",
+    "descricao_original": "Criar, para novos trabalhadores, uma carteira de trabalho verde e amarela, voluntária, na qual o contrato individual pode prevalecer sobre a CLT (mantendo os direitos constitucionais), e permitir a livre escolha entre sindicatos.",
     "fonte_proposta": "Plano de Governo 2018 - \"O Caminho da Prosperidade\" (Jair Bolsonaro) - registrado no TSE",
     "referencia_documento": "p. 64 - Modernização da Legislação Trabalhista",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 64,
     "status": "nao_cumprido",
     "percentual_cumprimento": 10,
-    "data_ultima_atualizacao": "2022-12-31",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "A MP 905/2019 (\"Carteira Verde e Amarela\") foi aprovada pela Câmara em abril/2020, mas caducou no Senado sem votação, nunca virando lei.",
-        "fonte_url": "https://www.cut.org.br/noticias/pressao-da-cut-faz-mp-da-carteira-verde-e-amarela-caducar-6b77",
-        "data": "2020-06-01"
+        "descricao": "A MP 905/2019 (11/11/2019) criou o Contrato de Trabalho Verde e Amarelo, com redução de encargos para o primeiro emprego de jovens de 18 a 29 anos. A Câmara a aprovou em 15/04/2020.",
+        "fonte_url": "https://www.camara.leg.br/noticias/654134-camara-aprova-mp-do-contrato-verde-e-amarelo/",
+        "data": "2020-04-15"
       },
       {
-        "descricao": "Uma segunda tentativa, a MP 1045/2021, foi aprovada na Câmara mas rejeitada pelo Senado, e uma terceira versão reeditada pelo governo também não avançou até o fim do mandato.",
-        "fonte_url": "https://www.brasildefato.com.br/2022/11/30/transicao-vai-pedir-retirada-da-reforma-administrativa-e-da-carteira-verde-amarela-de-bolsonaro/",
-        "data": "2022-11-30"
+        "descricao": "Sem acordo no Senado, o governo revogou a MP 905 pela MP 955/2020 em 20/04/2020, último dia de vigência, a pedido do presidente do Senado.",
+        "fonte_url": "https://www12.senado.leg.br/noticias/materias/2020/04/20/a-pedido-do-senado-governo-revoga-mp-do-contrato-verde-e-amarelo",
+        "data": "2020-04-20"
+      },
+      {
+        "descricao": "Na MP 1.045/2021 (programa emergencial de manutenção do emprego), a Câmara incluiu programas de contratação de jovens (Priore e Requip) e mudanças na CLT. O Senado rejeitou a MP em 01/09/2021, por 47 votos a 27.",
+        "fonte_url": "https://www12.senado.leg.br/noticias/materias/2021/09/01/senado-derruba-mp-com-minirreforma-trabalhista",
+        "data": "2021-09-01"
       }
     ]
   },
@@ -539,10 +634,15 @@
     "documento_pagina": 65,
     "status": "parcialmente_cumprido",
     "percentual_cumprimento": 50,
-    "data_ultima_atualizacao": "2022-12-31",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O governo reduziu unilateralmente o Imposto de Importação de centenas de produtos ao longo de 2022 (parte do chamado 'tarifaço' para conter a inflação) e reduziu o IPI em diversas ocasiões, mas uma reforma tarifária ampla e permanente não foi concluída.",
+        "descricao": "Em novembro de 2021 o governo reduziu em 10% a Tarifa Externa Comum (TEC) do Mercosul; em 17/08/2022 o Gecex/Camex tornou essa redução definitiva no Brasil, a primeira ampla diminuição da tarifa desde sua criação. Um corte adicional de 10%, de maio de 2022, valeria até o fim de 2023.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2022-08/camex-torna-definitivo-corte-de-10-de-tarifa-comum-do-mercosul",
+        "data": "2022-08-17"
+      },
+      {
+        "descricao": "Entre 2019 e 2022 foram concluídos 15 acordos comerciais internacionais, segundo a Lupa. Não houve redução de barreiras não tarifárias além de um comunicado conjunto com os EUA, em agosto de 2022, com compromisso de preveni-las e reduzi-las.",
         "fonte_url": "https://www.agencialupa.org/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas/",
         "data": "2022-12-23"
       }
@@ -554,24 +654,34 @@
     "eixo": "economico",
     "categoria": "Energia",
     "titulo": "Fim do monopólio da Petrobras no gás natural",
-    "descricao_original": "Desverticalizar e desestatizar o setor de gás natural, com livre acesso aos gasodutos de transporte, independência de distribuidoras e transportadoras, e criação de um mercado atacadista de gás natural.",
+    "descricao_original": "Desverticalizar e desestatizar o setor de gás natural, com livre acesso aos gasodutos de transporte, independência de distribuidoras e transportadoras, e criação de um mercado atacadista de gás natural, além de incentivo à exploração não convencional por pequenos produtores.",
     "fonte_proposta": "Plano de Governo 2018 - \"O Caminho da Prosperidade\" (Jair Bolsonaro) - registrado no TSE",
     "referencia_documento": "p. 75 - Fim do Monopólio da Petrobras no Gás Natural",
     "documento_url": "/propostas-tse/bolsonaro.pdf",
     "documento_pagina": 75,
-    "status": "cumprido",
-    "percentual_cumprimento": 90,
-    "data_ultima_atualizacao": "2021-04-08",
+    "status": "parcialmente_cumprido",
+    "percentual_cumprimento": 80,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
+        "descricao": "Em 08/07/2019 a Petrobras assinou Termo de Compromisso de Cessação com o CADE, comprometendo-se a vender suas participações em transportadoras de gás (NTS, TAG e TBG) e na Gaspetro (distribuição).",
+        "fonte_url": "https://blogs.correiobraziliense.com.br/servidor/petrobras-e-cade-assinam-termo-de-compromisso-para-o-mercado-de-gas-natural/",
+        "data": "2019-07-08"
+      },
+      {
         "descricao": "A Nova Lei do Gás (Lei 14.134/2021), sancionada em 08/04/2021, abriu o mercado de gás natural com livre acesso a gasodutos e bases para um mercado concorrencial, no âmbito do programa Novo Mercado de Gás.",
-        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14134.htm",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14134.htm",
         "data": "2021-04-08"
       },
       {
-        "descricao": "A Petrobras assinou Termo de Compromisso de Cessação com o CADE (2019) comprometendo-se a sair do setor de transporte e distribuição, e vendeu a TAG (2019) e a Gaspetro (2021/2022), reduzindo efetivamente sua posição dominante.",
-        "fonte_url": "https://www.gov.br/cade/pt-br",
-        "data": "2022-12-01"
+        "descricao": "Em 11/07/2022 a Petrobras concluiu a venda de 51% da Gaspetro à Compass por R$ 2,097 bilhões, saindo da distribuição de gás.",
+        "fonte_url": "https://www.moneytimes.com.br/petrobras-conclui-venda-de-51-da-gaspetro-por-r-2097-bilhoes-para-compass/",
+        "data": "2022-07-11"
+      },
+      {
+        "descricao": "Pelo acordo de 2019 com o Cade, a Petrobras deveria vender 10% da NTS, 10% da TAG, 51% da TBG e 51% da Gaspetro. Vendeu todas, exceto a participação na TBG, cuja venda deveria ter sido concluída até dezembro de 2021.",
+        "fonte_url": "https://www.poder360.com.br/energia/petrobras-rever-venda-da-tbg-e-sinalizacao-ruim-diz-tag/",
+        "data": "2023-05-10"
       }
     ]
   },
@@ -588,12 +698,27 @@
     "documento_pagina": 5,
     "status": "cumprido",
     "percentual_cumprimento": 100,
-    "data_ultima_atualizacao": "2023-06-19",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
+      {
+        "descricao": "Contexto sobre cobertura: em dezembro de 2022, último mês do Auxílio Brasil, cerca de 21,6 milhões de famílias receberam o benefício (valor médio de R$ 607,14).",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2022-12/pagamento-da-parcela-de-dezembro-do-auxilio-brasil-comeca-hoje",
+        "data": "2022-12-12"
+      },
       {
         "descricao": "O Bolsa Família foi recriado em março/2023 (MP 1.164/2023) e transformado em lei permanente pela Lei 14.601/2023 (sancionada 19/06/2023): R$ 142 por integrante (Benefício de Renda de Cidadania), complemento até o piso de R$ 600 por família, R$ 150 por criança de 0-7 anos (Benefício Primeira Infância) e R$ 50 por dependente de 7-18 anos, gestante ou lactante (Benefício Variável Familiar).",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm",
         "data": "2023-06-19"
+      },
+      {
+        "descricao": "Em 17/09/2026 o MDS anunciou reajuste de 15,04% (INPC acumulado de mar/2023 a ago/2026) no Bolsa Família a partir de outubro: piso por família de R$ 600 para R$ 691 e benefício médio estimado de R$ 675 para R$ 777.",
+        "fonte_url": "https://www.gov.br/mds/pt-br/noticias/bolsa-familia-tera-valor-minimo-de-r-691-a-partir-de-outubro",
+        "data": "2026-09-17"
+      },
+      {
+        "descricao": "Em setembro de 2026, segundo o Ministério do Desenvolvimento Social citado pelo Poder360, o Bolsa Família atendia 19,3 milhões de famílias — menos que os 21,6 milhões do fim de 2022. O reajuste de outubro (Decreto 13.120/2026) não ampliou o número de famílias atendidas.",
+        "fonte_url": "https://www.poder360.com.br/poder-economia/reajuste-no-bolsa-familia-passa-a-valer-em-outubro-leia-o-que-mudara/",
+        "data": "2026-09-17"
       }
     ]
   },
@@ -602,25 +727,40 @@
     "presidente_id": "lula-2023",
     "eixo": "economico",
     "categoria": "Trabalho",
-    "titulo": "Nova legislação trabalhista, revogando a reforma trabalhista vigente",
-    "descricao_original": "Propor, a partir de amplo debate e negociação, uma nova legislação trabalhista de proteção social extensa a todas as formas de trabalho, revogando os marcos regressivos da reforma trabalhista e restabelecendo o acesso gratuito à Justiça do Trabalho.",
+    "titulo": "Nova legislação trabalhista e revogação de marcos regressivos da legislação atual",
+    "descricao_original": "Propor, a partir de amplo debate e negociação, uma nova legislação trabalhista de extensa proteção social a todas as formas de ocupação, emprego e relação de trabalho (incluindo autônomos, domésticas, teletrabalho e trabalho por aplicativos e plataformas), revogando os marcos regressivos da atual legislação trabalhista, agravados pela última reforma, e restabelecendo o acesso gratuito à Justiça do Trabalho.",
     "fonte_proposta": "Diretrizes para o Programa de Reconstrução e Transformação do Brasil - Lula/Alckmin 2023-2026 (Coligação Brasil da Esperança)",
     "referencia_documento": "item 13 - p. 4",
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 4,
-    "status": "nao_cumprido",
-    "percentual_cumprimento": 5,
-    "data_ultima_atualizacao": "2026-02-17",
+    "status": "em_andamento",
+    "percentual_cumprimento": 15,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "Um grupo de trabalho para discutir a revisão da reforma trabalhista de 2017 foi formado em abril/2023, com negociação entre sindicatos e entidades patronais.",
+        "descricao": "Em abril de 2023 foi formado um grupo de trabalho, com sindicatos e entidades patronais, para discutir a reestruturação das relações de trabalho e a valorização da negociação coletiva, com prazo de 90 dias (prorrogável) para elaborar um projeto de lei.",
         "fonte_url": "https://agenciabrasil.ebc.com.br/geral/noticia/2023-05/projeto-de-lei-quer-rever-pontos-da-reforma-trabalhista",
         "data": "2023-05-05"
       },
       {
-        "descricao": "Nenhuma proposta estruturada de nova legislação trabalhista foi enviada ao Congresso até o momento; a Lei 13.467/2017 segue integralmente em vigor, e o próprio Planalto, questionado, evitou detalhar planos legislativos. A regulamentação do trabalho por aplicativos, tema correlato, também terminou sem consenso.",
-        "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/picanha-transparencia-13-promessas-nao-cumpridas-governo-lula/",
-        "data": "2026-02-17"
+        "descricao": "A Lei 14.611/2023 (igualdade salarial entre mulheres e homens, com alteração da CLT) foi sancionada em 03/07/2023. Não houve revogação nem revisão geral da Lei 13.467/2017 (reforma trabalhista), que segue em vigor.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14611.htm",
+        "data": "2023-07-03"
+      },
+      {
+        "descricao": "Em 05/03/2024 o Executivo enviou à Câmara o PLP 12/2024, que regula a relação de trabalho de motoristas de aplicativo de transporte de passageiros e prevê inclusão previdenciária. Em maio de 2026 o projeto estava pronto para a pauta do plenário, sem votação.",
+        "fonte_url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2419243",
+        "data": "2024-03-05"
+      },
+      {
+        "descricao": "Em 14/04/2026 o Executivo apresentou o PL 1.838/2026, que altera a CLT e outras leis para reduzir a duração normal do trabalho e tratar do descanso semanal remunerado. Em junho de 2026 o pedido de urgência foi retirado, e o projeto segue em tramitação.",
+        "fonte_url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2616127",
+        "data": "2026-04-14"
+      },
+      {
+        "descricao": "Contexto, sem alterar o status: em 14/10/2026 o Senado aprovou, em dois turnos (75 a 1), a PEC 221/2019, que acaba com a escala 6x1 (jornada máxima 5x2, sem redução salarial) e reduz a jornada de 44h para 40h semanais, com transição de 14 meses (42h após 60 dias da promulgação; 40h doze meses depois). A Câmara já havia aprovado em maio/2026. A medida altera a jornada, mas não revoga a reforma trabalhista de 2017 (Lei 13.467/2017), que segue em vigor.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/senado-aprova-fim-da-escala-6x1-e-reducao-da-jornada-de-trabalho",
+        "data": "2026-10-14"
       }
     ]
   },
@@ -629,25 +769,30 @@
     "presidente_id": "lula-2023",
     "eixo": "meio-ambiente-sustentabilidade",
     "categoria": "Desmatamento",
-    "titulo": "Combate ao desmatamento ilegal e desmatamento líquido zero na Amazônia",
+    "titulo": "Combate ao desmatamento ilegal e promoção do desmatamento líquido zero",
     "descricao_original": "Combater o crime ambiental promovido por milícias, grileiros e madeireiros, com combate implacável ao desmatamento ilegal e promoção do desmatamento líquido zero, com recomposição de áreas degradadas e reflorestamento dos biomas.",
     "fonte_proposta": "Diretrizes para o Programa de Reconstrução e Transformação do Brasil - Lula/Alckmin 2023-2026 (Coligação Brasil da Esperança)",
-    "referencia_documento": "item 94 - p. 16",
+    "referencia_documento": "item 94 - p. 17",
     "documento_url": "/propostas-tse/lula.pdf",
-    "documento_pagina": 16,
+    "documento_pagina": 17,
     "status": "parcialmente_cumprido",
-    "percentual_cumprimento": 55,
-    "data_ultima_atualizacao": "2025-11-01",
+    "percentual_cumprimento": 65,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O desmatamento na Amazônia (PRODES/INPE) caiu de 9.064 km² no ciclo 2022/2023 para 6.288 km² em 2023/2024 e 5.796 km² em 2024/2025 — queda acumulada de ~36% em dois ciclos.",
+        "descricao": "Estimativa do PRODES/INPE divulgada em 30/10/2025 apontou 5.796 km² de desmatamento na Amazônia entre ago/2024 e jul/2025 (−11,08%, menor taxa em 11 anos) e 7.235 km² no Cerrado (−11,49%). Não há dado oficial que indique que a meta de desmatamento líquido zero (desmatamento compensado por recomposição e reflorestamento) tenha sido atingida.",
         "fonte_url": "https://www.gov.br/inpe/pt-br/assuntos/ultimas-noticias/dados-do-prodes-apontam-reducao-no-desmatamento-na-amazonia-e-no-cerrado-brasileiros-1",
-        "data": "2025-11-01"
+        "data": "2025-10-30"
       },
       {
-        "descricao": "A meta de 'desmatamento líquido zero' não foi atingida: ainda há milhares de km² desmatados por ano sem recomposição equivalente, e o desmatamento ilegal persiste, embora em ritmo menor.",
-        "fonte_url": "https://www.gov.br/inpe/pt-br/assuntos/ultimas-noticias/dados-do-prodes-apontam-reducao-no-desmatamento-na-amazonia-e-no-cerrado-brasileiros-1",
-        "data": "2025-11-01"
+        "descricao": "Alertas do DETER/INPE entre ago/2025 e jul/2026 somaram 2.874 km² na Amazônia, queda de 36% sobre o período anterior e o menor nível desde 2016. O DETER é um sistema de alerta; a taxa oficial anual (PRODES) de 2025/26 ainda não foi divulgada e pode diferir.",
+        "fonte_url": "https://www.cnnbrasil.com.br/nacional/brasil/amazonia-registra-menor-nivel-de-desmatamento-desde-2016/",
+        "data": "2026-08-07"
+      },
+      {
+        "descricao": "Taxas consolidadas do PRODES/INPE para a Amazônia Legal: 9.064 km² (ago/2022-jul/2023), 6.518 km² (ago/2023-jul/2024) e 5.731 km² (ago/2024-jul/2025) — queda acumulada de ~37% em dois ciclos.",
+        "fonte_url": "https://www.gov.br/inpe/pt-br/assuntos/ultimas-noticias/sistema-do-inpe-aponta-5-731-km2-de-desmatamento-na-amazonia-em-2025",
+        "data": "2026-08-18"
       }
     ]
   },
@@ -664,17 +809,32 @@
     "documento_pagina": 19,
     "status": "parcialmente_cumprido",
     "percentual_cumprimento": 30,
-    "data_ultima_atualizacao": "2026-02-17",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "Em maio/2023, no aniversário de 11 anos da LAI, Lula assinou três decretos de fortalecimento da transparência: atualização do regulamento da LAI, criação do Sistema de Integridade, Transparência e Acesso à Informação, e criação do Conselho de Transparência, Integridade e Combate à Corrupção (CTICC). Em 2024, norma da CGU acabou com a presunção automática do 'sigilo de 100 anos'. Sigilos do governo anterior (ex.: visitas ao Alvorada) foram revistos.",
-        "fonte_url": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2023/05/governo-federal-anuncia-medidas-de-fortalecimento-da-transparencia-publica",
+        "descricao": "Em 13/03/2023 a CGU, ao revisar sigilos impostos na gestão anterior, autorizou a divulgação do cartão de vacinação de Jair Bolsonaro.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/geral/noticia/2023-03/cgu-decide-retirar-sigilo-de-cartao-de-vacina-de-jair-bolsonaro",
+        "data": "2023-03-13"
+      },
+      {
+        "descricao": "Em 16/05/2023 foram assinados o Decreto 11.527 (atualiza o regulamento da LAI), o Decreto 11.528 (institui o Conselho de Transparência, Integridade e Combate à Corrupção) e o Decreto 11.529 (institui o Sistema de Integridade, Transparência e Acesso à Informação e a Política de Transparência e Acesso à Informação da administração federal).",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11529.htm",
         "data": "2023-05-16"
       },
       {
-        "descricao": "Na prática, porém, o governo recusou 3.210 pedidos via LAI entre jan/2023 e dez/2024, impôs sigilo à agenda da primeira-dama e a gastos presidenciais, e em maio/2025 restringiu acesso a mais de 16 milhões de documentos no TransfereGov — descompasso entre o marco normativo criado e a prática de transparência.",
-        "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/picanha-transparencia-13-promessas-nao-cumpridas-governo-lula/",
-        "data": "2026-02-17"
+        "descricao": "Em 30/09/2024 a CGU editou novas orientações: sem prazo indicado, a restrição de acesso a informações pessoais presume-se de 15 anos, e prazos maiores exigem justificativa detalhada. O teto de até 100 anos previsto no art. 31 da LAI não foi alterado.",
+        "fonte_url": "https://www.poder360.com.br/poder-governo/cgu-impoe-novas-regras-e-sigilo-de-100-anos-deve-ser-justificado/",
+        "data": "2024-09-30"
+      },
+      {
+        "descricao": "Pedidos via LAI pela agenda da primeira-dama foram negados pelo governo sob o argumento de que ela não ocupa cargo público. A Transparência Internacional Brasil criticou a falta de informações.",
+        "fonte_url": "https://www.poder360.com.br/poder-congresso/rosangela-moro-vai-apresentar-projeto-para-quebrar-sigilo-de-janja/",
+        "data": "2025-01-30"
+      },
+      {
+        "descricao": "Em maio de 2025 veio a público que o Ministério da Gestão suspendera o download de cerca de 16 milhões de documentos do Transferegov (convênios, prestações de contas, dados de emendas), alegando proteção de dados pessoais (LGPD); segundo a Transparência Brasil, a restrição vigorava desde maio de 2024. Os documentos passaram a depender de pedidos via LAI.",
+        "fonte_url": "https://www.poder360.com.br/poder-governo/governo-lula-levara-meses-para-liberar-documentos-restringidos/",
+        "data": "2025-05-21"
       }
     ]
   },
@@ -691,16 +851,21 @@
     "documento_pagina": 8,
     "status": "cumprido",
     "percentual_cumprimento": 100,
-    "data_ultima_atualizacao": "2025-06-03",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "Em 13/11/2023, Lula sancionou a atualização da Lei de Cotas do ensino superior (Lei 12.711/2012): redução do teto de renda para 1 salário mínimo per capita, inclusão de quilombolas, prioridade no auxílio estudantil, extensão à pós-graduação e avaliação decenal — aplicada já no Sisu de jan/2024.",
-        "fonte_url": "https://agenciagov.ebc.com.br/noticias/202311/presidente-lula-sanciona-atualizacao-da-lei-de-cotas",
+        "descricao": "O Decreto 11.443, de 21/03/2023, fixa o mínimo de 30% de pessoas negras nos cargos em comissão e funções de confiança da administração federal direta, autárquica e fundacional, a ser alcançado até 31/12/2025.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11443.htm",
+        "data": "2023-03-21"
+      },
+      {
+        "descricao": "Em 13/11/2023 foi sancionada a Lei 14.723/2023, que atualiza a Lei de Cotas (Lei 12.711/2012): reduz para 1 salário mínimo per capita o critério de renda, inclui quilombolas, dá prioridade aos cotistas vulneráveis no auxílio estudantil, determina que as instituições federais promovam ações afirmativas na pós-graduação stricto sensu e prevê avaliação a cada 10 anos.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14723.htm",
         "data": "2023-11-13"
       },
       {
-        "descricao": "Em junho/2025, sancionou a nova lei de cotas no serviço público, ampliando de 20% para 30% a reserva para pessoas negras em concursos federais (substituindo a Lei 12.990/2014, que expirava em 2024) e incluindo administração direta e indireta e contratações temporárias.",
-        "fonte_url": "https://exame.com/economia/lula-sanciona-lei-que-amplia-para-30-cotas-raciais-em-concursos-federais/",
+        "descricao": "A Lei 15.142, de 03/06/2025, reserva 30% das vagas em concursos públicos federais (administração direta, autarquias, fundações, empresas públicas e sociedades de economia mista controladas pela União) a pessoas pretas e pardas, indígenas e quilombolas, e estende a reserva aos processos seletivos simplificados. A lei revogou a Lei 12.990/2014, que reservava 20% a pessoas negras e tinha vigência de 10 anos.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15142.htm",
         "data": "2025-06-03"
       }
     ]
@@ -717,18 +882,28 @@
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 14,
     "status": "em_andamento",
-    "percentual_cumprimento": 60,
-    "data_ultima_atualizacao": "2023-11-01",
+    "percentual_cumprimento": 35,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "Relatório do TCU entregue à equipe de transição apontou 14 mil obras paralisadas (37% de 38 mil contratos ativos com a União). Em nov/2023 foi sancionada lei (PL 4.172/2023) criando arcabouço para retomada de mais de 11 mil obras de educação e saúde, com recursos do FNDE e do SUS e prazo de conclusão de 24 meses prorrogáveis; só o MEC estimou R$ 6,2 bi para concluir as obras retomáveis.",
-        "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2023-11/lula-sanciona-lei-para-retomada-de-mais-de-11-mil-obras-inacabadas",
+        "descricao": "Em novembro de 2022 o TCU apontou, em relatório entregue à equipe de transição, cerca de 14 mil contratos de obras federais paralisados (37% de 38 mil), que somavam R$ 144 bilhões.",
+        "fonte_url": "https://www.cnnbrasil.com.br/politica/relatorio-do-tcu-aponta-que-37-das-obras-publicas-federais-estao-paralisadas/",
+        "data": "2022-11-16"
+      },
+      {
+        "descricao": "O Novo PAC foi instituído pelo Decreto 11.632, de 11/08/2023.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11632.htm",
+        "data": "2023-08-11"
+      },
+      {
+        "descricao": "Em 01/11/2023 foi sancionada a Lei 14.719/2023 (origem: PL 4.172/2023, do Executivo), que institui o Pacto Nacional pela Retomada de Obras e de Serviços de Engenharia destinados à educação básica e profissionalizante e à saúde. As obras de educação retomadas têm até 24 meses para conclusão, prorrogáveis uma vez.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14719.htm",
         "data": "2023-11-01"
       },
       {
-        "descricao": "O Novo PAC, lançado em 2023, retomou obras estruturantes, incluindo a conclusão do trecho final da Ferrovia Norte-Sul.",
-        "fonte_url": "https://pt.org.br/brasil-no-rumo-certo-com-lula-retomada-de-obras-mais-ferrovias-e-pac-3/",
-        "data": "2023-08-01"
+        "descricao": "Segundo o Painel de Obras Paralisadas do TCU, até abril de 2025, 11.469 das 22.621 obras com recursos federais mapeadas (50,7%) estavam paralisadas; educação e saúde concentravam 70% delas. Das 5.505 obras iniciadas entre abril de 2024 e abril de 2025, cerca de 1.200 (22%) já estavam paralisadas. A base do painel difere da do relatório de 2022, e os números não são diretamente comparáveis.",
+        "fonte_url": "https://portal.tcu.gov.br/imprensa/noticias/metade-das-obras-financiadas-com-recursos-federais-estao-paradas",
+        "data": "2025-07-30"
       }
     ]
   },
@@ -744,18 +919,43 @@
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 18,
     "status": "parcialmente_cumprido",
-    "percentual_cumprimento": 65,
-    "data_ultima_atualizacao": "2026-01-09",
+    "percentual_cumprimento": 75,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "As negociações do Acordo Mercosul-UE, iniciadas em 1999, foram definitivamente concluídas em 06/12/2024 ('Pacote de Brasília', após 7 rodadas negociadoras em Brasília em 2023-2024 e 6 encontros de Lula com a presidente da Comissão Europeia); em 09/01/2026 o Conselho da UE autorizou a assinatura. O Mercosul também firmou acordos com Singapura (2023) e EFTA (2025).",
-        "fonte_url": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2024/12/perguntas-e-respostas-acordo-de-parceria-mercosul-uniao-europeia",
+        "descricao": "O Brasil reingressou na Celac na 7ª Cúpula, em Buenos Aires, em 24/01/2023 (a participação estava suspensa desde 2020).",
+        "fonte_url": "https://www.cnnbrasil.com.br/politica/discurso-de-lula-prega-reintegracao-e-marca-reingresso-de-brasil-na-celac/",
+        "data": "2023-01-24"
+      },
+      {
+        "descricao": "O Brasil voltou à Unasul com o Decreto 11.475, de 06/04/2023, que promulga o Tratado Constitutivo, com vigência a partir de maio de 2023 (o país havia saído em 2019).",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11475.htm",
+        "data": "2023-04-06"
+      },
+      {
+        "descricao": "Em 06/12/2024, na 65ª Cúpula do Mercosul em Montevidéu, Mercosul e União Europeia anunciaram a conclusão das negociações do acordo, que duravam cerca de 25 anos.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2024-12/mercosul-e-uniao-europeia-firmam-acordo-comercial-negociado-ha-25-anos",
         "data": "2024-12-06"
       },
       {
-        "descricao": "O Brasil retomou protagonismo no Brics (bloco expandido, cúpula sediada pelo Brasil em 2025). Contudo, a Unasul não foi plenamente reativada e a Celac não recuperou o peso político de antes — o cumprimento é desigual entre as quatro organizações citadas na promessa.",
-        "fonte_url": "https://cebri.org/br/midia/567/acordo-mercosul-ue-um-marco-historico-para-o-comercio-internacional",
-        "data": "2025-07-01"
+        "descricao": "Sob presidência brasileira, o Brics (11 membros e 10 países parceiros) realizou sua cúpula no Rio de Janeiro em 6 e 7 de julho de 2025.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2025-07/entenda-o-que-e-o-brics-grupo-que-se-reune-partir-de-domingo-no-rio",
+        "data": "2025-07-04"
+      },
+      {
+        "descricao": "Em 09/01/2026 o Conselho da UE aprovou a assinatura do acordo com o Mercosul, com votos contrários de França, Polônia, Áustria, Hungria e Irlanda.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-01/uniao-europeia-aprova-assinatura-de-acordo-comercial-com-mercosul",
+        "data": "2026-01-09"
+      },
+      {
+        "descricao": "O Acordo Provisório de Comércio Mercosul-UE foi assinado em Assunção em 17/01/2026 e aprovado pelo Congresso Nacional (Decreto Legislativo nº 14, de 17/03/2026). A parte comercial passou a ser aplicada provisoriamente em 01/05/2026. A ratificação plena do acordo de associação depende do Parlamento Europeu, que em janeiro/2026 enviou o texto para análise do Tribunal de Justiça da UE.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-04/acordo-mercosul-ue-entra-em-vigor-nesta-sexta-apos-26-anos",
+        "data": "2026-05-01"
+      },
+      {
+        "descricao": "Os acordos Mercosul-Singapura (assinado em dez/2023) e Mercosul-EFTA (assinado em 16/09/2025) foram ratificados pelo Brasil em 30/06/2026. O de Singapura vigora para o Brasil desde 01/08/2026; o da EFTA foi promulgado pelo Decreto 13.126 (25/09/2026), com efeitos a partir de 01/10/2026.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/brasil-promulga-acordo-de-livre-comercio-entre-mercosul-e-efta",
+        "data": "2026-09-25"
       }
     ]
   },
@@ -771,18 +971,18 @@
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 4,
     "status": "cumprido",
-    "percentual_cumprimento": 95,
-    "data_ultima_atualizacao": "2026-01-01",
+    "percentual_cumprimento": 100,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "A Lei 14.663/2023 (sancionada em 28/08/2023, origem na MP 1.172/2023) instituiu a política de valorização permanente do salário mínimo a partir de 2024: reajuste anual pelo INPC acumulado até novembro + crescimento real do PIB de dois anos antes — mesma fórmula dos mandatos anteriores de Lula, que havia sido abandonada em 2019.",
+        "descricao": "A Lei 14.663/2023 (sancionada em 28/08/2023, origem na MP 1.172/2023) instituiu a política de valorização permanente do salário mínimo a partir de 2024: reajuste anual pelo INPC acumulado em 12 meses até novembro + crescimento real do PIB de dois anos antes — mesma lógica das Leis 12.382/2011 e 13.152/2015 (esta válida para 2016-2019); de 2020 a 2023 não houve regra de ganho real.",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm",
         "data": "2023-08-28"
       },
       {
-        "descricao": "Com a política, o mínimo passou de R$ 1.302 (jan/2023) a R$ 1.621 (2026), com ganho real em todos os reajustes. Ressalva: desde o pacote fiscal de 2024, o ganho real ficou limitado a 2,5% ao ano (em 2026, o PIB de 3,4% foi truncado para 2,5%), o que modera parcialmente a valorização prometida.",
-        "fonte_url": "https://spbancarios.com.br/02/2026/90-anos-do-salario-minimo-valorizacao-melhora-economia-e-vida-de-milhoes-de-brasileiros",
-        "data": "2026-01-01"
+        "descricao": "O salário mínimo passou de R$ 1.302 (jan/2023, valor fixado pela MP 1.143/2022) para R$ 1.320 (mai/2023), R$ 1.412 (2024), R$ 1.518 (2025) e R$ 1.621 (2026), com reajustes acima do INPC. A Lei 15.077/2024 limitou o aumento real de 2025 a 2030 ao intervalo do arcabouço fiscal (entre 0,6% e 2,5% ao ano). Em 2026, com INPC de 4,18% e PIB de 2024 de 3,4%, o aumento real aplicado foi de 2,5%; em 2025, com PIB de 2023 de 3,2%, também 2,5%.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12797.htm",
+        "data": "2025-12-23"
       }
     ]
   },
@@ -798,17 +998,27 @@
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 6,
     "status": "cumprido",
-    "percentual_cumprimento": 95,
-    "data_ultima_atualizacao": "2025-02-13",
+    "percentual_cumprimento": 100,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
+      {
+        "descricao": "Em 07/06/2023 o governo relançou o Farmácia Popular, com credenciamento de novas unidades em municípios mais vulneráveis e gratuidade dos medicamentos para osteoporose e dos anticoncepcionais (antes com coparticipação).",
+        "fonte_url": "https://www.cnnbrasil.com.br/saude/entenda-o-que-e-o-farmacia-popular-e-quem-pode-usar-o-servico/",
+        "data": "2023-06-07"
+      },
       {
         "descricao": "O Mais Médicos foi relançado em março/2023 (MP 1.165/2023, convertida na Lei 14.621/2023, sancionada em 14/07/2023), com Estratégia Nacional de Formação de Especialistas, incentivos para fixação em áreas remotas e transformação da Adaps em AGSUS.",
         "fonte_url": "https://www12.senado.leg.br/noticias/materias/2023/07/17/sancionada-estrategia-de-incentivo-ao-programa-mais-medicos",
         "data": "2023-07-14"
       },
       {
-        "descricao": "O Farmácia Popular foi retomado e ampliado: credenciamento de novas farmácias reaberto em 2023 (após 8 anos parado), gratuidade estendida a beneficiários do Bolsa Família (2023) e a novos medicamentos (osteoporose, contraceptivos, colesterol, Parkinson, glaucoma, rinite), programa Dignidade Menstrual a partir de 2024 (2,1 milhões de beneficiárias, 240 milhões de absorventes no 1º ano) e, em fev/2025, gratuidade total dos 41 itens para toda a população. Orçamento subiu de R$ 2,5 bi (2022) para R$ 4,2 bi previstos em 2025 (+69%).",
-        "fonte_url": "https://agenciagov.ebc.com.br/noticias/202502/ministerio-da-saude-anuncia-100-de-gratuidade-no-farmacia-popular-e-abre-credenciamento-a-todos-os-municipios-do-pais",
+        "descricao": "O Decreto 11.715, de 26/09/2023, instituiu a Estratégia Nacional para o Desenvolvimento do Complexo Econômico-Industrial da Saúde.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11715.htm",
+        "data": "2023-09-26"
+      },
+      {
+        "descricao": "Em 13/02/2025 o Ministério da Saúde anunciou a gratuidade dos 41 itens do programa e a abertura de credenciamento em 758 municípios sem o programa. Segundo o ministério, os atendidos passaram de 20,7 milhões (2022) para 24,7 milhões (2024), e o programa estava em 4.812 municípios.",
+        "fonte_url": "https://www.poder360.com.br/poder-saude/governo-anuncia-gratuidade-dos-41-medicamentos-no-farmacia-popular/",
         "data": "2025-02-13"
       }
     ]
@@ -825,13 +1035,23 @@
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 7,
     "status": "em_andamento",
-    "percentual_cumprimento": 35,
-    "data_ultima_atualizacao": "2026-02-17",
+    "percentual_cumprimento": 50,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O governo apresentou a 'PEC da Segurança Pública' (encaminhada ao Congresso em 2025), que constitucionaliza o SUSP e redefine competências federais na área, mas a proposta não foi aprovada e enfrenta resistência de governadores e parlamentares. A promessa correlata de Ministério da Segurança Pública separado foi descartada na transição, retomada por Lewandowski em 2024 e estagnou; em jan/2026 o governo voltou a cogitar a criação, condicionada à aprovação da PEC.",
-        "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/picanha-transparencia-13-promessas-nao-cumpridas-governo-lula/",
-        "data": "2026-02-17"
+        "descricao": "Em 24/04/2025 o Poder Executivo apresentou à Câmara a PEC 18/2025 (PEC da Segurança Pública), que altera os arts. 21, 22, 23, 24 e 144 da Constituição para dispor sobre as competências da União, dos estados, do DF e dos municípios na segurança pública.",
+        "fonte_url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2500080",
+        "data": "2025-04-24"
+      },
+      {
+        "descricao": "A Câmara aprovou em 05/03/2026 a PEC da Segurança Pública (PEC 18/2025, de autoria do Executivo), que constitucionaliza o SUSP (novo art. 144-A, 'regime de cooperação federativa'), e a enviou ao Senado.",
+        "fonte_url": "https://www12.senado.leg.br/noticias/materias/2026/03/05/camara-aprova-pec-da-seguranca-texto-sera-analisado-pelo-senado",
+        "data": "2026-03-05"
+      },
+      {
+        "descricao": "Em 14/10/2026 a CCJ do Senado concluiu a votação da PEC; o texto segue para o plenário, com intenção declarada de votar antes do 2º turno das eleições (25/10). Se o Senado aprovar sem alterações, a PEC é promulgada. Ainda não houve votação em plenário.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-10/ccj-do-senado-conclui-votacao-da-pec-da-seguranca-publica",
+        "data": "2026-10-14"
       }
     ]
   },
@@ -843,15 +1063,15 @@
     "titulo": "Revogação do teto de gastos",
     "descricao_original": "Revogar o teto de gastos e rever o atual regime fiscal, substituindo-o por um novo regime fiscal com credibilidade, previsibilidade, sustentabilidade e flexibilidade anticíclica.",
     "fonte_proposta": "Diretrizes para o Programa de Reconstrução e Transformação do Brasil - Lula/Alckmin 2023-2026 (Coligação Brasil da Esperança)",
-    "referencia_documento": "item 51 - p. 10",
+    "referencia_documento": "itens 51-52 - pp. 10-11",
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 10,
     "status": "cumprido",
     "percentual_cumprimento": 100,
-    "data_ultima_atualizacao": "2023-08-30",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O Novo Arcabouço Fiscal (Lei Complementar 200/2023, sancionada em 30/08/2023) substituiu o teto de gastos da EC 95/2016 por um regime de limite de crescimento real de despesas (70% da variação da receita, entre 0,6% e 2,5% a.a.) com metas de resultado primário — exatamente a substituição do regime fiscal prometida.",
+        "descricao": "A Lei Complementar 200, de 30/08/2023, instituiu o regime fiscal sustentável: a despesa primária cresce 70% da variação real da receita (50% se a meta primária do ano anterior não for cumprida), com piso de 0,6% e teto de 2,5% ao ano de crescimento real, além de metas de resultado primário. A sanção dessa lei revogou os dispositivos do teto de gastos no ADCT, conforme a EC 126/2022.",
         "fonte_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm",
         "data": "2023-08-30"
       }
@@ -868,19 +1088,24 @@
     "referencia_documento": "item 53 - p. 11",
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 11,
-    "status": "cumprido",
-    "percentual_cumprimento": 85,
-    "data_ultima_atualizacao": "2025-01-16",
+    "status": "parcialmente_cumprido",
+    "percentual_cumprimento": 75,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "A EC 132/2023 (promulgada em dez/2023) aprovou a reforma tributária do consumo (IVA Dual: CBS + IBS), simplificando tributos e eliminando cumulatividade e guerra fiscal. A regulamentação (LC 214/2025, sancionada em 16/01/2025) incluiu cesta básica nacional com imposto zerado e cashback automático para famílias do CadÚnico com renda per capita de até meio salário mínimo — mecanismos de progressividade prometidos.",
-        "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-01/lula-sanciona-regulamentacao-da-reforma-tributaria-sobre-consumo",
+        "descricao": "Ressalva: o art. 130 do ADCT, incluído pela EC 132/2023, determina que as alíquotas de referência sejam fixadas para manter a arrecadação equivalente à dos tributos substituídos. A reforma não prevê, portanto, redução da carga total sobre o consumo.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
+        "data": "2023-12-20"
+      },
+      {
+        "descricao": "A EC 132, de 20/12/2023, criou o IVA dual (CBS federal e IBS subnacional), com transição até 2033, quando ICMS e ISS serão extintos. A LC 214, de 16/01/2025, regulamentou a reforma: zerou as alíquotas sobre a Cesta Básica Nacional de Alimentos e criou a devolução personalizada (cashback) para famílias do CadÚnico com renda per capita de até meio salário mínimo.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
         "data": "2025-01-16"
       },
       {
-        "descricao": "Restam ressalvas: a reforma da renda (tributação de mais ricos) só avançou parcialmente com a ampliação da isenção do IR sancionada em nov/2025, cuja compensação via tributação de altas rendas segue controversa; e a alíquota do IVA estimada (~28%) é alta em padrão internacional, o que críticos apontam como limite à promessa de 'reduzir a tributação do consumo'.",
-        "fonte_url": "https://www.institutoliberal.org.br/blog/politica/governo-lula-imposto-e-taxa/",
-        "data": "2025-11-01"
+        "descricao": "A Lei 15.270, de 26/11/2025, ampliou a isenção do IR para rendas de até R$ 5 mil mensais a partir de 2026 e instituiu tributação mínima para pessoas físicas com rendimentos acima de R$ 600 mil/ano (a partir do ano-calendário 2026).",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm",
+        "data": "2025-11-26"
       }
     ]
   },
@@ -890,14 +1115,14 @@
     "eixo": "social",
     "categoria": "Combate à fome",
     "titulo": "Política nacional de abastecimento com estoques reguladores",
-    "descricao_original": "Estabelecer uma política nacional de abastecimento, com retomada dos estoques reguladores e ampliação do financiamento e apoio à produção de alimentos e à agricultura familiar.",
+    "descricao_original": "Estabelecer uma política nacional de abastecimento, com retomada dos estoques reguladores e ampliação das políticas de financiamento e de apoio à produção de alimentos, aos pequenos agricultores e à agricultura orgânica.",
     "fonte_proposta": "Diretrizes para o Programa de Reconstrução e Transformação do Brasil - Lula/Alckmin 2023-2026 (Coligação Brasil da Esperança)",
     "referencia_documento": "item 57 - p. 11",
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 11,
-    "status": "cumprido",
-    "percentual_cumprimento": 80,
-    "data_ultima_atualizacao": "2025-03-20",
+    "status": "parcialmente_cumprido",
+    "percentual_cumprimento": 60,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
         "descricao": "Em 29/06/2023, a Conab anunciou a compra de 500 mil toneladas de milho via Aquisições do Governo Federal, marcando a retomada da formação de estoques públicos após 6 anos de interrupção, dentro da Política de Garantia de Preços Mínimos.",
@@ -905,9 +1130,19 @@
         "data": "2023-06-29"
       },
       {
-        "descricao": "Os estoques cresceram nos anos seguintes: trigo voltou aos armazéns públicos após 11 anos, arroz após 8 anos, e o orçamento para estoques reguladores mais que quadruplicou em 2025 (de R$ 124 mi em 2024 para até R$ 539,9 mi), com aquisição prevista de 445 mil toneladas de grãos. O Plano Safra da Agricultura Familiar e o MDA também foram recriados, ampliando o financiamento à produção de alimentos.",
-        "fonte_url": "https://www.cnnbrasil.com.br/economia/macroeconomia/conab-recebe-r-350-milhoes-para-estoques-reguladores/",
-        "data": "2025-03-12"
+        "descricao": "O Decreto 11.820, de 12/12/2023, instituiu a Política Nacional de Abastecimento Alimentar, que tem entre seus objetivos a formação de estoques públicos estratégicos de alimentos básicos.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11820.htm",
+        "data": "2023-12-12"
+      },
+      {
+        "descricao": "A Portaria MDA 49, de 16/10/2024, instituiu o 1º Plano Nacional de Abastecimento Alimentar ('Alimento no Prato'), para 2025-2028.",
+        "fonte_url": "https://www.in.gov.br/web/dou/-/portaria-mda-n-49-de-16-de-outubro-de-2024-590768858",
+        "data": "2024-10-16"
+      },
+      {
+        "descricao": "Segundo a base de estoques públicos da Conab, o estoque de milho passou de cerca de 47 mil t (jun/2023) para 350 mil t (dez/2023) e caiu a 119 mil t em dez/2025; o de arroz, zerado em 2023, chegou a 224 mil t em dez/2025 e 278 mil t em mar/2026; o de trigo, a 6,6 mil t desde 2025; o de feijão ficou abaixo de 130 t em todo o período. (Cópia arquivada: o portal da Conab está fora do ar.)",
+        "fonte_url": "http://web.archive.org/web/20260305003615/https://portaldeinformacoes.conab.gov.br/downloads/arquivos/Estoques.txt",
+        "data": "2026-03-01"
       }
     ]
   },
@@ -922,19 +1157,29 @@
     "referencia_documento": "item 60 - p. 12",
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 12,
-    "status": "cumprido",
-    "percentual_cumprimento": 85,
-    "data_ultima_atualizacao": "2026-05-04",
+    "status": "parcialmente_cumprido",
+    "percentual_cumprimento": 50,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O Desenrola Brasil (2023-2024) renegociou dívidas de milhões de famílias de baixa renda com participação de bancos públicos e incentivos a credores privados.",
-        "fonte_url": "https://www.gov.br/fazenda",
-        "data": "2023-07-17"
+        "descricao": "A Lei 14.690, de 03/10/2023, instituiu o Desenrola Brasil, programa de renegociação de dívidas de pessoas físicas inadimplentes, com participação de bancos públicos e incentivos a credores privados.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14690.htm",
+        "data": "2023-10-03"
       },
       {
-        "descricao": "Em 04/05/2026, foi lançado por MP o Novo Desenrola Brasil: descontos de até 90%, uso de até 20% do FGTS para quitação, e linhas específicas Desenrola Famílias, Desenrola Empresas (micro e pequenos negócios), Desenrola Rural (agricultura familiar) e renegociação do Fies — cobrindo exatamente os públicos da promessa (famílias e pequenas empresas).",
-        "fonte_url": "https://www.gov.br/casacivil/pt-br/assuntos/noticias/2026/maio/novo-desenrola-do-governo-do-brasil-preve-ate-90-de-desconto-e-facilita-renegociacao-de-dividas",
+        "descricao": "A MP 1.355, de 04/05/2026, instituiu o Novo Desenrola Brasil para pessoas com renda de até 5 salários mínimos e dívidas em atraso de 91 a 720 dias, com juros de até 1,99% ao mês, saque extraordinário do FGTS (R$ 1.000 ou 20% do saldo, o que for maior), renegociação do Fies e uso do Pronampe para quitar dívidas de micro e pequenas empresas. A MP perdeu a eficácia sem ser convertida em lei.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/mpv/mpv1355.htm",
         "data": "2026-05-04"
+      },
+      {
+        "descricao": "Segundo o Banco Central, a taxa média de juros do crédito livre para pessoas físicas (série SGS 20740) subiu de 54,53% ao ano (dez/2022) para 61,74% ao ano (ago/2026); para empresas (SGS 20718), de 22,98% para 24,19% ao ano. A Selic, principal referência desses juros, é definida pelo Copom do Banco Central, autônomo desde 2021.",
+        "fonte_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20740/dados?formato=json&dataInicial=01/12/2022&dataFinal=31/08/2026",
+        "data": "2026-08-01"
+      },
+      {
+        "descricao": "A MP 1.393, de 25/09/2026, alterou a Lei 14.690/2023 para criar o Desenrola Brasil 3.0, modalidade emergencial de renegociação de dívidas de pessoas físicas inadimplentes. A MP está em tramitação no Congresso.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/mpv/mpv1393.htm",
+        "data": "2026-09-25"
       }
     ]
   },
@@ -949,19 +1194,44 @@
     "referencia_documento": "item 70 - p. 13",
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 13,
-    "status": "cumprido",
-    "percentual_cumprimento": 80,
-    "data_ultima_atualizacao": "2025-01-20",
+    "status": "parcialmente_cumprido",
+    "percentual_cumprimento": 60,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O Decreto 11.405/2023 (30/01/2023) determinou medidas de enfrentamento da emergência sanitária e combate ao garimpo ilegal na Terra Indígena Yanomami, com R$ 1,7 bi em créditos extraordinários, operações coordenadas (PF, Exército, FAB, Marinha, Força Nacional, FUNAI, IBAMA, PRF) e crédito extraordinário adicional de R$ 1 bi em 2024.",
-        "fonte_url": "https://doaj.org/article/eaed49664c2a42f8a8a24c50edbae76b",
+        "descricao": "O Decreto 11.405, de 30/01/2023, autorizou requisições de bens e serviços, a criação de Zona de Identificação de Defesa Aérea sobre o território Yanomami e a atuação da Força Nacional e do Ministério da Defesa em apoio à PF e ao Ibama contra o garimpo ilegal.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11405.htm",
         "data": "2023-01-30"
       },
       {
-        "descricao": "Resultados: alertas de garimpo na TI Yanomami caíram de 538 (abr-mai/2023) para 33 no mesmo período de 2024; em 2024 foram 3.536 operações de segurança; a Casa de Governo em Boa Vista (fev/2024) consolidou a primeira política permanente na região; óbitos por desnutrição caíram 68% entre os primeiros semestres de 2023 e 2024. Ressalva: o MPF registrou reocupações por garimpeiros ao longo de 2023 e a Justiça determinou novo cronograma de ações em dez/2023, indicando que a eliminação não foi definitiva.",
-        "fonte_url": "https://agenciagov.ebc.com.br/noticias/202501/acoes-do-governo-federal-na-terra-yanomami-derrubam-garimpo-e-reerguem-infraestrutura",
-        "data": "2025-01-20"
+        "descricao": "A Receita Federal instituiu a nota fiscal eletrônica do ouro ativo financeiro (IN RFB 2.138/2023), de uso obrigatório a partir de 01/08/2023 (IN RFB 2.150, de 07/07/2023).",
+        "fonte_url": "https://www.in.gov.br/web/dou/-/instrucao-normativa-rfb-n-2.150-de-7-de-julho-de-2023-495186465",
+        "data": "2023-07-07"
+      },
+      {
+        "descricao": "Em 12/03/2024, a MP 1.209 abriu crédito extraordinário de R$ 1,06 bilhão, justificado pelas ações no território Yanomami e por determinações do STF na ADPF 709.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/mpv/mpv1209.htm",
+        "data": "2024-03-12"
+      },
+      {
+        "descricao": "Segundo dados do Censipam divulgados pela Casa de Governo, a TI Yanomami teve 102 alertas de garimpo entre janeiro e abril de 2024, queda de 73% sobre o mesmo período de 2023.",
+        "fonte_url": "https://www.poder360.com.br/meio-ambiente/alertas-de-garimpo-ilegal-caem-73-em-terra-yanomami/",
+        "data": "2024-06-14"
+      },
+      {
+        "descricao": "Em 21/03/2025 o STF confirmou, por unanimidade, a inconstitucionalidade da presunção de boa-fé na compra de ouro (art. 39, §4º, da Lei 12.844/2013), em ações propostas por partidos.",
+        "fonte_url": "https://www.poder360.com.br/poder-justica/por-unanimidade-stf-confirma-fim-da-boa-fe-no-comercio-de-ouro/",
+        "data": "2025-03-21"
+      },
+      {
+        "descricao": "O PL 3.025/2023, do Executivo, sobre rastreabilidade do ouro, foi aprovado pela Câmara em 22/04/2026 e aguarda tramitação no Senado.",
+        "fonte_url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2368697",
+        "data": "2026-04-22"
+      },
+      {
+        "descricao": "A Lei 15.506, de 16/09/2026, instituiu a Política Nacional de Minerais Críticos e Estratégicos.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15506.htm",
+        "data": "2026-09-16"
       }
     ]
   },
@@ -978,12 +1248,17 @@
     "documento_pagina": 14,
     "status": "cumprido",
     "percentual_cumprimento": 100,
-    "data_ultima_atualizacao": "2026-07-01",
+    "data_ultima_atualizacao": "2026-10-16",
     "evidencias": [
       {
-        "descricao": "Nenhum processo de privatização da Petrobras ou da PPSA foi iniciado ou avançou durante o mandato. A Petrobras foi retirada da carteira de estudos de desestatização, sua política de preços de paridade internacional foi substituída e o plano estratégico foi reorientado para investimentos em refino, transição energética e exploração (incluindo a Margem Equatorial), mantendo o controle estatal.",
-        "fonte_url": "https://pt.wikipedia.org/wiki/Governo_Lula",
-        "data": "2023-05-16"
+        "descricao": "Contexto: em 12/05/2022, no governo anterior, o Ministério de Minas e Energia pediu ao Ministério da Economia o início dos estudos de privatização da Petrobras e da PPSA.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2022-05/ministro-entrega-estudos-de-privatizacao-da-ppsa-e-da-petrobras",
+        "data": "2022-05-12"
+      },
+      {
+        "descricao": "O Decreto 11.478, de 06/04/2023, revogou a qualificação da PPSA no Programa de Parcerias de Investimentos (PPI). Nenhum processo de privatização da Petrobras ou da PPSA avançou no mandato; a União mantém o controle de ambas.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11478.htm",
+        "data": "2023-04-06"
       }
     ]
   },
@@ -995,21 +1270,26 @@
     "titulo": "Oposição à privatização da Eletrobras",
     "descricao_original": "Opor-se à privatização da Eletrobras, recuperando seu papel como patrimônio do povo e viabilizando programas como o Luz para Todos.",
     "fonte_proposta": "Diretrizes para o Programa de Reconstrução e Transformação do Brasil - Lula/Alckmin 2023-2026 (Coligação Brasil da Esperança)",
-    "referencia_documento": "item 78 - p. 14",
+    "referencia_documento": "item 78 - pp. 14-15",
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 14,
     "status": "parcialmente_cumprido",
     "percentual_cumprimento": 40,
-    "data_ultima_atualizacao": "2025-12-11",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "A privatização da Eletrobras foi consumada em junho/2022, no governo anterior — antes da posse. Impossibilitado de revertê-la, o governo ajuizou em 2023 a ADI 7385 no STF contestando o 'teto de voto' da Lei 14.182/2021, que limitava a 10% o poder de voto da União apesar de sua participação de ~42% no capital.",
-        "fonte_url": "https://noticias.stf.jus.br/postsnoticias/stf-homologa-acordo-sobre-participacao-da-uniao-na-eletrobras/",
-        "data": "2023-01-01"
+        "descricao": "A privatização da Eletrobras foi concluída em junho de 2022, antes da posse. Em 05/05/2023 o governo, via AGU, ajuizou no STF a ADI 7385, contestando o 'teto de voto' da Lei 14.182/2021, que limita a 10% o poder de voto da União, então dona (com BNDES e BNDESPar) de pouco mais de 40% das ações ordinárias.",
+        "fonte_url": "https://www.cnnbrasil.com.br/economia/agu-entra-com-acao-no-stf-para-rever-privatizacao-da-eletrobras/",
+        "data": "2023-05-05"
       },
       {
-        "descricao": "A disputa terminou em acordo de conciliação (CCAF/AGU), aprovado pela assembleia de acionistas em 29/04/2025 e homologado integralmente pelo STF em 11/12/2025: a União passou a indicar 3 dos 10 membros do Conselho de Administração e 1 do Conselho Fiscal, em troca de não mais contestar o teto de voto e da liberação da empresa da obrigação de investir em Angra 3. A empresa (renomeada Axia Energia) permanece privada — o governo ampliou influência na governança, mas não reverteu a privatização nem recuperou a empresa 'como patrimônio do povo' nos termos da promessa.",
-        "fonte_url": "https://www.gov.br/agu/pt-br/comunicacao/noticias/stf-homologa-acordo-entre-uniao-e-eletrobras",
+        "descricao": "O Decreto 11.628, de 04/08/2023, reeditou o Programa Luz para Todos.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11628.htm",
+        "data": "2023-08-04"
+      },
+      {
+        "descricao": "A disputa terminou em acordo de conciliação (CCAF/AGU), aprovado pela assembleia de acionistas em 29/04/2025 e homologado integralmente pelo STF em 11/12/2025: a União passou a indicar 3 dos 10 membros do Conselho de Administração e 1 do Conselho Fiscal, em troca de não mais contestar o teto de voto e de a empresa não ter obrigações adicionais de financiamento do setor nuclear. A empresa (renomeada Axia Energia) permanece privada — o governo ampliou influência na governança, mas não reverteu a privatização nem recuperou a empresa 'como patrimônio do povo' nos termos da promessa.",
+        "fonte_url": "https://www.poder360.com.br/poder-justica/stf-homologa-integralmente-acordo-da-desestatizacao-da-eletrobras/",
         "data": "2025-12-11"
       }
     ]
@@ -1026,18 +1306,18 @@
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 15,
     "status": "cumprido",
-    "percentual_cumprimento": 90,
-    "data_ultima_atualizacao": "2026-07-01",
+    "percentual_cumprimento": 100,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O projeto de privatização dos Correios (PL 591/2021), que já estava estagnado no Senado desde 2022, não foi retomado; os Correios permanecem estatais e foram excluídos dos planos de desestatização.",
-        "fonte_url": "https://maisretorno.com/portal/tudo-sobre/eletrobras/page/4",
-        "data": "2023-01-01"
+        "descricao": "O Decreto 11.478, de 06/04/2023, excluiu os Correios (ECT) do Programa Nacional de Desestatização e revogou sua qualificação no PPI. A empresa segue estatal.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11478.htm",
+        "data": "2023-04-06"
       },
       {
-        "descricao": "Ressalva de contexto: a empresa atravessa grave crise financeira, com prejuízo bilionário atribuído em parte à 'taxa das blusinhas' (Lei 14.902/2024), que encerrou o monopólio dos Correios na distribuição de encomendas internacionais — a estatal foi mantida pública, mas fragilizada financeiramente.",
-        "fonte_url": "https://pt.wikipedia.org/wiki/Governo_Lula",
-        "data": "2026-07-01"
+        "descricao": "Ressalva: a empresa enfrenta grave crise financeira (patrimônio líquido negativo de R$ 10,4 bi e prejuízo de R$ 6 bi nos nove primeiros meses de 2025). Em dez/2025 contratou empréstimo de R$ 12 bi com cinco bancos, e seu plano de reestruturação prevê avaliar mudança do regime societário (possível economia mista, com sócios privados). O presidente dos Correios afirmou não haver 'olhar sobre privatização', mas sim sobre 'parcerias, inclusive societárias'.",
+        "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-12/correios-estuda-abrir-capital-e-faz-emprestimo-de-r-12-bi-com-bancos",
+        "data": "2025-12-29"
       }
     ]
   },
@@ -1052,19 +1332,19 @@
     "referencia_documento": "item 80 - p. 15",
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 15,
-    "status": "cumprido",
-    "percentual_cumprimento": 85,
-    "data_ultima_atualizacao": "2025-02-25",
+    "status": "parcialmente_cumprido",
+    "percentual_cumprimento": 65,
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "O BNDES teve impacto recorde de R$ 276,5 bi no crédito em 2024 (R$ 212,6 bi em aprovações + R$ 63,9 bi alavancados em garantias), com lucro de R$ 26,4 bi (+20,5%), e pela primeira vez desde 2017 a indústria superou o agronegócio nas liberações, refletindo a política Nova Indústria Brasil. Meta de aprovações de 2% do PIB até 2026.",
-        "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-02/bndes-tem-impacto-recorde-de-r-2765-bi-no-credito-em-2024",
+        "descricao": "Segundo o BNDES, o banco teve impacto de R$ 276,5 bi no crédito em 2024 (R$ 212,6 bi em aprovações + R$ 63,9 bi alavancados em garantias), com lucro de R$ 26,4 bi (+20,5%), e pela primeira vez desde 2017 a indústria superou o agronegócio nas liberações. (Cópia arquivada: a página original está fora do ar no período eleitoral.)",
+        "fonte_url": "http://web.archive.org/web/20260612030956/https://agenciabrasil.ebc.com.br/economia/noticia/2025-02/bndes-tem-impacto-recorde-de-r-2765-bi-no-credito-em-2024",
         "data": "2025-02-25"
       },
       {
-        "descricao": "A FINEP financiou R$ 22,4 bi em projetos de inovação em 2023-2024 (valor histórico recorde); BNDES + FINEP aprovaram juntos R$ 29,6 bi para inovação em 2024, o maior valor desde 2010 (+110% sobre 2023, +297% sobre 2022). BB, CEF, BNB e BASA foram integrados a programas como o Plano Mais Produção (R$ 681,3 bi) e o Desenrola.",
-        "fonte_url": "https://agenciadenoticias.bndes.gov.br/industria/Com-R$-296-bi-BNDES-e-Finep-ampliam-investimentos-em-inovacao/",
-        "data": "2025-01-01"
+        "descricao": "Segundo o BNDES, os financiamentos para inovação aprovados por BNDES e Finep somaram R$ 29,6 bi em 2024 (R$ 16 bi da Finep, R$ 13,6 bi do BNDES), o maior valor desde 2010: +110% sobre 2023 e +297% sobre 2022. Não foram reunidas evidências sobre BB, Caixa, BNB e Basa. (Cópia arquivada: o acervo do BNDES está fora do ar no período eleitoral.)",
+        "fonte_url": "http://web.archive.org/web/20260610185020/https://agenciadenoticias.bndes.gov.br/industria/Com-R$-296-bi-BNDES-e-Finep-ampliam-investimentos-em-inovacao/",
+        "data": "2025-05-02"
       }
     ]
   },
@@ -1074,24 +1354,29 @@
     "eixo": "institucional-democratico",
     "categoria": "Combate à corrupção",
     "titulo": "Reconstrução dos órgãos de combate à corrupção",
-    "descricao_original": "Restabelecer os instrumentos de combate à corrupção respeitando o devido processo legal, fortalecendo a Controladoria-Geral da União, a Polícia Federal, o Coaf e a Receita Federal.",
+    "descricao_original": "Assegurar que os instrumentos de combate à corrupção sejam restabelecidos, respeitando o devido processo legal, retomando a política de prevenção e combate à corrupção e de promoção da transparência e da integridade pública.",
     "fonte_proposta": "Diretrizes para o Programa de Reconstrução e Transformação do Brasil - Lula/Alckmin 2023-2026 (Coligação Brasil da Esperança)",
-    "referencia_documento": "item 111 - p. 19",
+    "referencia_documento": "itens 111-112 - p. 19",
     "documento_url": "/propostas-tse/lula.pdf",
     "documento_pagina": 19,
     "status": "parcialmente_cumprido",
     "percentual_cumprimento": 50,
-    "data_ultima_atualizacao": "2025-12-09",
+    "data_ultima_atualizacao": "2026-10-17",
     "evidencias": [
       {
-        "descricao": "A Transparência Internacional-Brasil registrou como pontos positivos do 1º ano: indicações técnicas para postos-chave na CGU e na Polícia Federal, revisão de sigilos indevidos e recriação de espaços de participação social. A CGU assinou acordo de cooperação com a PF que resultou em 162 operações conjuntas entre 2023 e 2025 (72 só em 2025), e a confiança no governo medida pela OCDE subiu de 26% (2022) para 38% (2025).",
-        "fonte_url": "https://www.congressoemfoco.com.br/artigo/114692/o-brasil-voltou-a-combater-a-corrupcao-com-transparencia-e-integridade",
-        "data": "2025-12-09"
+        "descricao": "A MP 1.158/2023, que transferia o Coaf do Banco Central para o Ministério da Fazenda, perdeu a vigência sem ser convertida em lei.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/mpv/mpv1158.htm",
+        "data": "2023-01-12"
       },
       {
-        "descricao": "Contrapontos que impedem avaliação integral: a reestruturação da CGU em 2023 (MP 1.154/2023 e Decreto 11.330/2023) extinguiu a Secretaria de Combate à Corrupção como unidade dedicada, e o número de operações especiais anticorrupção caiu quase pela metade (37 em 2023 e 33 até out/2024, contra média anual de 66 no governo anterior). Não houve, ademais, mudança estrutural no Coaf, e a promessa era 'restabelecer instrumentos', o que ocorreu apenas em parte.",
-        "fonte_url": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2023/03/combate-a-corrupcao-continua-sendo-tratado-como-um-dos-elementos-centrais-da-atuacao-da-controladoria",
+        "descricao": "Na reestruturação da CGU (Decreto 11.330/2023), a Secretaria de Combate à Corrupção foi transformada em Secretaria de Integridade Pública e Secretaria de Integridade Privada, e as operações especiais passaram à Secretaria Federal de Controle Interno. A Folha (21/03/2023) descreveu a mudança como diluição do setor; a CGU contestou. (Cópia arquivada da nota da CGU.)",
+        "fonte_url": "http://web.archive.org/web/20230323172521/https://www.gov.br/cgu/pt-br/assuntos/noticias/2023/03/combate-a-corrupcao-continua-sendo-tratado-como-um-dos-elementos-centrais-da-atuacao-da-controladoria",
         "data": "2023-03-21"
+      },
+      {
+        "descricao": "O Decreto 11.528, de 16/05/2023, criou o Conselho de Transparência, Integridade e Combate à Corrupção, vinculado à CGU; o Decreto 11.529, da mesma data, instituiu o Sistema e a Política de Transparência, Integridade e Acesso à Informação.",
+        "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11528.htm",
+        "data": "2023-05-16"
       }
     ]
   }
