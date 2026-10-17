@@ -1,0 +1,230 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { indicadores, presidentes, propostas } from '../lib/data';
+import { isFormularioConfigurado, WEB3FORMS_URL, web3formsAccessKey } from '../lib/formularios';
+import { withBase } from '../lib/paths';
+
+// Lista de itens que podem ser contestados, agrupada por mandato. O valor da opção leva o id e o
+// nome do item, para que o e-mail recebido identifique o dado sem precisar consultar o JSON.
+const grupos = presidentes.flatMap((presidente) => {
+  // Indicadores têm o mesmo nome nos dois mandatos; o período evita confundi-los no seletor.
+  const periodo = `${presidente.mandato_inicio.slice(0, 4)}–${presidente.mandato_fim.slice(0, 4)}`;
+  return [
+    {
+      rotulo: `${presidente.nome} — propostas`,
+      itens: propostas
+        .filter((proposta) => proposta.presidente_id === presidente.id)
+        .map((proposta) => ({ id: proposta.id, nome: proposta.titulo })),
+    },
+    {
+      rotulo: `${presidente.nome} — indicadores`,
+      itens: indicadores
+        .filter((indicador) => indicador.presidente_id === presidente.id)
+        .map((indicador) => ({ id: indicador.id, nome: `${indicador.nome} (${periodo})` })),
+    },
+  ];
+});
+---
+
+<Layout
+  title="Reportar erro"
+  description="Encontrou um dado errado no Radar de Propostas? Envie a correção com a fonte da informação."
+>
+  <h1 class="text-2xl font-bold text-slate-900">Reportar erro</h1>
+  <p class="mt-2 max-w-3xl text-slate-600">
+    Encontrou uma informação errada, desatualizada ou sem fonte adequada em uma proposta ou em um
+    indicador? Envie a correção por este formulário. Toda correção precisa vir acompanhada da fonte
+    que a comprova.
+  </p>
+
+  <div class="mt-8 grid gap-6 lg:grid-cols-3">
+    <section class="rounded-lg border border-slate-200 bg-white p-5 lg:col-span-2">
+      {
+        isFormularioConfigurado ? (
+          <form id="form-correcao" action={WEB3FORMS_URL} method="POST" class="space-y-4">
+            <input type="hidden" name="access_key" value={web3formsAccessKey} />
+            <input type="hidden" name="subject" value="Correção de dado - Radar de Propostas" />
+            <input type="hidden" name="from_name" value="Radar de Propostas" />
+            {/* Campo invisível contra robôs (honeypot do Web3Forms). */}
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off" />
+
+            <div>
+              <label for="item" class="block text-sm font-semibold text-slate-700">
+                Qual dado está errado?
+              </label>
+              <select
+                id="item"
+                name="item"
+                required
+                class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm"
+              >
+                <option value="">Selecione a proposta ou o indicador</option>
+                {grupos.map((grupo) => (
+                  <optgroup label={grupo.rotulo}>
+                    {grupo.itens.map((item) => (
+                      <option value={`${item.id} | ${item.nome}`} data-id={item.id}>
+                        {item.nome}
+                      </option>
+                    ))}
+                  </optgroup>
+                ))}
+                <option value="outro | Outro (descrito abaixo)" data-id="outro">
+                  Outro (descreva abaixo)
+                </option>
+              </select>
+            </div>
+
+            <div>
+              <label for="erro" class="block text-sm font-semibold text-slate-700">
+                O que está errado?
+              </label>
+              <textarea
+                id="erro"
+                name="erro"
+                required
+                rows="4"
+                maxlength="3000"
+                placeholder="Copie o trecho ou o valor que está errado e explique o problema."
+                class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+              />
+            </div>
+
+            <div>
+              <label for="correcao" class="block text-sm font-semibold text-slate-700">
+                Qual é a informação correta?
+              </label>
+              <textarea
+                id="correcao"
+                name="correcao"
+                required
+                rows="4"
+                maxlength="3000"
+                class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+              />
+            </div>
+
+            <div>
+              <label for="fonte" class="block text-sm font-semibold text-slate-700">
+                Link da fonte <span class="font-normal text-red-700">(obrigatório)</span>
+              </label>
+              <input
+                id="fonte"
+                name="fonte"
+                type="url"
+                required
+                pattern="https?://.+"
+                maxlength="1000"
+                placeholder="https://"
+                title="Informe o endereço completo da fonte, começando com http:// ou https://"
+                class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+              />
+              <p class="mt-1 text-xs text-slate-500">
+                Link direto para o documento, a lei, a base de dados ou a reportagem que comprova a
+                informação correta.
+              </p>
+            </div>
+
+            <div>
+              <label for="fonte_2" class="block text-sm font-semibold text-slate-700">
+                Outra fonte <span class="font-normal text-slate-500">(opcional)</span>
+              </label>
+              <input
+                id="fonte_2"
+                name="fonte_2"
+                type="url"
+                pattern="https?://.+"
+                maxlength="1000"
+                placeholder="https://"
+                class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+              />
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="nome" class="block text-sm font-semibold text-slate-700">
+                  Nome <span class="font-normal text-slate-500">(opcional)</span>
+                </label>
+                <input
+                  id="nome"
+                  name="name"
+                  type="text"
+                  maxlength="120"
+                  autocomplete="name"
+                  class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-semibold text-slate-700">
+                  E-mail <span class="font-normal text-slate-500">(opcional)</span>
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  maxlength="200"
+                  autocomplete="email"
+                  class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                />
+              </div>
+            </div>
+            <p class="text-xs text-slate-500">
+              Informe um e-mail se quiser ser avisado ou se aceitar ser contatado para esclarecer a
+              fonte. Os dados deste formulário são enviados por e-mail por meio do serviço Web3Forms e
+              usados apenas para analisar a correção.
+            </p>
+
+            <button
+              type="submit"
+              class="rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700 disabled:opacity-60"
+            >
+              Enviar correção
+            </button>
+            <p id="form-correcao-status" class="text-sm" aria-live="polite" />
+          </form>
+        ) : (
+          <div class="rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-500">
+            Formulário de correção ainda não configurado.
+          </div>
+        )
+      }
+    </section>
+
+    <aside class="h-fit rounded-lg border border-slate-200 bg-white p-5 text-sm text-slate-700">
+      <h2 class="text-base font-semibold text-slate-900">Que fontes são aceitas</h2>
+      <p class="mt-2">
+        Dê preferência a fontes primárias: Diário Oficial e Planalto, Câmara e Senado, tribunais,
+        IBGE, Banco Central, INPE, IPEA, TCU e demais órgãos oficiais. Reportagens de veículos
+        jornalísticos também são aceitas.
+      </p>
+      <p class="mt-2">
+        Sites de partidos, sindicatos e campanhas, blogs de opinião e postagens em redes sociais não
+        servem como comprovação.
+      </p>
+      <h2 class="mt-5 text-base font-semibold text-slate-900">O que acontece depois</h2>
+      <p class="mt-2">
+        Cada correção é conferida na fonte indicada e avaliada pelos mesmos critérios da{' '}
+        <a href={withBase('/metodologia')} class="underline">metodologia</a>, qualquer que seja o
+        mandato. Se procedente, o dado é ajustado e a fonte passa a constar nas evidências.
+      </p>
+    </aside>
+  </div>
+</Layout>
+
+<script>
+  import { ativarEnvioWeb3Forms } from '../scripts/web3forms';
+
+  // Links "Reportar erro" das páginas de proposta e indicador chegam com ?item=<id>.
+  const select = document.getElementById('item') as HTMLSelectElement | null;
+  const itemInicial = new URLSearchParams(window.location.search).get('item');
+  if (select && itemInicial) {
+    const opcao = Array.from(select.options).find((o) => o.dataset.id === itemInicial);
+    if (opcao) opcao.selected = true;
+  }
+
+  ativarEnvioWeb3Forms('form-correcao', 'form-correcao-status', {
+    mensagemSucesso: 'Correção enviada. Obrigado por ajudar a manter os dados corretos!',
+    prepararDados: (dados) => {
+      dados.subject = `Correção de dado: ${dados.item} - Radar de Propostas`;
+    },
+  });
+</script>

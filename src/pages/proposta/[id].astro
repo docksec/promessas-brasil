@@ -86,4 +86,12 @@ const eixo = getEixo(proposta.eixo);
       )
     }
   </section>
+
+  <p class="mt-10 text-sm text-slate-500">
+    Encontrou um erro nesta proposta?{' '}
+    <a href={withBase(`/correcao?item=${proposta.id}`)} class="underline hover:text-slate-700">
+      Reportar erro com a fonte
+    </a>
+    .
+  </p>
 </Layout>

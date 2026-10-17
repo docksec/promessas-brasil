@@ -1,4 +1,5 @@
 import doacaoData from '../data/doacao.json';
+import { isPreenchido } from './config';
 
 export interface ConfigPix {
   chave: string;
@@ -12,16 +13,9 @@ export interface ConfigPix {
 
 export interface ConfigDoacao {
   pix: ConfigPix;
-  web3forms_access_key: string;
 }
 
 export const doacao = doacaoData as ConfigDoacao;
-
-const PENDENTE = 'PENDENTE';
-
-export function isPreenchido(valor: string): boolean {
-  return valor.trim() !== '' && valor.trim() !== PENDENTE;
-}
 
 export function isPixConfigurado(pix: ConfigPix): boolean {
   return isPreenchido(pix.chave) && isPreenchido(pix.nome_recebedor) && isPreenchido(pix.cidade);
