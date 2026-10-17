@@ -94,6 +94,21 @@ substituídos por números reais, com a fonte oficial preenchida no campo `fonte
 o valor for `"PLACEHOLDER"`, o card de indicador exibe um aviso de "dado ainda não
 preenchido" em vez de calcular uma variação.
 
+### Página de doação (`/doacao`)
+
+A página de doação lê `src/data/doacao.json`. Enquanto um campo estiver como `"PENDENTE"`,
+o bloco correspondente aparece como "ainda não configurado".
+
+- **`pix`** — `chave`, `nome_recebedor` e `cidade` do recebedor, exibidos na página.
+  `copia_e_cola` é o código emitido pelo banco: quando preenchido, é usado sem alteração (o
+  build falha se o CRC estiver inválido); se vazio, `src/lib/pix.ts` gera um BR Code estático,
+  sem valor definido, a partir da chave. O QR Code é gerado no build a partir desse código.
+  `link_pagamento` (opcional) é a página de cobrança do banco, mostrada como alternativa.
+- **`web3forms_access_key`** — chave de acesso do [Web3Forms](https://web3forms.com), gerada
+  com o e-mail que deve receber as solicitações de melhoria. O site é estático, então o envio
+  do formulário é feito por esse serviço. A chave é pública por design (só permite enviar
+  para o e-mail cadastrado nela).
+
 ## Metodologia
 
 A página `/metodologia` descreve os critérios de cada status, as fontes usadas, a
