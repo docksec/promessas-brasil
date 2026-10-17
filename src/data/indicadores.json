@@ -74,8 +74,8 @@
     "presidente_id": "lula-2023",
     "nome": "Produtividade do trabalho (por hora trabalhada)",
     "unidade": "R$ por hora (de 2021)",
-    "valor_inicio_mandato": "41,36",
-    "valor_fim_mandato": "42,54",
+    "valor_inicio_mandato": "41,360",
+    "valor_fim_mandato": "42,538",
     "fonte": "FGV IBRE/Observatório da Produtividade Regis Bonelli, indicador anual (anos de 2022 e 2025, último ano completo) - https://ibre.fgv.br/observatorio-produtividade/temas/indicador-anual-de-produtividade-do-trabalho-agregada-desde-1981",
     "categoria": "produtividade"
   },
@@ -184,8 +184,8 @@
     "presidente_id": "bolsonaro-2019",
     "nome": "Produtividade do trabalho (por hora trabalhada)",
     "unidade": "R$ por hora (de 2021)",
-    "valor_inicio_mandato": "42,22",
-    "valor_fim_mandato": "41,36",
+    "valor_inicio_mandato": "42,221",
+    "valor_fim_mandato": "41,360",
     "fonte": "FGV IBRE/Observatório da Produtividade Regis Bonelli, indicador anual (anos de 2018 e 2022) - https://ibre.fgv.br/observatorio-produtividade/temas/indicador-anual-de-produtividade-do-trabalho-agregada-desde-1981",
     "categoria": "produtividade"
   },
