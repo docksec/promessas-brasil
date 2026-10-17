@@ -55,7 +55,7 @@ export interface Eixo {
   cor: string;
 }
 
-export type TipoValorIndicador = 'inicio_fim' | 'total_mandato';
+export type TipoValorIndicador = 'inicio_fim' | 'total_mandato' | 'media_anual';
 
 export interface Indicador {
   id: string;
@@ -66,6 +66,7 @@ export interface Indicador {
   valor_inicio_mandato?: string;
   valor_fim_mandato?: string;
   valor_total_mandato?: string;
+  valor_media_anual?: string;
   fonte: string;
   categoria: string;
 }

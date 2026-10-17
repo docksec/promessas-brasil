@@ -19,6 +19,9 @@ function formatarValorIndicador(indicador?: Indicador): string {
   if (indicador.tipo_valor === 'total_mandato') {
     return `${indicador.valor_total_mandato} ${indicador.unidade}`;
   }
+  if (indicador.tipo_valor === 'media_anual') {
+    return `${indicador.valor_media_anual} ${indicador.unidade} (média)`;
+  }
   return `${indicador.valor_inicio_mandato} → ${indicador.valor_fim_mandato} ${indicador.unidade}`;
 }
 

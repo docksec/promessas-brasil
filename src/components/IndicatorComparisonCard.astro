@@ -12,13 +12,17 @@ interface Props {
 }
 
 const { indicador, aumentoEBom = true, mandatoEmAndamento = false } = Astro.props;
-const ehTotalMandato = indicador.tipo_valor === 'total_mandato';
+// Indicadores de valor único (total ou média anual no mandato) não têm início/fim nem variação.
+const ehValorUnico = indicador.tipo_valor === 'total_mandato' || indicador.tipo_valor === 'media_anual';
+const valorUnico =
+  indicador.tipo_valor === 'media_anual' ? indicador.valor_media_anual : indicador.valor_total_mandato;
+const labelValorUnico = indicador.tipo_valor === 'media_anual' ? 'Média anual no mandato' : 'Total no mandato';
 
-const variacao = ehTotalMandato
+const variacao = ehValorUnico
   ? null
   : calcularVariacao(indicador.valor_inicio_mandato ?? '', indicador.valor_fim_mandato ?? '');
-const temDados = ehTotalMandato
-  ? isValorNumerico(indicador.valor_total_mandato ?? '')
+const temDados = ehValorUnico
+  ? isValorNumerico(valorUnico ?? '')
   : isValorNumerico(indicador.valor_inicio_mandato ?? '') &&
     isValorNumerico(indicador.valor_fim_mandato ?? '');
 
@@ -44,11 +48,11 @@ const tendenciaStyles = {
   <p class="text-xs text-slate-500">Fonte: {indicador.fonte}</p>
 
   {
-    ehTotalMandato ? (
+    ehValorUnico ? (
       <div class="mt-3">
-        <span class="block text-xs uppercase tracking-wide text-slate-400">Total no mandato</span>
+        <span class="block text-xs uppercase tracking-wide text-slate-400">{labelValorUnico}</span>
         <span class="text-lg font-bold text-slate-900">
-          {indicador.valor_total_mandato}{temDados ? ` ${indicador.unidade}` : ''}
+          {valorUnico}{temDados ? ` ${indicador.unidade}` : ''}
         </span>
       </div>
     ) : (
