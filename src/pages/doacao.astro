@@ -20,14 +20,14 @@ const qrSvg = pixConfigurado
   title="Apoie o projeto"
   description="Apoie o Radar de Propostas com uma doação via Pix e solicite uma melhoria para o site."
 >
-  <h1 class="text-2xl font-bold text-slate-900">Apoie o projeto</h1>
-  <p class="mt-2 max-w-3xl text-slate-600">
+  <h1 class="text-3xl font-extrabold tracking-tight text-texto">Apoie o projeto</h1>
+  <p class="mt-2 max-w-3xl text-texto-2">
     O Radar de Propostas é mantido de forma independente. Se o projeto é útil para você, considere
     fazer uma doação via Pix, de qualquer valor. Quem doa pode solicitar uma melhoria para o site
     pelo formulário abaixo.
   </p>
 
-  <div class="mt-6 max-w-3xl rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+  <div class="mt-6 max-w-3xl rounded-2xl border border-aviso-linha bg-aviso-bg p-4 text-sm text-aviso-texto">
     <span class="font-semibold">Neutralidade:</span> doações não influenciam a avaliação de nenhuma
     proposta. Solicitações de melhoria tratam do site (funcionalidades, correções, novos dados), e o
     status de cada proposta continua sendo definido exclusivamente pelos critérios da{' '}
@@ -35,24 +35,24 @@ const qrSvg = pixConfigurado
   </div>
 
   <div class="mt-8 grid gap-6 lg:grid-cols-2">
-    <section class="rounded-lg border border-slate-200 bg-white p-5">
-      <h2 class="text-lg font-semibold text-slate-900">1. Faça sua doação via Pix</h2>
+    <section class="rounded-2xl border border-linha bg-superficie shadow-cartao p-5">
+      <h2 class="text-lg font-semibold text-texto">1. Faça sua doação via Pix</h2>
 
       {
         pixConfigurado ? (
           <div class="mt-4">
             <div
-              class="mx-auto w-56 max-w-full rounded-md border border-slate-200 bg-white p-2"
+              class="qr-code mx-auto w-56 max-w-full rounded-lg border border-linha bg-white p-2"
               role="img"
               aria-label="QR Code para doação via Pix"
               set:html={qrSvg}
             />
-            <p class="mt-3 text-center text-xs text-slate-500">
+            <p class="mt-3 text-center text-xs text-suave">
               Abra o app do seu banco, escolha pagar com Pix e leia o QR Code. O valor é você quem
               define.
             </p>
 
-            <dl class="mt-5 space-y-2 text-sm text-slate-700">
+            <dl class="mt-5 space-y-2 text-sm text-texto-2">
               <div>
                 <dt class="font-semibold">Recebedor</dt>
                 <dd>{doacao.pix.nome_recebedor}</dd>
@@ -63,7 +63,7 @@ const qrSvg = pixConfigurado
               </div>
             </dl>
 
-            <label for="pix-copia-e-cola" class="mt-5 block text-sm font-semibold text-slate-700">
+            <label for="pix-copia-e-cola" class="mt-5 block text-sm font-semibold text-texto-2">
               Pix copia e cola
             </label>
             <div class="mt-1 flex flex-col gap-2 sm:flex-row">
@@ -72,22 +72,22 @@ const qrSvg = pixConfigurado
                 type="text"
                 readonly
                 value={pixCopiaECola}
-                class="min-w-0 flex-1 rounded-md border border-slate-300 bg-slate-50 px-3 py-2 font-mono text-xs text-slate-700"
+                class="min-w-0 flex-1 rounded-lg border border-campo bg-sutil px-3 py-2 font-mono text-xs text-texto-2"
               />
               <button
                 type="button"
                 id="copiar-pix"
-                class="rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
+                class="rounded-full bg-primario px-4 py-2 text-sm font-medium text-sobre-primario hover:bg-primario-hover"
               >
                 Copiar
               </button>
             </div>
-            <p id="copiar-pix-status" class="mt-1 h-4 text-xs text-green-700" aria-live="polite" />
+            <p id="copiar-pix-status" class="mt-1 h-4 text-xs text-sucesso" aria-live="polite" />
 
             {linkPagamento && (
-              <p class="mt-4 text-sm text-slate-700">
+              <p class="mt-4 text-sm text-texto-2">
                 Prefere outra opção?{' '}
-                <a href={linkPagamento} target="_blank" rel="noopener noreferrer" class="underline hover:text-slate-900">
+                <a href={linkPagamento} target="_blank" rel="noopener noreferrer" class="underline hover:text-texto">
                   Abrir a página de pagamento do banco
                 </a>
                 .
@@ -95,16 +95,16 @@ const qrSvg = pixConfigurado
             )}
           </div>
         ) : (
-          <div class="mt-4 rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-500">
+          <div class="mt-4 rounded-lg bg-sutil px-3 py-2 text-sm text-suave">
             Dados do Pix ainda não configurados.
           </div>
         )
       }
     </section>
 
-    <section class="rounded-lg border border-slate-200 bg-white p-5">
-      <h2 class="text-lg font-semibold text-slate-900">2. Solicite uma melhoria</h2>
-      <p class="mt-2 text-sm text-slate-600">
+    <section class="rounded-2xl border border-linha bg-superficie shadow-cartao p-5">
+      <h2 class="text-lg font-semibold text-texto">2. Solicite uma melhoria</h2>
+      <p class="mt-2 text-sm text-texto-2">
         Depois de doar, descreva a melhoria que você gostaria de ver no site. A solicitação é enviada
         por e-mail para a equipe do projeto, que pode responder no endereço que você informar.
       </p>
@@ -119,7 +119,7 @@ const qrSvg = pixConfigurado
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off" />
 
             <div>
-              <label for="nome" class="block text-sm font-semibold text-slate-700">Nome</label>
+              <label for="nome" class="block text-sm font-semibold text-texto-2">Nome</label>
               <input
                 id="nome"
                 name="name"
@@ -127,12 +127,12 @@ const qrSvg = pixConfigurado
                 required
                 maxlength="120"
                 autocomplete="name"
-                class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                class="mt-1 w-full rounded-lg border border-campo px-3 py-2 text-sm"
               />
             </div>
 
             <div>
-              <label for="email" class="block text-sm font-semibold text-slate-700">Seu e-mail</label>
+              <label for="email" class="block text-sm font-semibold text-texto-2">Seu e-mail</label>
               <input
                 id="email"
                 name="email"
@@ -140,12 +140,12 @@ const qrSvg = pixConfigurado
                 required
                 maxlength="200"
                 autocomplete="email"
-                class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                class="mt-1 w-full rounded-lg border border-campo px-3 py-2 text-sm"
               />
             </div>
 
             <div>
-              <label for="solicitacao" class="block text-sm font-semibold text-slate-700">
+              <label for="solicitacao" class="block text-sm font-semibold text-texto-2">
                 Melhoria solicitada
               </label>
               <textarea
@@ -154,25 +154,25 @@ const qrSvg = pixConfigurado
                 required
                 rows="6"
                 maxlength="5000"
-                class="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+                class="mt-1 w-full rounded-lg border border-campo px-3 py-2 text-sm"
               />
             </div>
 
-            <p class="text-xs text-slate-500">
+            <p class="text-xs text-suave">
               Os dados deste formulário são enviados por e-mail por meio do serviço Web3Forms e usados
               apenas para analisar e responder à sua solicitação.
             </p>
 
             <button
               type="submit"
-              class="rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700 disabled:opacity-60"
+              class="rounded-full bg-primario px-4 py-2 text-sm font-medium text-sobre-primario hover:bg-primario-hover disabled:opacity-60"
             >
               Enviar solicitação
             </button>
             <p id="form-melhoria-status" class="text-sm" aria-live="polite" />
           </form>
         ) : (
-          <div class="mt-4 rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-500">
+          <div class="mt-4 rounded-lg bg-sutil px-3 py-2 text-sm text-suave">
             Formulário de solicitação ainda não configurado.
           </div>
         )

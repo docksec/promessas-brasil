@@ -4,15 +4,15 @@ import { withBase } from '../lib/paths';
 ---
 
 <Layout title="Metodologia">
-  <h1 class="text-2xl font-bold text-slate-900">Metodologia</h1>
-  <p class="mt-2 text-slate-600">
+  <h1 class="text-3xl font-extrabold tracking-tight text-texto">Metodologia</h1>
+  <p class="mt-2 text-texto-2">
     Esta página descreve como classificamos o cumprimento de propostas e
     de onde vêm os dados exibidos no site.
   </p>
 
-  <section class="mt-8 rounded-lg border border-slate-200 bg-white p-5">
-    <h2 class="text-lg font-semibold text-slate-900">Como definimos os status</h2>
-    <dl class="mt-4 space-y-3 text-sm text-slate-700">
+  <section class="mt-8 rounded-2xl border border-linha bg-superficie shadow-cartao p-5">
+    <h2 class="text-lg font-semibold text-texto">Como definimos os status</h2>
+    <dl class="mt-4 space-y-3 text-sm text-texto-2">
       <div>
         <dt class="font-semibold">Cumprido</dt>
         <dd>A proposta foi implementada e está em vigor ou em execução comprovada — não apenas anunciada. Para propostas legislativas, exige lei aprovada, sancionada e regulamentada quando aplicável. Para propostas executivas, exige decreto/programa publicado com execução orçamentária ou operacional verificável. Para metas numéricas, exige que o valor declarado tenha sido atingido segundo dados oficiais. Uma proposta cumprida tem sempre 100%; se houver ressalva relevante, ela é classificada como parcialmente cumprida.</dd>
@@ -34,28 +34,28 @@ import { withBase } from '../lib/paths';
         <dd>Nenhuma ação concreta e verificável (projeto de lei, decreto, orçamento destinado) foi identificada até a data da última avaliação.</dd>
       </div>
     </dl>
-    <p class="mt-4 text-xs text-slate-500">Cada status é atribuído com base em fontes oficiais (Diário Oficial, portal do Congresso, dados de institutos como IBGE e Banco Central) e reavaliado periodicamente. Quando o cumprimento de uma proposta depende também do Congresso Nacional e não apenas do Poder Executivo, isso é indicado separadamente.</p>
+    <p class="mt-4 text-xs text-suave">Cada status é atribuído com base em fontes oficiais (Diário Oficial, portal do Congresso, dados de institutos como IBGE e Banco Central) e reavaliado periodicamente. Quando o cumprimento de uma proposta depende também do Congresso Nacional e não apenas do Poder Executivo, isso é indicado separadamente.</p>
   </section>
 
-  <section class="mt-8 rounded-lg border border-slate-200 bg-white p-5">
-    <h2 class="text-lg font-semibold text-slate-900">Fontes de dados</h2>
+  <section class="mt-8 rounded-2xl border border-linha bg-superficie shadow-cartao p-5">
+    <h2 class="text-lg font-semibold text-texto">Fontes de dados</h2>
 
     <div class="mt-4">
-      <h3 class="text-sm font-semibold text-slate-900">Propostas de campanha</h3>
-      <p class="mt-1 text-sm text-slate-700">
+      <h3 class="text-sm font-semibold text-texto">Propostas de campanha</h3>
+      <p class="mt-1 text-sm text-texto-2">
         O texto original de cada proposta é extraído dos planos de governo oficiais,
         registrados no Tribunal Superior Eleitoral (TSE):
       </p>
-      <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700">
+      <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-texto-2">
         <li>
           Jair Bolsonaro (2018) —
-          <a href={withBase('/propostas-tse/bolsonaro.pdf')} class="underline hover:text-slate-900">
+          <a href={withBase('/propostas-tse/bolsonaro.pdf')} class="underline hover:text-texto">
             "O Caminho da Prosperidade"
           </a>
         </li>
         <li>
           Lula/Alckmin (2022) —
-          <a href={withBase('/propostas-tse/lula.pdf')} class="underline hover:text-slate-900">
+          <a href={withBase('/propostas-tse/lula.pdf')} class="underline hover:text-texto">
             "Diretrizes para o Programa de Reconstrução e Transformação do Brasil"
           </a>
         </li>
@@ -63,8 +63,8 @@ import { withBase } from '../lib/paths';
     </div>
 
     <div class="mt-5">
-      <h3 class="text-sm font-semibold text-slate-900">Indicadores socioeconômicos</h3>
-      <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700">
+      <h3 class="text-sm font-semibold text-texto">Indicadores socioeconômicos</h3>
+      <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-texto-2">
         <li>
           <span class="font-medium">IBGE</span> — Desemprego (PNAD Contínua), inflação (IPCA) e
           PIB (Contas Nacionais Trimestrais)
@@ -82,7 +82,7 @@ import { withBase } from '../lib/paths';
           Amazônia (PRODES e DETER)
         </li>
       </ul>
-      <p class="mt-3 text-sm text-slate-700">
+      <p class="mt-3 text-sm text-texto-2">
         O valor de início de cada indicador é o último dado disponível antes da posse (a situação
         herdada): dezembro do ano anterior para dados mensais e o ano anterior para dados anuais. O
         valor final é o último dado do mandato ou, em mandatos em andamento, o mais recente
@@ -92,8 +92,8 @@ import { withBase } from '../lib/paths';
     </div>
 
     <div class="mt-5">
-      <h3 class="text-sm font-semibold text-slate-900">Evidências de cumprimento</h3>
-      <p class="mt-1 text-sm text-slate-700">
+      <h3 class="text-sm font-semibold text-texto">Evidências de cumprimento</h3>
+      <p class="mt-1 text-sm text-texto-2">
         A avaliação de status de cada proposta é embasada em fontes oficiais (Diário Oficial,
         Planalto, Congresso Nacional, Senado Federal, STF, BNDES) e em agências de checagem e
         veículos de jornalismo (Agência Lupa, Poder360, Congresso em Foco, CNN Brasil, entre
@@ -102,17 +102,17 @@ import { withBase } from '../lib/paths';
     </div>
   </section>
 
-  <section class="mt-8 rounded-lg border border-slate-200 bg-white p-5">
-    <h2 class="text-lg font-semibold text-slate-900">Neutralidade e limitações</h2>
-    <p class="mt-2 text-sm text-slate-700">
+  <section class="mt-8 rounded-2xl border border-linha bg-superficie shadow-cartao p-5">
+    <h2 class="text-lg font-semibold text-texto">Neutralidade e limitações</h2>
+    <p class="mt-2 text-sm text-texto-2">
       Este projeto não tem vínculo com partidos, candidatos ou campanhas. O objetivo é único: dar
       clareza ao eleitor sobre o que foi prometido, o que foi entregue e o que não foi entregue,
       com base em fontes oficiais.
     </p>
-    <p class="mt-3 text-sm text-slate-700">
+    <p class="mt-3 text-sm text-texto-2">
       Reconhecemos algumas limitações metodológicas:
     </p>
-    <ul class="mt-2 list-disc space-y-2 pl-5 text-sm text-slate-700">
+    <ul class="mt-2 list-disc space-y-2 pl-5 text-sm text-texto-2">
       <li>
         <span class="font-semibold">Propostas genéricas.</span> Algumas propostas de campanha são
         formuladas de maneira ampla ou sem metas mensuráveis (ex: "fortalecer a educação"), o que
@@ -134,19 +134,19 @@ import { withBase } from '../lib/paths';
     </ul>
   </section>
 
-  <section class="mt-8 rounded-lg border border-slate-200 bg-white p-5">
-    <h2 class="text-lg font-semibold text-slate-900">Frequência de atualização</h2>
-    <p class="mt-2 text-sm text-slate-700">
+  <section class="mt-8 rounded-2xl border border-linha bg-superficie shadow-cartao p-5">
+    <h2 class="text-lg font-semibold text-texto">Frequência de atualização</h2>
+    <p class="mt-2 text-sm text-texto-2">
       Os dados são revisados periodicamente, sem calendário fixo. Cada proposta mostra a data
       da sua última atualização, e cada indicador informa o período a que o valor se refere.
     </p>
   </section>
 
-  <section class="mt-8 rounded-lg border border-slate-200 bg-white p-5">
-    <h2 class="text-lg font-semibold text-slate-900">Correções</h2>
-    <p class="mt-2 text-sm text-slate-700">
+  <section class="mt-8 rounded-2xl border border-linha bg-superficie shadow-cartao p-5">
+    <h2 class="text-lg font-semibold text-texto">Correções</h2>
+    <p class="mt-2 text-sm text-texto-2">
       Qualquer pessoa pode apontar um dado errado pela página{' '}
-      <a href={withBase('/correcao')} class="underline hover:text-slate-900">Reportar erro</a>,
+      <a href={withBase('/correcao')} class="underline hover:text-texto">Reportar erro</a>,
       informando obrigatoriamente a fonte que comprova a correção. Cada pedido é conferido na fonte
       e avaliado pelos mesmos critérios desta metodologia, qualquer que seja o mandato.
     </p>

@@ -46,15 +46,15 @@ const rotuloColunaA = isMandatoEmAndamento(presidenteA) ? 'início → atual' : 
 const rotuloColunaB = isMandatoEmAndamento(presidenteB) ? 'início → atual' : 'início → fim';
 ---
 
-<div class="overflow-x-auto rounded-lg border border-slate-200 bg-white">
+<div class="overflow-x-auto rounded-2xl border border-linha bg-superficie shadow-cartao">
   <table class="w-full min-w-[640px] text-sm">
     <thead>
-      <tr class="border-b border-slate-200 bg-slate-50 text-left">
-        <th class="px-4 py-3 font-semibold text-slate-600">Indicador</th>
-        <th class="px-4 py-3 font-semibold text-slate-600">
+      <tr class="border-b border-linha bg-sutil text-left">
+        <th class="px-4 py-3 font-semibold text-texto-2">Indicador</th>
+        <th class="px-4 py-3 font-semibold text-texto-2">
           {presidenteA?.nome} ({rotuloColunaA})
         </th>
-        <th class="px-4 py-3 font-semibold text-slate-600">
+        <th class="px-4 py-3 font-semibold text-texto-2">
           {presidenteB?.nome} ({rotuloColunaB})
         </th>
       </tr>
@@ -65,12 +65,12 @@ const rotuloColunaB = isMandatoEmAndamento(presidenteB) ? 'início → atual' : 
           const indA = indicadoresA.find((i) => getChaveLinha(i) === chave);
           const indB = indicadoresB.find((i) => getChaveLinha(i) === chave);
           return (
-            <tr class="border-b border-slate-100 last:border-0">
-              <td class="px-4 py-3 font-medium text-slate-900">
+            <tr class="border-b border-linha last:border-0">
+              <td class="px-4 py-3 font-medium text-texto">
                 {indA?.nome ?? indB?.nome ?? chave}
               </td>
-              <td class="px-4 py-3 text-slate-700">{formatarValorIndicador(indA)}</td>
-              <td class="px-4 py-3 text-slate-700">{formatarValorIndicador(indB)}</td>
+              <td class="px-4 py-3 text-texto-2">{formatarValorIndicador(indA)}</td>
+              <td class="px-4 py-3 text-texto-2">{formatarValorIndicador(indB)}</td>
             </tr>
           );
         })
