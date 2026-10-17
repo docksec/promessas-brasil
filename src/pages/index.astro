@@ -6,10 +6,10 @@ import { withBase } from '../lib/paths';
 
 <Layout title="Início">
   <section class="mx-auto max-w-3xl text-center">
-    <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+    <h1 class="text-4xl font-extrabold tracking-tight text-texto sm:text-5xl">
       Radar de Propostas
     </h1>
-    <p class="mt-4 text-lg text-slate-600">
+    <p class="mt-4 text-lg text-texto-2">
       Um acompanhamento independente e não-partidário das propostas de campanha dos
       presidentes do Brasil: o que foi prometido, o que foi cumprido, e como o país
       mudou do início ao fim de cada mandato.
@@ -17,7 +17,7 @@ import { withBase } from '../lib/paths';
   </section>
 
   <section class="mt-12">
-    <h2 class="text-xl font-semibold text-slate-900">Escolha um mandato para explorar</h2>
+    <h2 class="text-xl font-semibold text-texto">Escolha um mandato para explorar</h2>
     <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
       {
         presidentes.map((presidente) => {
@@ -26,24 +26,24 @@ import { withBase } from '../lib/paths';
           return (
             <a
               href={withBase(`/presidente/${presidente.id}`)}
-              class="flex items-center gap-4 rounded-lg border border-slate-200 bg-white p-5 transition hover:border-slate-300 hover:shadow-sm"
+              class="flex items-center gap-4 rounded-2xl border border-linha bg-superficie p-5 transition hover:border-campo hover:shadow-cartao-hover"
             >
               <img
                 src={withBase(presidente.foto)}
                 alt=""
-                class="h-16 w-16 flex-shrink-0 rounded-full bg-slate-100 object-cover"
+                class="h-16 w-16 flex-shrink-0 rounded-full bg-trilho object-cover"
               />
               <div>
-                <h3 class="text-lg font-semibold text-slate-900">{presidente.nome}</h3>
-                <p class="text-sm text-slate-500">
+                <h3 class="text-lg font-semibold text-texto">{presidente.nome}</h3>
+                <p class="text-sm text-suave">
                   {presidente.mandato_inicio.slice(0, 4)}–
                   {isMandatoEmAndamento(presidente) ? 'atual' : presidente.mandato_fim.slice(0, 4)} ·{' '}
                   {presidente.partido_coligacao}
                 </p>
-                <p class="mt-1 text-sm text-slate-600">
+                <p class="mt-1 text-sm text-texto-2">
                   {cumpridas} de {propostasDoMandato.length} propostas cumpridas
                   {isMandatoEmAndamento(presidente) && (
-                    <span class="ml-1 text-xs font-medium text-blue-700">(mandato em andamento)</span>
+                    <span class="ml-1 text-xs font-medium text-destaque">(mandato em andamento)</span>
                   )}
                 </p>
               </div>
@@ -57,20 +57,20 @@ import { withBase } from '../lib/paths';
   <section class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2">
     <a
       href={withBase('/comparar')}
-      class="rounded-lg border border-slate-200 bg-white p-5 transition hover:border-slate-300 hover:shadow-sm"
+      class="rounded-2xl border border-linha bg-superficie p-5 transition hover:border-campo hover:shadow-cartao-hover"
     >
-      <h3 class="text-lg font-semibold text-slate-900">Comparar mandatos</h3>
-      <p class="mt-1 text-sm text-slate-600">
+      <h3 class="text-lg font-semibold text-texto">Comparar mandatos</h3>
+      <p class="mt-1 text-sm text-texto-2">
         Veja lado a lado os mesmos indicadores e o percentual de cumprimento de
         propostas por eixo entre dois mandatos.
       </p>
     </a>
     <a
       href={withBase('/metodologia')}
-      class="rounded-lg border border-slate-200 bg-white p-5 transition hover:border-slate-300 hover:shadow-sm"
+      class="rounded-2xl border border-linha bg-superficie p-5 transition hover:border-campo hover:shadow-cartao-hover"
     >
-      <h3 class="text-lg font-semibold text-slate-900">Metodologia</h3>
-      <p class="mt-1 text-sm text-slate-600">
+      <h3 class="text-lg font-semibold text-texto">Metodologia</h3>
+      <p class="mt-1 text-sm text-texto-2">
         Entenda como classificamos o status de cada proposta e quais fontes usamos.
       </p>
     </a>

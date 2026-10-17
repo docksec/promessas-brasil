@@ -126,9 +126,9 @@ export const STATUS_LABELS: Record<StatusProposta, string> = {
 };
 
 export const STATUS_COLORS: Record<StatusProposta, { bg: string; text: string; dot: string }> = {
-  cumprido: { bg: 'bg-green-100', text: 'text-green-800', dot: 'bg-green-500' },
-  parcialmente_cumprido: { bg: 'bg-yellow-100', text: 'text-yellow-800', dot: 'bg-yellow-500' },
-  em_andamento: { bg: 'bg-blue-100', text: 'text-blue-800', dot: 'bg-blue-500' },
-  nao_cumprido: { bg: 'bg-red-100', text: 'text-red-800', dot: 'bg-red-500' },
-  nao_iniciado: { bg: 'bg-gray-100', text: 'text-gray-700', dot: 'bg-gray-400' },
+  cumprido: { bg: 'bg-cumprido-bg', text: 'text-cumprido-texto', dot: 'bg-cumprido-ponto' },
+  parcialmente_cumprido: { bg: 'bg-parcial-bg', text: 'text-parcial-texto', dot: 'bg-parcial-ponto' },
+  em_andamento: { bg: 'bg-andamento-bg', text: 'text-andamento-texto', dot: 'bg-andamento-ponto' },
+  nao_cumprido: { bg: 'bg-naocumprido-bg', text: 'text-naocumprido-texto', dot: 'bg-naocumprido-ponto' },
+  nao_iniciado: { bg: 'bg-naoiniciado-bg', text: 'text-naoiniciado-texto', dot: 'bg-naoiniciado-ponto' },
 };

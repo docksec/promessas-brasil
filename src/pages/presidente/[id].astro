@@ -51,31 +51,31 @@ const percentualGeral =
     <img
       src={withBase(presidente.foto)}
       alt=""
-      class="h-20 w-20 rounded-full bg-slate-100 object-cover"
+      class="h-20 w-20 rounded-full bg-trilho object-cover"
     />
     <div>
-      <h1 class="text-2xl font-bold text-slate-900">{presidente.nome}</h1>
-      <p class="text-sm text-slate-500">
+      <h1 class="text-3xl font-extrabold tracking-tight text-texto">{presidente.nome}</h1>
+      <p class="text-sm text-suave">
         {presidente.mandato_inicio} a {presidente.mandato_fim}
         {emAndamento && (
-          <span class="ml-1 inline-flex items-center gap-1 rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-800">
-            <span class="h-1.5 w-1.5 rounded-full bg-blue-500" /> Mandato em andamento
+          <span class="ml-1 inline-flex items-center gap-1 rounded-full bg-andamento-bg px-2 py-0.5 text-xs font-medium text-andamento-texto">
+            <span class="h-1.5 w-1.5 rounded-full bg-andamento-ponto" /> Mandato em andamento
           </span>
         )}
         {' '}· {presidente.partido_coligacao}
       </p>
     </div>
-    <div class="ml-auto rounded-lg bg-slate-100 px-4 py-2 text-center">
-      <span class="block text-2xl font-bold text-slate-900">{percentualGeral}%</span>
-      <span class="block text-xs text-slate-500">cumprimento médio ({cumpridas} cumpridas)</span>
+    <div class="ml-auto rounded-2xl bg-trilho px-4 py-2 text-center">
+      <span class="block text-3xl font-extrabold tracking-tight text-texto">{percentualGeral}%</span>
+      <span class="block text-xs text-suave">cumprimento médio ({cumpridas} cumpridas)</span>
     </div>
   </div>
 
   <section class="mt-10">
-    <h2 class="text-lg font-semibold text-slate-900">
+    <h2 class="text-lg font-semibold text-texto">
       Ponto de partida vs {emAndamento ? 'situação atual' : 'ponto de chegada'}
     </h2>
-    <p class="text-sm text-slate-500">
+    <p class="text-sm text-suave">
       Indicadores objetivos comparando início do mandato com{' '}
       {emAndamento ? 'o dado mais recente disponível (mandato ainda em curso)' : 'o fim do mandato'}.
     </p>
@@ -93,17 +93,17 @@ const percentualGeral =
   </section>
 
   <section class="mt-10">
-    <h2 class="text-lg font-semibold text-slate-900">
+    <h2 class="text-lg font-semibold text-texto">
       Linha do tempo do mandato{emAndamento ? ' (em andamento)' : ''}
     </h2>
-    <p class="text-sm text-slate-500">Últimas atualizações de status das propostas.</p>
+    <p class="text-sm text-suave">Últimas atualizações de status das propostas.</p>
     <div class="mt-4">
       <Timeline propostas={propostasDoMandato} />
     </div>
   </section>
 
   <section class="mt-10">
-    <h2 class="text-lg font-semibold text-slate-900">Propostas de campanha</h2>
+    <h2 class="text-lg font-semibold text-texto">Propostas de campanha</h2>
     <div class="mt-4">
       <FilterBar />
     </div>

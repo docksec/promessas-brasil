@@ -1,1 +1,125 @@
 @import "tailwindcss";
+@import "@fontsource-variable/figtree";
+
+/* O tema escuro é ativado por data-tema="escuro" no <html> (ver Layout.astro). */
+@custom-variant dark (&:where([data-tema="escuro"], [data-tema="escuro"] *));
+
+/*
+ * Cores por função, não por tom: os componentes usam bg-superficie, text-texto, border-linha etc.
+ * O tema claro define os valores aqui; o escuro só os redefine abaixo.
+ */
+@theme {
+  --font-sans: "Figtree Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --color-fundo: #f3f4f7;
+  --color-superficie: #ffffff;
+  --color-sutil: #f3f4f7;
+  --color-texto: #15171c;
+  --color-texto-2: #3b404c;
+  --color-suave: #565b6a;
+  --color-suave-2: #646a79;
+  --color-linha: #e4e6ec;
+  --color-campo: #c9cdd6;
+  --color-trilho: #ecedf2;
+  --color-ponto: #9aa0ae;
+  --color-primario: #15171c;
+  --color-primario-hover: #333743;
+  --color-sobre-primario: #ffffff;
+  --color-destaque: #3a3fb8;
+  --color-sucesso: #1f6b3a;
+  --color-erro: #a0281d;
+
+  --color-aviso-bg: #fff6e5;
+  --color-aviso-linha: #f2d49a;
+  --color-aviso-texto: #6e4500;
+
+  --color-melhora-bg: #e6f4ea;
+  --color-melhora-texto: #1f6b3a;
+  --color-piora-bg: #fce8e6;
+  --color-piora-texto: #a0281d;
+  --color-estavel-bg: #eef0f3;
+  --color-estavel-texto: #4a5060;
+
+  /* Status das propostas: azul e laranja para os mais frequentes (distinguíveis por daltônicos). */
+  --color-cumprido-bg: #e3f1fb;
+  --color-cumprido-texto: #0d5a8f;
+  --color-cumprido-ponto: #1f7cc2;
+  --color-parcial-bg: #fdefdd;
+  --color-parcial-texto: #8a4b00;
+  --color-parcial-ponto: #d0750a;
+  --color-andamento-bg: #eceafd;
+  --color-andamento-texto: #4b3ba8;
+  --color-andamento-ponto: #6e5dd6;
+  --color-naocumprido-bg: #fce8e6;
+  --color-naocumprido-texto: #a0281d;
+  --color-naocumprido-ponto: #d2402f;
+  --color-naoiniciado-bg: #eef0f3;
+  --color-naoiniciado-texto: #4a5060;
+  --color-naoiniciado-ponto: #8a90a0;
+
+  --shadow-cartao: 0 1px 2px rgb(20 22 30 / 0.06);
+  --shadow-cartao-hover: 0 4px 14px rgb(20 22 30 / 0.08);
+}
+
+:root {
+  color-scheme: light;
+}
+
+[data-tema="escuro"] {
+  color-scheme: dark;
+
+  --color-fundo: #0e1116;
+  --color-superficie: #161b22;
+  --color-sutil: #1c222b;
+  --color-texto: #e6eaf0;
+  --color-texto-2: #c3cad5;
+  --color-suave: #9aa4b2;
+  --color-suave-2: #8a95a5;
+  --color-linha: #262c36;
+  --color-campo: #3a424f;
+  --color-trilho: #262c36;
+  --color-ponto: #4a5363;
+  --color-primario: #5cc8e8;
+  --color-primario-hover: #8ad9ee;
+  --color-sobre-primario: #0e1116;
+  --color-destaque: #5cc8e8;
+  --color-sucesso: #7fd69b;
+  --color-erro: #ff9b8f;
+
+  --color-aviso-bg: #2b2110;
+  --color-aviso-linha: #5a4420;
+  --color-aviso-texto: #f5cf8e;
+
+  --color-melhora-bg: #16301f;
+  --color-melhora-texto: #7fd69b;
+  --color-piora-bg: #3d1a17;
+  --color-piora-texto: #ff9b8f;
+  --color-estavel-bg: #232a35;
+  --color-estavel-texto: #b4bcc8;
+
+  --color-cumprido-bg: #12304a;
+  --color-cumprido-texto: #8cc6ff;
+  --color-cumprido-ponto: #6cb4ff;
+  --color-parcial-bg: #3a2810;
+  --color-parcial-texto: #f5bd72;
+  --color-parcial-ponto: #f0a64a;
+  --color-andamento-bg: #2a2550;
+  --color-andamento-texto: #b9aeff;
+  --color-andamento-ponto: #a08fff;
+  --color-naocumprido-bg: #3d1a17;
+  --color-naocumprido-texto: #ff9b8f;
+  --color-naocumprido-ponto: #f2705f;
+  --color-naoiniciado-bg: #232a35;
+  --color-naoiniciado-texto: #b4bcc8;
+  --color-naoiniciado-ponto: #7d8796;
+
+  --shadow-cartao: none;
+  --shadow-cartao-hover: none;
+}
+
+/* O QR Code do Pix precisa de fundo claro para ser lido em qualquer tema. */
+.qr-code svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}

@@ -14,16 +14,16 @@ const ordenadas = [...propostas].sort(
 );
 ---
 
-<ol class="relative border-l border-slate-200 pl-6">
+<ol class="relative border-l border-linha pl-6">
   {
     ordenadas.map((proposta) => (
       <li class="mb-8 ml-2 last:mb-0">
-        <span class="absolute -left-[7px] mt-1.5 h-3 w-3 rounded-full border-2 border-white bg-slate-400" />
-        <time class="text-xs font-medium text-slate-400">
+        <span class="absolute -left-[7px] mt-1.5 h-3 w-3 rounded-full border-2 border-superficie bg-ponto" />
+        <time class="text-xs font-medium text-suave-2">
           {proposta.data_ultima_atualizacao}
         </time>
         <a href={withBase(`/proposta/${proposta.id}`)} class="mt-1 flex flex-wrap items-center gap-2">
-          <span class="font-medium text-slate-900 hover:underline">{proposta.titulo}</span>
+          <span class="font-medium text-texto hover:underline">{proposta.titulo}</span>
           <StatusBadge status={proposta.status} size="sm" />
         </a>
       </li>

@@ -18,7 +18,7 @@ export function ativarEnvioWeb3Forms(formId: string, statusId: string, opcoes: O
     evento.preventDefault();
     const botao = form.querySelector('button[type="submit"]') as HTMLButtonElement;
     botao.disabled = true;
-    status.className = 'text-sm text-slate-600';
+    status.className = 'text-sm text-texto-2';
     status.textContent = 'Enviando...';
 
     // Campos opcionais vazios (ex: e-mail) não são enviados.
@@ -37,10 +37,10 @@ export function ativarEnvioWeb3Forms(formId: string, statusId: string, opcoes: O
       const resultado = await resposta.json();
       if (!resposta.ok || !resultado.success) throw new Error(resultado.message);
       form.reset();
-      status.className = 'text-sm text-green-700';
+      status.className = 'text-sm text-sucesso';
       status.textContent = opcoes.mensagemSucesso;
     } catch {
-      status.className = 'text-sm text-red-700';
+      status.className = 'text-sm text-erro';
       status.textContent = 'Não foi possível enviar agora. Tente novamente em alguns minutos.';
     } finally {
       botao.disabled = false;
