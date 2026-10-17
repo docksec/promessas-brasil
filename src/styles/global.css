@@ -117,6 +117,20 @@
   --shadow-cartao-hover: none;
 }
 
+/*
+ * A lista de opções de um <select> é desenhada pelo navegador e, em alguns sistemas (ex: Windows),
+ * ignora o tema e usa fundo branco — com a cor de texto herdada do tema escuro, as opções ficavam
+ * brancas sobre branco. Fundo e texto explícitos resolvem nos dois temas.
+ */
+@layer base {
+  select,
+  option,
+  optgroup {
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+  }
+}
+
 /* O QR Code do Pix precisa de fundo claro para ser lido em qualquer tema. */
 .qr-code svg {
   display: block;
