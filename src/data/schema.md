@@ -83,7 +83,7 @@ Métricas objetivas comparando o início e o fim de cada mandato.
 | `valor_total_mandato`     | string | (`total_mandato`) Soma do indicador no mandato. Só é comparável entre mandatos de mesma duração. |
 | `valor_media_anual`       | string | (`media_anual`) Média anual do indicador no mandato, calculada apenas com anos completos. Preferível a `total_mandato` quando um dos mandatos está em andamento. |
 | `fonte`                   | string | Fonte oficial do dado (ex: IBGE, Banco Central, INPE), com o período de referência entre parênteses antes do link. |
-| `categoria`               | string | Categoria do indicador, usada para agrupar entre mandatos na página `/comparar`. Ex: `desemprego`, `inflacao`, `pib`, `divida_publica`, `salario_minimo`, `cambio`, `meio_ambiente`, `extrema_pobreza`, `homicidios`, `aprovacao_popular`. |
+| `categoria`               | string | Categoria do indicador, usada para agrupar entre mandatos na página `/comparar`. Ex: `desemprego`, `inflacao`, `pib`, `divida_publica`, `salario_minimo`, `salario_minimo_real`, `produtividade`, `cambio`, `meio_ambiente`, `extrema_pobreza`, `homicidios`, `aprovacao_popular`. |
 
 > Ao preencher `valor_inicio_mandato` e `valor_fim_mandato` com números reais, o
 > `IndicatorComparisonCard` calcula automaticamente a variação percentual e mostra

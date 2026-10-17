@@ -60,6 +60,26 @@
     "categoria": "salario_minimo"
   },
   {
+    "id": "indicador-lula-0010",
+    "presidente_id": "lula-2023",
+    "nome": "Salário mínimo real",
+    "unidade": "R$ (set/2026)",
+    "valor_inicio_mandato": "1.423,09",
+    "valor_fim_mandato": "1.621,00",
+    "fonte": "IPEA, série GAC12_SALMINRE12, deflacionada pelo INPC (dez/2022 e set/2026; valores em R$ de set/2026) - https://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO=%27GAC12_SALMINRE12%27)",
+    "categoria": "salario_minimo_real"
+  },
+  {
+    "id": "indicador-lula-0011",
+    "presidente_id": "lula-2023",
+    "nome": "Produtividade do trabalho (por hora trabalhada)",
+    "unidade": "R$ por hora (de 2021)",
+    "valor_inicio_mandato": "41,360",
+    "valor_fim_mandato": "42,538",
+    "fonte": "FGV IBRE/Observatório da Produtividade Regis Bonelli, indicador anual (anos de 2022 e 2025, último ano completo) - https://ibre.fgv.br/observatorio-produtividade/temas/indicador-anual-de-produtividade-do-trabalho-agregada-desde-1981",
+    "categoria": "produtividade"
+  },
+  {
     "id": "indicador-lula-0007",
     "presidente_id": "lula-2023",
     "nome": "Taxa de câmbio (R$/US$)",
@@ -148,6 +168,26 @@
     "valor_fim_mandato": "1.212,00",
     "fonte": "IPEA/Decretos do salário mínimo (dez/2018 e dez/2022) - https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=1739471028",
     "categoria": "salario_minimo"
+  },
+  {
+    "id": "indicador-bolsonaro-0010",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "Salário mínimo real",
+    "unidade": "R$ (set/2026)",
+    "valor_inicio_mandato": "1.440,15",
+    "valor_fim_mandato": "1.423,09",
+    "fonte": "IPEA, série GAC12_SALMINRE12, deflacionada pelo INPC (dez/2018 e dez/2022; valores em R$ de set/2026) - https://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO=%27GAC12_SALMINRE12%27)",
+    "categoria": "salario_minimo_real"
+  },
+  {
+    "id": "indicador-bolsonaro-0011",
+    "presidente_id": "bolsonaro-2019",
+    "nome": "Produtividade do trabalho (por hora trabalhada)",
+    "unidade": "R$ por hora (de 2021)",
+    "valor_inicio_mandato": "42,221",
+    "valor_fim_mandato": "41,360",
+    "fonte": "FGV IBRE/Observatório da Produtividade Regis Bonelli, indicador anual (anos de 2018 e 2022) - https://ibre.fgv.br/observatorio-produtividade/temas/indicador-anual-de-produtividade-do-trabalho-agregada-desde-1981",
+    "categoria": "produtividade"
   },
   {
     "id": "indicador-bolsonaro-0007",
