@@ -104,9 +104,9 @@
     "presidente_id": "lula-2023",
     "nome": "Taxa de homicídios",
     "unidade": "por 100 mil habitantes",
-    "valor_inicio_mandato": "22,01",
+    "valor_inicio_mandato": "21,61",
     "valor_fim_mandato": "20,03",
-    "fonte": "IPEA/FBSP - Atlas da Violência 2026 (anos de 2022 e 2024, último disponível) - https://www.ipea.gov.br/atlasviolencia/dados-series/20/",
+    "fonte": "IPEA/FBSP - Atlas da Violência 2026 (anos de 2023, 1º ano do mandato, e 2024, último disponível) - https://www.ipea.gov.br/atlasviolencia/dados-series/20/",
     "categoria": "homicidios"
   },
   {
@@ -214,9 +214,9 @@
     "presidente_id": "bolsonaro-2019",
     "nome": "Taxa de homicídios",
     "unidade": "por 100 mil habitantes",
-    "valor_inicio_mandato": "28,06",
+    "valor_inicio_mandato": "21,89",
     "valor_fim_mandato": "22,01",
-    "fonte": "IPEA/FBSP - Atlas da Violência 2026 (anos de 2018 e 2022) - https://www.ipea.gov.br/atlasviolencia/dados-series/20/",
+    "fonte": "IPEA/FBSP - Atlas da Violência 2026 (anos de 2019, 1º ano do mandato, e 2022) - https://www.ipea.gov.br/atlasviolencia/dados-series/20/",
     "categoria": "homicidios"
   }
 ]
